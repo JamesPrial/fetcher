@@ -83,6 +83,7 @@ class OpenRouterProvider(BaseProvider):
                     completion=self._parse_price(pricing_data.get("completion")),
                     image=self._parse_price(pricing_data.get("image")),
                     request=self._parse_price(pricing_data.get("request")),
+                    currency="USD",
                 )
 
             # Parse capabilities
