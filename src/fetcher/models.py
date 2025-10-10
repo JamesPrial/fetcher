@@ -35,7 +35,7 @@ class ModelInfo(BaseModel):
     context_length: Optional[int] = Field(None, description="Maximum context window size")
     pricing: Optional[PricingInfo] = Field(None, description="Pricing information")
     capabilities: ModelCapabilities = Field(
-        default_factory=ModelCapabilities, description="Model capabilities"
+        default_factory=lambda: ModelCapabilities(supports_function_calling=False, supports_vision=False, supports_streaming=False), description="Model capabilities"
     )
     metadata: Dict[str, Any] = Field(
         default_factory=dict, description="Additional provider-specific metadata"
@@ -54,7 +54,7 @@ class ProviderInfo(BaseModel):
     name: str = Field(..., description="Provider name")
     model_count: int = Field(0, description="Number of models from this provider")
     last_updated: datetime = Field(
-        default_factory=datetime.utcnow, description="Last fetch timestamp"
+        default_factory=datetime.now, description="Last fetch timestamp"
     )
 
     class Config:
@@ -69,7 +69,7 @@ class ModelCatalog(BaseModel):
         default_factory=dict, description="Provider information"
     )
     last_updated: datetime = Field(
-        default_factory=datetime.utcnow, description="Catalog last update timestamp"
+        default_factory=datetime.now, description="Catalog last update timestamp"
     )
 
     class Config:
@@ -84,8 +84,8 @@ class ModelCatalog(BaseModel):
             self.providers[model.provider] = ProviderInfo(name=model.provider, model_count=0)
 
         self.providers[model.provider].model_count += 1
-        self.providers[model.provider].last_updated = datetime.utcnow()
-        self.last_updated = datetime.utcnow()
+        self.providers[model.provider].last_updated = datetime.now()
+        self.last_updated = datetime.now()
 
     def get_models_by_provider(self, provider: str) -> List[ModelInfo]:
         """Get all models from a specific provider."""
