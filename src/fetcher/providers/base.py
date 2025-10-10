@@ -43,12 +43,15 @@ class BaseProvider(ABC):
             if self.api_key:
                 headers["Authorization"] = f"Bearer {self.api_key}"
 
-            self._client = httpx.AsyncClient(
-                base_url=self.base_url,
-                headers=headers,
-                timeout=self.timeout,
-                follow_redirects=True,
-            )
+            client_kwargs = {
+                "headers": headers,
+                "timeout": self.timeout,
+                "follow_redirects": True,
+            }
+            if self.base_url:
+                client_kwargs["base_url"] = self.base_url
+
+            self._client = httpx.AsyncClient(**client_kwargs)
         return self._client
 
     async def close(self) -> None:
