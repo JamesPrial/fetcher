@@ -6,6 +6,7 @@ import httpx
 
 from .base import BaseProvider
 from ..models import ModelInfo, PricingInfo, ModelCapabilities
+from .data_loader import get_pricing_map, get_capabilities_map
 
 
 class GoogleProvider(BaseProvider):
@@ -13,143 +14,11 @@ class GoogleProvider(BaseProvider):
 
     DEFAULT_BASE_URL = "https://generativelanguage.googleapis.com/v1beta"
 
-    # Static pricing mapping (per million tokens) based on official pricing
-    # Source: https://ai.google.dev/gemini-api/docs/pricing
-    PRICING_MAP = {
-        # Gemini 2.5 Pro
-        "gemini-2.5-pro": {"prompt": 1.25, "completion": 5.00},
-        "gemini-2.5-pro-preview": {"prompt": 1.25, "completion": 5.00},
-        "gemini-2.5-pro-latest": {"prompt": 1.25, "completion": 5.00},
-        # Gemini 2.5 Flash
-        "gemini-2.5-flash": {"prompt": 0.075, "completion": 0.30},
-        "gemini-2.5-flash-preview": {"prompt": 0.075, "completion": 0.30},
-        "gemini-2.5-flash-latest": {"prompt": 0.075, "completion": 0.30},
-        # Gemini 2.0 Flash
-        "gemini-2.0-flash": {"prompt": 0.10, "completion": 0.40},
-        "gemini-2.0-flash-exp": {"prompt": 0.10, "completion": 0.40},
-        "gemini-2.0-flash-preview": {"prompt": 0.10, "completion": 0.40},
-        # Gemini 1.5 Pro
-        "gemini-1.5-pro": {"prompt": 1.25, "completion": 5.00},
-        "gemini-1.5-pro-latest": {"prompt": 1.25, "completion": 5.00},
-        # Gemini 1.5 Flash
-        "gemini-1.5-flash": {"prompt": 0.075, "completion": 0.30},
-        "gemini-1.5-flash-latest": {"prompt": 0.075, "completion": 0.30},
-        "gemini-1.5-flash-8b": {"prompt": 0.0375, "completion": 0.15},
-        "gemini-1.5-flash-8b-latest": {"prompt": 0.0375, "completion": 0.15},
-        # Gemini 1.0 Pro
-        "gemini-1.0-pro": {"prompt": 0.50, "completion": 1.50},
-        "gemini-1.0-pro-latest": {"prompt": 0.50, "completion": 1.50},
-    }
-
-    # Capabilities mapping
-    CAPABILITIES_MAP = {
-        # Gemini 2.5 models - Full multimodal
-        "gemini-2.5-pro": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-2.5-pro-preview": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-2.5-pro-latest": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-2.5-flash": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-2.5-flash-preview": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-2.5-flash-latest": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        # Gemini 2.0 models
-        "gemini-2.0-flash": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-2.0-flash-exp": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-2.0-flash-preview": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        # Gemini 1.5 models
-        "gemini-1.5-pro": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-1.5-pro-latest": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-1.5-flash": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-1.5-flash-latest": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-1.5-flash-8b": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        "gemini-1.5-flash-8b-latest": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image", "video", "audio"],
-        },
-        # Gemini 1.0 models - Text and image only
-        "gemini-1.0-pro": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image"],
-        },
-        "gemini-1.0-pro-latest": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "modalities": ["text", "image"],
-        },
-    }
+    # Pricing and capabilities loaded from JSON config files
+    # Source: src/fetcher/data/provider_configs/google.json
+    # Based on official pricing: https://ai.google.dev/gemini-api/docs/pricing
+    PRICING_MAP: Dict[str, Dict[str, float]] = {}
+    CAPABILITIES_MAP: Dict[str, Dict[str, Any]] = {}
 
     def __init__(self, api_key: Optional[str] = None, timeout: float = 30.0):
         """
@@ -313,3 +182,8 @@ class GoogleProvider(BaseProvider):
             # Log the error but don't fail the entire fetch
             print(f"Warning: Failed to parse model {data.get('name', 'unknown')}: {e}")
             return None
+
+
+# Load pricing and capabilities at module level to support class-level access
+GoogleProvider.PRICING_MAP = get_pricing_map("google")
+GoogleProvider.CAPABILITIES_MAP = get_capabilities_map("google")

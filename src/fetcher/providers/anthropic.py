@@ -6,6 +6,7 @@ import httpx
 
 from .base import BaseProvider
 from ..models import ModelInfo, PricingInfo, ModelCapabilities
+from .data_loader import get_pricing_map, get_capabilities_map
 
 
 class AnthropicProvider(BaseProvider):
@@ -14,118 +15,11 @@ class AnthropicProvider(BaseProvider):
     DEFAULT_BASE_URL = "https://api.anthropic.com/v1"
     API_VERSION = "2023-06-01"
 
-    # Static pricing mapping (per million tokens) based on official pricing
-    # Source: https://www.anthropic.com/pricing
-    PRICING_MAP = {
-        # Claude 4.5 Sonnet
-        "claude-sonnet-4-5-20250929": {"prompt": 3.00, "completion": 15.00},
-        # Claude 4.1 Opus
-        "claude-opus-4-1-20250805": {"prompt": 15.00, "completion": 75.00},
-        # Claude 4 Opus
-        "claude-opus-4-20250514": {"prompt": 15.00, "completion": 75.00},
-        # Claude 4 Sonnet
-        "claude-sonnet-4-20250514": {"prompt": 3.00, "completion": 15.00},
-        # Claude 3.7 Sonnet
-        "claude-3-7-sonnet-20250219": {"prompt": 3.00, "completion": 15.00},
-        # Claude 3.5 Haiku
-        "claude-3-5-haiku-20241022": {"prompt": 0.80, "completion": 4.00},
-        # Claude 3.5 Sonnet
-        "claude-3-5-sonnet-20241022": {"prompt": 3.00, "completion": 15.00},
-        "claude-3-5-sonnet-20240620": {"prompt": 3.00, "completion": 15.00},
-        # Claude 3 Opus
-        "claude-3-opus-20240229": {"prompt": 15.00, "completion": 75.00},
-        # Claude 3 Sonnet
-        "claude-3-sonnet-20240229": {"prompt": 3.00, "completion": 15.00},
-        # Claude 3 Haiku
-        "claude-3-haiku-20240307": {"prompt": 0.25, "completion": 1.25},
-    }
-
-    # Capabilities mapping
-    CAPABILITIES_MAP = {
-        # Claude 4.5 models
-        "claude-sonnet-4-5-20250929": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-        # Claude 4.1 models
-        "claude-opus-4-1-20250805": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-        # Claude 4 models
-        "claude-opus-4-20250514": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-        "claude-sonnet-4-20250514": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-        # Claude 3.7 models
-        "claude-3-7-sonnet-20250219": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-        # Claude 3.5 models
-        "claude-3-5-haiku-20241022": {
-            "vision": False,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text"],
-        },
-        "claude-3-5-sonnet-20241022": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-        "claude-3-5-sonnet-20240620": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-        # Claude 3 models
-        "claude-3-opus-20240229": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-        "claude-3-sonnet-20240229": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-        "claude-3-haiku-20240307": {
-            "vision": True,
-            "function_calling": True,
-            "streaming": True,
-            "context_length": 200000,
-            "modalities": ["text", "image"],
-        },
-    }
+    # Pricing and capabilities loaded from JSON config files
+    # Source: src/fetcher/data/provider_configs/anthropic.json
+    # Based on official pricing: https://www.anthropic.com/pricing
+    PRICING_MAP: Dict[str, Dict[str, float]] = {}
+    CAPABILITIES_MAP: Dict[str, Dict[str, Any]] = {}
 
     def __init__(self, api_key: Optional[str] = None, timeout: float = 30.0):
         """
@@ -281,3 +175,8 @@ class AnthropicProvider(BaseProvider):
             # Log the error but don't fail the entire fetch
             print(f"Warning: Failed to parse model {data.get('id', 'unknown')}: {e}")
             return None
+
+
+# Load pricing and capabilities at module level to support class-level access
+AnthropicProvider.PRICING_MAP = get_pricing_map("anthropic")
+AnthropicProvider.CAPABILITIES_MAP = get_capabilities_map("anthropic")
