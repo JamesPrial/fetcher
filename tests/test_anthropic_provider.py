@@ -165,8 +165,8 @@ class TestAnthropicProvider:
 
         # Check pricing (from static mapping)
         assert model.pricing is not None
-        assert model.pricing.prompt == 3.00
-        assert model.pricing.completion == 15.00
+        assert model.pricing.prompt == 0.000003
+        assert model.pricing.completion == 0.000015
         assert model.pricing.currency == "USD"
 
     def test_parse_model_with_capabilities(self):

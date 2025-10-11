@@ -84,6 +84,16 @@ Provider implementations should:
 - `ModelCatalog.add_model()` automatically updates provider statistics and timestamps
 - Pricing includes optional `currency` field (defaults to "USD")
 
+### Pricing Format
+
+**All providers use per-token pricing** stored in scientific notation (e.g., `3e-06` for $3.00 per 1M tokens):
+- OpenRouter: Natively provides per-token pricing from API
+- Anthropic: Static pricing map uses per-token format (e.g., `0.000003` = $3.00 per 1M tokens)
+- OpenAI: Static pricing map uses per-token format (e.g., `0.0000025` = $2.50 per 1M tokens)
+- Google: Static pricing map uses per-token format (e.g., `0.000000075` = $0.075 per 1M tokens)
+
+**Display Conversion**: The HTML viewer multiplies all prices by 1,000,000 to display user-friendly "per 1M tokens" values.
+
 ## Configuration
 
 The CLI reads environment variables and passes them as arguments to the `Fetcher` class. Environment variables follow these patterns:
