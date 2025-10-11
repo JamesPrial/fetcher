@@ -354,6 +354,13 @@ def generate_html_template() -> str:
             </div>
         </div>
 
+        <details class="controls" style="margin-bottom: 20px;">
+            <summary style="cursor: pointer; font-weight: 600; padding: 10px 0;">
+                📊 Provider Details
+            </summary>
+            <div id="providerDetails" style="margin-top: 15px;"></div>
+        </details>
+
         <div class="controls">
             <input type="text" class="search-box" id="searchBox" placeholder="Search models by name or description...">
 
@@ -437,6 +444,7 @@ def generate_html_template() -> str:
                 filteredModels = [...allModels];
 
                 updateStats(data);
+                updateProviderDetails(data);
                 createProviderFilters();
                 renderModels();
             } catch (error) {
@@ -451,14 +459,44 @@ def generate_html_template() -> str:
             const providers = new Set(allModels.map(m => m.provider));
             document.getElementById('totalProviders').textContent = providers.size;
 
-            const avgPrice = allModels.reduce((sum, m) => sum + (m.pricing?.prompt || 0), 0) / allModels.length;
-            document.getElementById('avgPromptPrice').textContent = (avgPrice * 1000000).toFixed(4);
+            // Calculate average price excluding models with null or zero pricing
+            const modelsWithPricing = allModels.filter(m => m.pricing && m.pricing.prompt && m.pricing.prompt > 0);
+            if (modelsWithPricing.length > 0) {
+                const avgPrice = modelsWithPricing.reduce((sum, m) => sum + m.pricing.prompt, 0) / modelsWithPricing.length;
+                document.getElementById('avgPromptPrice').textContent = (avgPrice * 1000000).toFixed(2);
+            } else {
+                document.getElementById('avgPromptPrice').textContent = 'N/A';
+            }
 
-            const latestUpdate = allModels.reduce((latest, m) => {
-                const date = new Date(m.updated_at);
-                return date > latest ? date : latest;
-            }, new Date(0));
-            document.getElementById('lastUpdated').textContent = latestUpdate.toLocaleDateString();
+            // Use catalog-level last_updated if available
+            const lastUpdatedDate = data.last_updated ? new Date(data.last_updated) : new Date();
+            document.getElementById('lastUpdated').textContent = lastUpdatedDate.toLocaleDateString();
+        }
+
+        function updateProviderDetails(data) {
+            const container = document.getElementById('providerDetails');
+            if (!data.providers || Object.keys(data.providers).length === 0) {
+                container.innerHTML = '<p style="color: var(--text-secondary);">No provider information available</p>';
+                return;
+            }
+
+            const providerHTML = Object.entries(data.providers)
+                .sort(([a], [b]) => a.localeCompare(b))
+                .map(([key, provider]) => {
+                    const lastUpdated = new Date(provider.last_updated).toLocaleString();
+                    return `
+                        <div style="display: inline-block; margin: 10px 15px 10px 0; padding: 12px 16px; background: var(--bg-secondary); border-radius: 6px; border: 1px solid var(--border-color);">
+                            <strong style="color: var(--accent-color); text-transform: capitalize;">${provider.name}</strong>
+                            <div style="margin-top: 5px; font-size: 0.9em; color: var(--text-secondary);">
+                                Models: <strong>${provider.model_count}</strong><br>
+                                Last Updated: ${lastUpdated}
+                            </div>
+                        </div>
+                    `;
+                })
+                .join('');
+
+            container.innerHTML = providerHTML;
         }
 
         function createProviderFilters() {
@@ -556,9 +594,15 @@ def generate_html_template() -> str:
                     case 'context':
                         return (b.context_length || 0) - (a.context_length || 0);
                     case 'prompt-price':
-                        return (a.pricing?.prompt || 0) - (b.pricing?.prompt || 0);
+                        // Handle null pricing: put at end (treat as Infinity)
+                        const aPrompt = (a.pricing?.prompt && a.pricing.prompt > 0) ? a.pricing.prompt : Infinity;
+                        const bPrompt = (b.pricing?.prompt && b.pricing.prompt > 0) ? b.pricing.prompt : Infinity;
+                        return aPrompt - bPrompt;
                     case 'completion-price':
-                        return (a.pricing?.completion || 0) - (b.pricing?.completion || 0);
+                        // Handle null pricing: put at end (treat as Infinity)
+                        const aCompletion = (a.pricing?.completion && a.pricing.completion > 0) ? a.pricing.completion : Infinity;
+                        const bCompletion = (b.pricing?.completion && b.pricing.completion > 0) ? b.pricing.completion : Infinity;
+                        return aCompletion - bCompletion;
                     case 'updated':
                         return new Date(b.updated_at) - new Date(a.updated_at);
                     default:
@@ -582,16 +626,26 @@ def generate_html_template() -> str:
                 if (model.capabilities?.supports_function_calling) capabilities.push('<span class="badge badge-success">Functions</span>');
                 if (model.capabilities?.supports_streaming) capabilities.push('<span class="badge badge-warning">Streaming</span>');
 
-                const promptPrice = ((model.pricing?.prompt || 0) * 1000000).toFixed(4);
-                const completionPrice = ((model.pricing?.completion || 0) * 1000000).toFixed(4);
+                // Display N/A for null pricing
+                const promptPrice = (model.pricing?.prompt && model.pricing.prompt > 0)
+                    ? '$' + (model.pricing.prompt * 1000000).toFixed(4)
+                    : 'N/A';
+                const completionPrice = (model.pricing?.completion && model.pricing.completion > 0)
+                    ? '$' + (model.pricing.completion * 1000000).toFixed(4)
+                    : 'N/A';
+
+                // Display N/A for zero/null context length
+                const contextDisplay = (model.context_length && model.context_length > 0)
+                    ? model.context_length.toLocaleString()
+                    : 'N/A';
 
                 return `
                     <tr>
                         <td><strong>${model.name}</strong><br><small style="color: var(--text-secondary)">${model.model_id}</small></td>
                         <td><span class="badge badge-provider">${model.provider}</span></td>
-                        <td>${(model.context_length || 0).toLocaleString()}</td>
-                        <td class="price">$${promptPrice}</td>
-                        <td class="price">$${completionPrice}</td>
+                        <td>${contextDisplay}</td>
+                        <td class="price">${promptPrice}</td>
+                        <td class="price">${completionPrice}</td>
                         <td>${capabilities.join(' ')}</td>
                     </tr>
                 `;
