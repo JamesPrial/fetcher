@@ -9,7 +9,8 @@ A Python tool for fetching available AI models from various providers and storin
 - Store models in structured JSON format
 - Export to CSV and YAML formats
 - Merge capabilities for incremental updates
-- Command-line interface for easy usage
+- **Command-line interface** for easy usage
+- **Programmatic API** for use as a Python library
 
 ## Installation
 
@@ -26,7 +27,67 @@ pip install -e ".[dev]"
 
 ## Usage
 
-### Fetch Models
+### Programmatic API
+
+Use the `Fetcher` class directly in your Python code:
+
+```python
+import asyncio
+from fetcher import Fetcher
+
+# Create a Fetcher instance
+fetcher = Fetcher()
+
+# Fetch models asynchronously
+async def main():
+    # Fetch and merge with existing catalog
+    catalog, summary = await fetcher.fetch(provider="openrouter", merge=True)
+    print(f"Fetched {summary['fetched_count']} models")
+    print(f"Total models in catalog: {summary['total_models']}")
+
+    # List models
+    models = fetcher.list(provider="openrouter", limit=10)
+    for model in models:
+        print(f"{model.model_id}: {model.name}")
+
+    # Export to CSV
+    path = fetcher.export(format="csv", output_path="models.csv")
+    print(f"Exported to: {path}")
+
+asyncio.run(main())
+```
+
+**Fetcher Class Methods:**
+
+- `async fetch(provider="openrouter", merge=True)` - Fetch models from a provider
+  - Returns: `(ModelCatalog, summary_dict)`
+  - Raises: `ValueError` if no models fetched, `Exception` on failure
+
+- `list(provider=None, limit=None)` - List fetched models
+  - Returns: `List[ModelInfo]` (filtered and limited)
+
+- `export(format="json", output_path=None)` - Export catalog
+  - Returns: `Path` to exported file
+  - Formats: `"json"`, `"csv"`, `"yaml"`
+
+**Custom Configuration:**
+
+```python
+from pathlib import Path
+from fetcher import Fetcher
+
+# Pass configuration directly as arguments
+fetcher = Fetcher(
+    data_dir=Path("custom/data"),
+    api_keys={"openrouter": "sk-or-v1-..."},
+    timeout=60.0,
+    debug=True
+)
+```
+
+### Command-Line Interface
+
+#### Fetch Models
 
 Fetch models from OpenRouter (default provider):
 
@@ -40,7 +101,7 @@ Fetch from a specific provider:
 fetcher fetch --provider openrouter
 ```
 
-### List Models
+#### List Models
 
 List all fetched models:
 
@@ -60,7 +121,7 @@ Limit the number of results:
 fetcher list --limit 10
 ```
 
-### Export Data
+#### Export Data
 
 Export to different formats:
 
@@ -96,10 +157,10 @@ Available configuration options:
 fetcher/
 ├── src/fetcher/
 │   ├── __init__.py
+│   ├── fetcher.py         # Main Fetcher class (programmatic API)
 │   ├── models.py          # Pydantic data models
-│   ├── config.py          # Configuration management
 │   ├── storage.py         # Data persistence
-│   ├── cli.py             # Command-line interface
+│   ├── cli.py             # Command-line interface (handles env vars)
 │   └── providers/         # Provider implementations
 │       ├── __init__.py
 │       ├── base.py        # Abstract base class
@@ -153,7 +214,7 @@ To add a new provider:
 1. Create a new file in `src/fetcher/providers/`
 2. Subclass `BaseProvider`
 3. Implement `fetch_models()` method
-4. Add provider to CLI in `cli.py`
+4. Add provider to `fetcher.py` and `cli.py` (optional for CLI support)
 
 Example:
 

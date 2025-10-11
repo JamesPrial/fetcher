@@ -1,6 +1,6 @@
 """Pydantic models for structured model data."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional, Dict, Any, List
 
 from pydantic import BaseModel, Field
@@ -41,7 +41,7 @@ class ModelInfo(BaseModel):
         default_factory=dict, description="Additional provider-specific metadata"
     )
     updated_at: datetime = Field(
-        default_factory=datetime.utcnow, description="Last update timestamp"
+        default_factory=lambda: datetime.now(timezone.utc), description="Last update timestamp"
     )
 
     class Config:
