@@ -12,7 +12,7 @@ ALWAYS checkout a new branch before beginning implementing anything, and when yo
 
 ## Project Overview
 
-This package fetches available AI models from various providers (currently OpenRouter) and stores them in structured JSON format. It provides both a CLI and programmatic API for model catalog management.
+This package fetches available AI models from various providers (OpenRouter, Anthropic) and stores them in structured JSON format. It provides both a CLI and programmatic API for model catalog management.
 
 ## Development Commands
 
@@ -47,7 +47,7 @@ pytest tests/test_file.py::test_function_name
 
 **Fetcher** (`src/fetcher/fetcher.py`): Main programmatic API that coordinates between providers and storage. Accepts all configuration as constructor arguments (api_keys, base_urls, timeout, debug, data_dir). Returns `(ModelCatalog, summary_dict)` tuples from fetch operations.
 
-**Provider System** (`src/fetcher/providers/`): Abstract `BaseProvider` class with async context manager support and lazy HTTP client initialization. Providers implement `fetch_models()` to return `List[ModelInfo]`. Currently implements `OpenRouterProvider`.
+**Provider System** (`src/fetcher/providers/`): Abstract `BaseProvider` class with async context manager support and lazy HTTP client initialization. Providers implement `fetch_models()` to return `List[ModelInfo]`. Currently implements `OpenRouterProvider` and `AnthropicProvider`.
 
 **Storage** (`src/fetcher/storage.py`): Handles persistence to JSON (primary format), CSV, and YAML. Implements merge logic that updates existing models by `model_id` or adds new ones. Default storage location: `data/models.json`.
 
@@ -103,5 +103,54 @@ fetcher = Fetcher(
     timeout=60.0,
     debug=True,
     data_dir=Path("custom/data")
+)
+```
+
+## Provider-Specific Notes
+
+### AnthropicProvider
+
+The Anthropic provider fetches models from the Anthropic API. Key characteristics:
+
+- **Authentication**: Requires API key (set via `ANTHROPIC_API_KEY` environment variable or passed programmatically)
+- **Headers**: Uses custom `x-api-key` header instead of Bearer auth, plus `anthropic-version` header
+- **Pagination**: Supports full pagination using `after_id` and `limit` parameters
+- **Static Mappings**: Pricing and detailed capabilities are maintained via static mappings, as the Anthropic API returns minimal model info
+
+**CLI Usage:**
+```bash
+# Set API key
+export ANTHROPIC_API_KEY="sk-ant-..."
+
+# Fetch Anthropic models
+fetcher fetch --provider anthropic
+
+# Fetch from all providers
+fetcher fetch --provider all
+
+# List Anthropic models
+fetcher list --provider anthropic
+```
+
+**Programmatic Usage:**
+```python
+from pathlib import Path
+from fetcher import Fetcher
+
+# Initialize with Anthropic API key
+fetcher = Fetcher(
+    api_keys={"anthropic": "sk-ant-..."},
+    timeout=60.0,
+    data_dir=Path("data")
+)
+
+# Fetch Anthropic models
+catalog, summary = await fetcher.fetch(provider="anthropic", merge=True)
+
+# Search for specific Anthropic models
+models = fetcher.search(
+    provider="anthropic",
+    supports_vision=True,
+    min_context=100000
 )
 ```
