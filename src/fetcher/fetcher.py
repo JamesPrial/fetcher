@@ -6,6 +6,9 @@ from typing import Optional, List, Dict, Any, Tuple
 from .storage import Storage
 from .models import ModelInfo, ModelCatalog
 from .providers.openrouter import OpenRouterProvider
+from .providers.anthropic import AnthropicProvider
+from .providers.openai import OpenAIProvider
+from .providers.google import GoogleProvider
 
 
 class Fetcher:
@@ -53,7 +56,7 @@ class Fetcher:
         Fetch models from a provider.
 
         Args:
-            provider: Provider to fetch from ("openrouter" or "all")
+            provider: Provider to fetch from ("openrouter", "anthropic", "openai", "google", or "all")
             merge: Whether to merge with existing data or overwrite
 
         Returns:
@@ -72,6 +75,24 @@ class Fetcher:
             api_key = self._get_api_key("openrouter")
             providers_to_fetch.append(
                 OpenRouterProvider(api_key=api_key, timeout=self._timeout)
+            )
+
+        if provider == "anthropic" or provider == "all":
+            api_key = self._get_api_key("anthropic")
+            providers_to_fetch.append(
+                AnthropicProvider(api_key=api_key, timeout=self._timeout)
+            )
+
+        if provider == "openai" or provider == "all":
+            api_key = self._get_api_key("openai")
+            providers_to_fetch.append(
+                OpenAIProvider(api_key=api_key, timeout=self._timeout)
+            )
+
+        if provider == "google" or provider == "all":
+            api_key = self._get_api_key("google")
+            providers_to_fetch.append(
+                GoogleProvider(api_key=api_key, timeout=self._timeout)
             )
 
         # Fetch from all specified providers
