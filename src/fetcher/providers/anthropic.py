@@ -21,6 +21,12 @@ class AnthropicProvider(BaseProvider):
         "claude-sonnet-4-5-20250929": {"prompt": 3.00, "completion": 15.00},
         # Claude 4.1 Opus
         "claude-opus-4-1-20250805": {"prompt": 15.00, "completion": 75.00},
+        # Claude 4 Opus
+        "claude-opus-4-20250514": {"prompt": 15.00, "completion": 75.00},
+        # Claude 4 Sonnet
+        "claude-sonnet-4-20250514": {"prompt": 3.00, "completion": 15.00},
+        # Claude 3.7 Sonnet
+        "claude-3-7-sonnet-20250219": {"prompt": 3.00, "completion": 15.00},
         # Claude 3.5 Haiku
         "claude-3-5-haiku-20241022": {"prompt": 0.80, "completion": 4.00},
         # Claude 3.5 Sonnet
@@ -46,6 +52,29 @@ class AnthropicProvider(BaseProvider):
         },
         # Claude 4.1 models
         "claude-opus-4-1-20250805": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 200000,
+            "modalities": ["text", "image"],
+        },
+        # Claude 4 models
+        "claude-opus-4-20250514": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 200000,
+            "modalities": ["text", "image"],
+        },
+        "claude-sonnet-4-20250514": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 200000,
+            "modalities": ["text", "image"],
+        },
+        # Claude 3.7 models
+        "claude-3-7-sonnet-20250219": {
             "vision": True,
             "function_calling": True,
             "streaming": True,

@@ -20,6 +20,11 @@ class OpenAIProvider(BaseProvider):
         "gpt-5": {"prompt": 1.25, "completion": 10.00},
         "gpt-5-mini": {"prompt": 0.25, "completion": 2.00},
         "gpt-5-nano": {"prompt": 0.10, "completion": 0.50},
+        "gpt-5-codex": {"prompt": 1.25, "completion": 10.00},
+        # GPT-4.1 series
+        "gpt-4.1": {"prompt": 2.00, "completion": 8.00},
+        "gpt-4.1-mini": {"prompt": 0.40, "completion": 1.60},
+        "gpt-4.1-nano": {"prompt": 0.10, "completion": 0.40},
         # GPT-4o series
         "gpt-4o": {"prompt": 2.50, "completion": 10.00},
         "gpt-4o-2024-11-20": {"prompt": 2.50, "completion": 10.00},
@@ -35,6 +40,10 @@ class OpenAIProvider(BaseProvider):
         "o1-mini-2024-09-12": {"prompt": 3.00, "completion": 12.00},
         "o1-preview": {"prompt": 15.00, "completion": 60.00},
         "o1-preview-2024-09-12": {"prompt": 15.00, "completion": 60.00},
+        # o3/o4 series (next-gen reasoning models)
+        "o3": {"prompt": 2.00, "completion": 8.00},
+        "o3-pro": {"prompt": 20.00, "completion": 80.00},
+        "o4-mini": {"prompt": 1.10, "completion": 4.40},
         # GPT-4 Turbo
         "gpt-4-turbo": {"prompt": 10.00, "completion": 30.00},
         "gpt-4-turbo-2024-04-09": {"prompt": 10.00, "completion": 30.00},
@@ -52,6 +61,8 @@ class OpenAIProvider(BaseProvider):
         "gpt-3.5-turbo-0125": {"prompt": 0.50, "completion": 1.50},
         "gpt-3.5-turbo-1106": {"prompt": 1.00, "completion": 2.00},
         "gpt-3.5-turbo-16k": {"prompt": 3.00, "completion": 4.00},
+        # Codex models
+        "codex-mini-latest": {"prompt": 1.50, "completion": 6.00},
         # Embedding models (per million tokens)
         "text-embedding-3-small": {"prompt": 0.02, "completion": 0.0},
         "text-embedding-3-large": {"prompt": 0.13, "completion": 0.0},
@@ -80,6 +91,35 @@ class OpenAIProvider(BaseProvider):
             "function_calling": True,
             "streaming": True,
             "context_length": 272000,
+            "modalities": ["text", "image"],
+        },
+        "gpt-5-codex": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 400000,
+            "modalities": ["text", "image"],
+        },
+        # GPT-4.1 series
+        "gpt-4.1": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 1000000,
+            "modalities": ["text", "image"],
+        },
+        "gpt-4.1-mini": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 1000000,
+            "modalities": ["text", "image"],
+        },
+        "gpt-4.1-nano": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 1000000,
             "modalities": ["text", "image"],
         },
         # GPT-4o series
@@ -174,6 +214,28 @@ class OpenAIProvider(BaseProvider):
             "streaming": False,
             "context_length": 128000,
             "modalities": ["text"],
+        },
+        # o3/o4 series (next-gen reasoning models with vision)
+        "o3": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 200000,
+            "modalities": ["text", "image"],
+        },
+        "o3-pro": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 200000,
+            "modalities": ["text", "image"],
+        },
+        "o4-mini": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 200000,
+            "modalities": ["text", "image"],
         },
         # GPT-4 Turbo
         "gpt-4-turbo": {
@@ -275,6 +337,14 @@ class OpenAIProvider(BaseProvider):
             "streaming": True,
             "context_length": 16385,
             "modalities": ["text"],
+        },
+        # Codex models
+        "codex-mini-latest": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 200000,
+            "modalities": ["text", "image"],
         },
         # Embedding models
         "text-embedding-3-small": {
@@ -397,10 +467,16 @@ class OpenAIProvider(BaseProvider):
             # Generate description
             if is_fine_tuned:
                 description = f"Fine-tuned OpenAI model: {model_id}"
+            elif model_id == "gpt-5-codex":
+                description = "OpenAI GPT-5 Codex - specialized coding model with multimodal capabilities"
             elif model_id.startswith("gpt-5"):
                 description = "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities"
+            elif model_id.startswith("gpt-4.1"):
+                description = "OpenAI GPT-4.1 - advanced model with 1M token context window"
             elif model_id.startswith("gpt-4o"):
                 description = "OpenAI GPT-4o - flagship model with vision and function calling"
+            elif model_id.startswith("o3") or model_id.startswith("o4"):
+                description = "OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities"
             elif model_id.startswith("o1"):
                 description = "OpenAI o1 - advanced reasoning model"
             elif model_id.startswith("gpt-4-turbo"):
@@ -409,6 +485,8 @@ class OpenAIProvider(BaseProvider):
                 description = "OpenAI GPT-4 - advanced language model"
             elif model_id.startswith("gpt-3.5"):
                 description = "OpenAI GPT-3.5 Turbo - fast and cost-effective"
+            elif "codex" in model_id:
+                description = f"OpenAI Codex model - specialized for code generation: {model_id}"
             elif "embedding" in model_id:
                 description = f"OpenAI embedding model: {model_id}"
             else:
