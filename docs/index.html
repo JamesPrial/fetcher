@@ -72,6 +72,16 @@
                     <option value="updated">Last Updated</option>
                 </select>
             </div>
+
+            <div class="sort-controls" style="margin-top: 10px;">
+                <span class="sort-label">Download filtered models:</span>
+                <select id="exportFormat">
+                    <option value="json">JSON</option>
+                    <option value="csv">CSV</option>
+                </select>
+                <button class="filter-btn" id="downloadBtn" style="margin-left: 10px;">📥 Download</button>
+                <span class="sort-label" id="downloadCount" style="margin-left: 10px; font-size: 12px;">(0 models)</span>
+            </div>
         </div>
 
         <div class="table-container">
@@ -305,6 +315,7 @@
 
             if (filteredModels.length === 0) {
                 tbody.innerHTML = '<tr><td colspan="6" class="loading">No models match your filters</td></tr>';
+                updateDownloadCount();
                 return;
             }
 
@@ -338,7 +349,120 @@
                     </tr>
                 `;
             }).join('');
+
+            updateDownloadCount();
         }
+
+        function updateDownloadCount() {
+            const count = filteredModels.length;
+            document.getElementById('downloadCount').textContent = `(${count} model${count !== 1 ? 's' : ''})`;
+        }
+
+        // Export functions
+        function exportToJSON() {
+            const data = {
+                models: filteredModels,
+                metadata: {
+                    total_models: filteredModels.length,
+                    exported_at: new Date().toISOString(),
+                    filters_applied: {
+                        providers: Array.from(activeProviders),
+                        capabilities: Array.from(activeCapabilities),
+                        search_term: document.getElementById('searchBox').value
+                    }
+                }
+            };
+            return JSON.stringify(data, null, 2);
+        }
+
+        function exportToCSV() {
+            // CSV headers
+            const headers = [
+                'Model ID',
+                'Model Name',
+                'Provider',
+                'Context Length',
+                'Prompt Price ($/1M tokens)',
+                'Completion Price ($/1M tokens)',
+                'Supports Vision',
+                'Supports Function Calling',
+                'Supports Streaming',
+                'Description',
+                'Updated At'
+            ];
+
+            // Convert models to CSV rows
+            const rows = filteredModels.map(model => {
+                const promptPrice = (model.pricing?.prompt && model.pricing.prompt > 0)
+                    ? (model.pricing.prompt * 1000000).toFixed(4)
+                    : '';
+                const completionPrice = (model.pricing?.completion && model.pricing.completion > 0)
+                    ? (model.pricing.completion * 1000000).toFixed(4)
+                    : '';
+                const contextLength = (model.context_length && model.context_length > 0)
+                    ? model.context_length
+                    : '';
+
+                return [
+                    escapeCSV(model.model_id),
+                    escapeCSV(model.name),
+                    escapeCSV(model.provider),
+                    contextLength,
+                    promptPrice,
+                    completionPrice,
+                    model.capabilities?.supports_vision ? 'Yes' : 'No',
+                    model.capabilities?.supports_function_calling ? 'Yes' : 'No',
+                    model.capabilities?.supports_streaming ? 'Yes' : 'No',
+                    escapeCSV(model.description || ''),
+                    model.updated_at
+                ].join(',');
+            });
+
+            return [headers.join(','), ...rows].join('\n');
+        }
+
+        function escapeCSV(value) {
+            if (typeof value !== 'string') return value;
+            // Escape quotes and wrap in quotes if contains comma, quote, or newline
+            if (value.includes(',') || value.includes('"') || value.includes('\n')) {
+                return '"' + value.replace(/"/g, '""') + '"';
+            }
+            return value;
+        }
+
+        function downloadFile(content, filename, mimeType) {
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        // Download button event listener
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            const format = document.getElementById('exportFormat').value;
+            const timestamp = new Date().toISOString().split('T')[0];
+
+            let content, filename, mimeType;
+
+            if (format === 'json') {
+                content = exportToJSON();
+                filename = `models-filtered-${timestamp}.json`;
+                mimeType = 'application/json';
+            } else if (format === 'csv') {
+                content = exportToCSV();
+                filename = `models-filtered-${timestamp}.csv`;
+                mimeType = 'text/csv';
+            }
+
+            if (content) {
+                downloadFile(content, filename, mimeType);
+            }
+        });
 
         // Initialize
         loadModels();
