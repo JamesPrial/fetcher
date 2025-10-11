@@ -39,7 +39,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.187567+00:00
+  updated_at: 2025-10-11 15:11:32.813137+00:00
 - model_id: baidu/ernie-4.5-21b-a3b-thinking
   name: 'Baidu: ERNIE 4.5 21B A3B Thinking'
   provider: openrouter
@@ -62,7 +62,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187602+00:00
+  updated_at: 2025-10-11 15:11:32.813165+00:00
 - model_id: google/gemini-2.5-flash-image
   name: 'Google: Gemini 2.5 Flash Image (Nano Banana)'
   provider: openrouter
@@ -87,7 +87,7 @@ models:
     - image
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.187622+00:00
+  updated_at: 2025-10-11 15:11:32.813182+00:00
 - model_id: qwen/qwen3-vl-30b-a3b-thinking
   name: 'Qwen: Qwen3 VL 30B A3B Thinking'
   provider: openrouter
@@ -116,7 +116,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187638+00:00
+  updated_at: 2025-10-11 15:11:32.813201+00:00
 - model_id: qwen/qwen3-vl-30b-a3b-instruct
   name: 'Qwen: Qwen3 VL 30B A3B Instruct'
   provider: openrouter
@@ -145,7 +145,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187652+00:00
+  updated_at: 2025-10-11 15:11:32.813213+00:00
 - model_id: openai/gpt-5-pro
   name: 'OpenAI: GPT-5 Pro'
   provider: openrouter
@@ -172,7 +172,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.187665+00:00
+  updated_at: 2025-10-11 15:11:32.813225+00:00
 - model_id: z-ai/glm-4.6
   name: 'Z.AI: GLM 4.6'
   provider: openrouter
@@ -211,7 +211,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187678+00:00
+  updated_at: 2025-10-11 15:11:32.813236+00:00
 - model_id: anthropic/claude-sonnet-4.5
   name: 'Anthropic: Claude Sonnet 4.5'
   provider: openrouter
@@ -245,7 +245,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.187689+00:00
+  updated_at: 2025-10-11 15:11:32.813258+00:00
 - model_id: deepseek/deepseek-v3.2-exp
   name: 'DeepSeek: DeepSeek V3.2 Exp'
   provider: openrouter
@@ -279,7 +279,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.187701+00:00
+  updated_at: 2025-10-11 15:11:32.813271+00:00
 - model_id: thedrummer/cydonia-24b-v4.1
   name: 'TheDrummer: Cydonia 24B V4.1'
   provider: openrouter
@@ -301,7 +301,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187712+00:00
+  updated_at: 2025-10-11 15:11:32.813284+00:00
 - model_id: relace/relace-apply-3
   name: 'Relace: Relace Apply 3'
   provider: openrouter
@@ -327,7 +327,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187726+00:00
+  updated_at: 2025-10-11 15:11:32.813296+00:00
 - model_id: google/gemini-2.5-flash-preview-09-2025
   name: 'Google: Gemini 2.5 Flash Preview 09-2025'
   provider: openrouter
@@ -353,7 +353,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.187738+00:00
+  updated_at: 2025-10-11 15:11:32.813306+00:00
 - model_id: google/gemini-2.5-flash-lite-preview-09-2025
   name: 'Google: Gemini 2.5 Flash Lite Preview 09-2025'
   provider: openrouter
@@ -380,7 +380,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.187747+00:00
+  updated_at: 2025-10-11 15:11:32.813315+00:00
 - model_id: qwen/qwen3-vl-235b-a22b-thinking
   name: 'Qwen: Qwen3 VL 235B A22B Thinking'
   provider: openrouter
@@ -416,7 +416,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187759+00:00
+  updated_at: 2025-10-11 15:11:32.813326+00:00
 - model_id: qwen/qwen3-vl-235b-a22b-instruct
   name: 'Qwen: Qwen3 VL 235B A22B Instruct'
   provider: openrouter
@@ -453,7 +453,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187770+00:00
+  updated_at: 2025-10-11 15:11:32.813337+00:00
 - model_id: qwen/qwen3-max
   name: 'Qwen: Qwen3 Max'
   provider: openrouter
@@ -482,7 +482,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187789+00:00
+  updated_at: 2025-10-11 15:11:32.813350+00:00
 - model_id: qwen/qwen3-coder-plus
   name: 'Qwen: Qwen3 Coder Plus'
   provider: openrouter
@@ -506,7 +506,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187799+00:00
+  updated_at: 2025-10-11 15:11:32.813359+00:00
 - model_id: openai/gpt-5-codex
   name: 'OpenAI: GPT-5 Codex'
   provider: openrouter
@@ -544,7 +544,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.187811+00:00
+  updated_at: 2025-10-11 15:11:32.813368+00:00
 - model_id: deepseek/deepseek-v3.1-terminus
   name: 'DeepSeek: DeepSeek V3.1 Terminus'
   provider: openrouter
@@ -579,7 +579,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.187824+00:00
+  updated_at: 2025-10-11 15:11:32.813381+00:00
 - model_id: x-ai/grok-4-fast
   name: 'xAI: Grok 4 Fast'
   provider: openrouter
@@ -608,7 +608,7 @@ models:
     - image->text
   metadata:
     architecture: Grok
-  updated_at: 2025-10-11 01:46:13.187835+00:00
+  updated_at: 2025-10-11 15:11:32.813391+00:00
 - model_id: alibaba/tongyi-deepresearch-30b-a3b:free
   name: Tongyi DeepResearch 30B A3B (free)
   provider: openrouter
@@ -645,7 +645,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187844+00:00
+  updated_at: 2025-10-11 15:11:32.813402+00:00
 - model_id: alibaba/tongyi-deepresearch-30b-a3b
   name: Tongyi DeepResearch 30B A3B
   provider: openrouter
@@ -682,7 +682,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187855+00:00
+  updated_at: 2025-10-11 15:11:32.813413+00:00
 - model_id: qwen/qwen3-coder-flash
   name: 'Qwen: Qwen3 Coder Flash'
   provider: openrouter
@@ -706,7 +706,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187867+00:00
+  updated_at: 2025-10-11 15:11:32.813424+00:00
 - model_id: arcee-ai/afm-4.5b
   name: 'Arcee AI: AFM 4.5B'
   provider: openrouter
@@ -730,7 +730,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187878+00:00
+  updated_at: 2025-10-11 15:11:32.813434+00:00
 - model_id: opengvlab/internvl3-78b
   name: 'OpenGVLab: InternVL3 78B'
   provider: openrouter
@@ -757,7 +757,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187889+00:00
+  updated_at: 2025-10-11 15:11:32.813443+00:00
 - model_id: qwen/qwen3-next-80b-a3b-thinking
   name: 'Qwen: Qwen3 Next 80B A3B Thinking'
   provider: openrouter
@@ -792,7 +792,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187900+00:00
+  updated_at: 2025-10-11 15:11:32.813452+00:00
 - model_id: qwen/qwen3-next-80b-a3b-instruct
   name: 'Qwen: Qwen3 Next 80B A3B Instruct'
   provider: openrouter
@@ -828,7 +828,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187913+00:00
+  updated_at: 2025-10-11 15:11:32.813464+00:00
 - model_id: meituan/longcat-flash-chat:free
   name: 'Meituan: LongCat Flash Chat (free)'
   provider: openrouter
@@ -861,7 +861,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187923+00:00
+  updated_at: 2025-10-11 15:11:32.813475+00:00
 - model_id: meituan/longcat-flash-chat
   name: 'Meituan: LongCat Flash Chat'
   provider: openrouter
@@ -894,7 +894,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187932+00:00
+  updated_at: 2025-10-11 15:11:32.813483+00:00
 - model_id: qwen/qwen-plus-2025-07-28
   name: 'Qwen: Qwen Plus 0728'
   provider: openrouter
@@ -916,7 +916,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187941+00:00
+  updated_at: 2025-10-11 15:11:32.813491+00:00
 - model_id: qwen/qwen-plus-2025-07-28:thinking
   name: 'Qwen: Qwen Plus 0728 (thinking)'
   provider: openrouter
@@ -938,7 +938,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.187952+00:00
+  updated_at: 2025-10-11 15:11:32.813501+00:00
 - model_id: nvidia/nemotron-nano-9b-v2:free
   name: 'NVIDIA: Nemotron Nano 9B V2 (free)'
   provider: openrouter
@@ -965,7 +965,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187965+00:00
+  updated_at: 2025-10-11 15:11:32.813510+00:00
 - model_id: nvidia/nemotron-nano-9b-v2
   name: 'NVIDIA: Nemotron Nano 9B V2'
   provider: openrouter
@@ -992,7 +992,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187976+00:00
+  updated_at: 2025-10-11 15:11:32.813518+00:00
 - model_id: moonshotai/kimi-k2-0905
   name: 'MoonshotAI: Kimi K2 0905'
   provider: openrouter
@@ -1026,7 +1026,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.187985+00:00
+  updated_at: 2025-10-11 15:11:32.813529+00:00
 - model_id: deepcogito/cogito-v2-preview-llama-109b-moe
   name: Cogito V2 Preview Llama 109B
   provider: openrouter
@@ -1054,7 +1054,7 @@ models:
     - image->text
   metadata:
     architecture: Llama4
-  updated_at: 2025-10-11 01:46:13.187997+00:00
+  updated_at: 2025-10-11 15:11:32.813541+00:00
 - model_id: deepcogito/cogito-v2-preview-deepseek-671b
   name: 'Deep Cogito: Cogito V2 Preview Deepseek 671B'
   provider: openrouter
@@ -1083,7 +1083,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.188007+00:00
+  updated_at: 2025-10-11 15:11:32.813550+00:00
 - model_id: stepfun-ai/step3
   name: 'StepFun: Step3'
   provider: openrouter
@@ -1109,7 +1109,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188021+00:00
+  updated_at: 2025-10-11 15:11:32.813559+00:00
 - model_id: qwen/qwen3-30b-a3b-thinking-2507
   name: 'Qwen: Qwen3 30B A3B Thinking 2507'
   provider: openrouter
@@ -1141,7 +1141,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.188035+00:00
+  updated_at: 2025-10-11 15:11:32.813571+00:00
 - model_id: x-ai/grok-code-fast-1
   name: 'xAI: Grok Code Fast 1'
   provider: openrouter
@@ -1164,7 +1164,7 @@ models:
     - text->text
   metadata:
     architecture: Grok
-  updated_at: 2025-10-11 01:46:13.188046+00:00
+  updated_at: 2025-10-11 15:11:32.813583+00:00
 - model_id: nousresearch/hermes-4-70b
   name: 'Nous: Hermes 4 70B'
   provider: openrouter
@@ -1196,7 +1196,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.188055+00:00
+  updated_at: 2025-10-11 15:11:32.813597+00:00
 - model_id: nousresearch/hermes-4-405b
   name: 'Nous: Hermes 4 405B'
   provider: openrouter
@@ -1230,7 +1230,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188064+00:00
+  updated_at: 2025-10-11 15:11:32.813605+00:00
 - model_id: google/gemini-2.5-flash-image-preview
   name: 'Google: Gemini 2.5 Flash Image Preview (Nano Banana)'
   provider: openrouter
@@ -1254,7 +1254,7 @@ models:
     - image
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.188076+00:00
+  updated_at: 2025-10-11 15:11:32.813617+00:00
 - model_id: deepseek/deepseek-chat-v3.1:free
   name: 'DeepSeek: DeepSeek V3.1 (free)'
   provider: openrouter
@@ -1286,7 +1286,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.188087+00:00
+  updated_at: 2025-10-11 15:11:32.813625+00:00
 - model_id: deepseek/deepseek-chat-v3.1
   name: 'DeepSeek: DeepSeek V3.1'
   provider: openrouter
@@ -1318,7 +1318,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.188098+00:00
+  updated_at: 2025-10-11 15:11:32.813633+00:00
 - model_id: openai/gpt-4o-audio-preview
   name: 'OpenAI: GPT-4o Audio'
   provider: openrouter
@@ -1342,7 +1342,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188114+00:00
+  updated_at: 2025-10-11 15:11:32.813644+00:00
 - model_id: mistralai/mistral-medium-3.1
   name: 'Mistral: Mistral Medium 3.1'
   provider: openrouter
@@ -1375,7 +1375,7 @@ models:
     - image->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188124+00:00
+  updated_at: 2025-10-11 15:11:32.813655+00:00
 - model_id: baidu/ernie-4.5-21b-a3b
   name: 'Baidu: ERNIE 4.5 21B A3B'
   provider: openrouter
@@ -1403,7 +1403,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188134+00:00
+  updated_at: 2025-10-11 15:11:32.813664+00:00
 - model_id: baidu/ernie-4.5-vl-28b-a3b
   name: 'Baidu: ERNIE 4.5 VL 28B A3B'
   provider: openrouter
@@ -1431,7 +1431,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188145+00:00
+  updated_at: 2025-10-11 15:11:32.813674+00:00
 - model_id: z-ai/glm-4.5v
   name: 'Z.AI: GLM 4.5V'
   provider: openrouter
@@ -1459,7 +1459,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188155+00:00
+  updated_at: 2025-10-11 15:11:32.813683+00:00
 - model_id: ai21/jamba-mini-1.7
   name: 'AI21: Jamba Mini 1.7'
   provider: openrouter
@@ -1484,7 +1484,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188168+00:00
+  updated_at: 2025-10-11 15:11:32.813697+00:00
 - model_id: ai21/jamba-large-1.7
   name: 'AI21: Jamba Large 1.7'
   provider: openrouter
@@ -1509,7 +1509,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188177+00:00
+  updated_at: 2025-10-11 15:11:32.813712+00:00
 - model_id: openai/gpt-5-chat
   name: 'OpenAI: GPT-5 Chat'
   provider: openrouter
@@ -1531,7 +1531,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188186+00:00
+  updated_at: 2025-10-11 15:11:32.813722+00:00
 - model_id: openai/gpt-5
   name: 'OpenAI: GPT-5'
   provider: openrouter
@@ -1558,7 +1558,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188195+00:00
+  updated_at: 2025-10-11 15:11:32.813730+00:00
 - model_id: openai/gpt-5-mini
   name: 'OpenAI: GPT-5 Mini'
   provider: openrouter
@@ -1582,7 +1582,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188208+00:00
+  updated_at: 2025-10-11 15:11:32.813743+00:00
 - model_id: openai/gpt-5-nano
   name: 'OpenAI: GPT-5 Nano'
   provider: openrouter
@@ -1607,7 +1607,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188217+00:00
+  updated_at: 2025-10-11 15:11:32.814537+00:00
 - model_id: openai/gpt-oss-120b
   name: 'OpenAI: gpt-oss-120b'
   provider: openrouter
@@ -1633,7 +1633,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188227+00:00
+  updated_at: 2025-10-11 15:11:32.814551+00:00
 - model_id: openai/gpt-oss-20b:free
   name: 'OpenAI: gpt-oss-20b (free)'
   provider: openrouter
@@ -1660,7 +1660,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188242+00:00
+  updated_at: 2025-10-11 15:11:32.814563+00:00
 - model_id: openai/gpt-oss-20b
   name: 'OpenAI: gpt-oss-20b'
   provider: openrouter
@@ -1687,7 +1687,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188251+00:00
+  updated_at: 2025-10-11 15:11:32.814574+00:00
 - model_id: anthropic/claude-opus-4.1
   name: 'Anthropic: Claude Opus 4.1'
   provider: openrouter
@@ -1713,7 +1713,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.188263+00:00
+  updated_at: 2025-10-11 15:11:32.814587+00:00
 - model_id: mistralai/codestral-2508
   name: 'Mistral: Codestral 2508'
   provider: openrouter
@@ -1739,7 +1739,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188272+00:00
+  updated_at: 2025-10-11 15:11:32.814596+00:00
 - model_id: qwen/qwen3-coder-30b-a3b-instruct
   name: 'Qwen: Qwen3 Coder 30B A3B Instruct'
   provider: openrouter
@@ -1769,7 +1769,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.188282+00:00
+  updated_at: 2025-10-11 15:11:32.814606+00:00
 - model_id: qwen/qwen3-30b-a3b-instruct-2507
   name: 'Qwen: Qwen3 30B A3B Instruct 2507'
   provider: openrouter
@@ -1797,7 +1797,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.188293+00:00
+  updated_at: 2025-10-11 15:11:32.814615+00:00
 - model_id: z-ai/glm-4.5
   name: 'Z.AI: GLM 4.5'
   provider: openrouter
@@ -1825,7 +1825,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188303+00:00
+  updated_at: 2025-10-11 15:11:32.814623+00:00
 - model_id: z-ai/glm-4.5-air:free
   name: 'Z.AI: GLM 4.5 Air (free)'
   provider: openrouter
@@ -1852,7 +1852,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188363+00:00
+  updated_at: 2025-10-11 15:11:32.814635+00:00
 - model_id: z-ai/glm-4.5-air
   name: 'Z.AI: GLM 4.5 Air'
   provider: openrouter
@@ -1879,7 +1879,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188374+00:00
+  updated_at: 2025-10-11 15:11:32.814646+00:00
 - model_id: qwen/qwen3-235b-a22b-thinking-2507
   name: 'Qwen: Qwen3 235B A22B Thinking 2507'
   provider: openrouter
@@ -1913,7 +1913,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.188383+00:00
+  updated_at: 2025-10-11 15:11:32.814656+00:00
 - model_id: z-ai/glm-4-32b
   name: 'Z.AI: GLM 4 32B '
   provider: openrouter
@@ -1941,7 +1941,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188394+00:00
+  updated_at: 2025-10-11 15:11:32.814664+00:00
 - model_id: qwen/qwen3-coder:free
   name: 'Qwen: Qwen3 Coder 480B A35B (free)'
   provider: openrouter
@@ -1970,7 +1970,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.188406+00:00
+  updated_at: 2025-10-11 15:11:32.814672+00:00
 - model_id: qwen/qwen3-coder
   name: 'Qwen: Qwen3 Coder 480B A35B'
   provider: openrouter
@@ -1999,7 +1999,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.188416+00:00
+  updated_at: 2025-10-11 15:11:32.814682+00:00
 - model_id: bytedance/ui-tars-1.5-7b
   name: 'ByteDance: UI-TARS 7B '
   provider: openrouter
@@ -2032,7 +2032,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188426+00:00
+  updated_at: 2025-10-11 15:11:32.814695+00:00
 - model_id: google/gemini-2.5-flash-lite
   name: 'Google: Gemini 2.5 Flash Lite'
   provider: openrouter
@@ -2059,7 +2059,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.188434+00:00
+  updated_at: 2025-10-11 15:11:32.814703+00:00
 - model_id: qwen/qwen3-235b-a22b-2507
   name: 'Qwen: Qwen3 235B A22B Instruct 2507'
   provider: openrouter
@@ -2091,7 +2091,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.188442+00:00
+  updated_at: 2025-10-11 15:11:32.814713+00:00
 - model_id: switchpoint/router
   name: Switchpoint Router
   provider: openrouter
@@ -2117,7 +2117,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188452+00:00
+  updated_at: 2025-10-11 15:11:32.814723+00:00
 - model_id: moonshotai/kimi-k2:free
   name: 'MoonshotAI: Kimi K2 0711 (free)'
   provider: openrouter
@@ -2145,7 +2145,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188461+00:00
+  updated_at: 2025-10-11 15:11:32.814732+00:00
 - model_id: moonshotai/kimi-k2
   name: 'MoonshotAI: Kimi K2 0711'
   provider: openrouter
@@ -2173,7 +2173,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188471+00:00
+  updated_at: 2025-10-11 15:11:32.814742+00:00
 - model_id: thudm/glm-4.1v-9b-thinking
   name: 'THUDM: GLM 4.1V 9B Thinking'
   provider: openrouter
@@ -2199,7 +2199,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188481+00:00
+  updated_at: 2025-10-11 15:11:32.814752+00:00
 - model_id: mistralai/devstral-medium
   name: 'Mistral: Devstral Medium'
   provider: openrouter
@@ -2229,7 +2229,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188493+00:00
+  updated_at: 2025-10-11 15:11:32.814762+00:00
 - model_id: mistralai/devstral-small
   name: 'Mistral: Devstral Small 1.1'
   provider: openrouter
@@ -2265,7 +2265,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188502+00:00
+  updated_at: 2025-10-11 15:11:32.814773+00:00
 - model_id: cognitivecomputations/dolphin-mistral-24b-venice-edition:free
   name: 'Venice: Uncensored (free)'
   provider: openrouter
@@ -2292,7 +2292,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188510+00:00
+  updated_at: 2025-10-11 15:11:32.814781+00:00
 - model_id: x-ai/grok-4
   name: 'xAI: Grok 4'
   provider: openrouter
@@ -2317,7 +2317,7 @@ models:
     - image->text
   metadata:
     architecture: Grok
-  updated_at: 2025-10-11 01:46:13.188522+00:00
+  updated_at: 2025-10-11 15:11:32.814792+00:00
 - model_id: google/gemma-3n-e2b-it:free
   name: 'Google: Gemma 3n 2B (free)'
   provider: openrouter
@@ -2345,7 +2345,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188531+00:00
+  updated_at: 2025-10-11 15:11:32.814802+00:00
 - model_id: tencent/hunyuan-a13b-instruct:free
   name: 'Tencent: Hunyuan A13B Instruct (free)'
   provider: openrouter
@@ -2371,7 +2371,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188540+00:00
+  updated_at: 2025-10-11 15:11:32.814815+00:00
 - model_id: tencent/hunyuan-a13b-instruct
   name: 'Tencent: Hunyuan A13B Instruct'
   provider: openrouter
@@ -2397,7 +2397,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188549+00:00
+  updated_at: 2025-10-11 15:11:32.814827+00:00
 - model_id: tngtech/deepseek-r1t2-chimera:free
   name: 'TNG: DeepSeek R1T2 Chimera (free)'
   provider: openrouter
@@ -2426,7 +2426,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.188558+00:00
+  updated_at: 2025-10-11 15:11:32.814835+00:00
 - model_id: tngtech/deepseek-r1t2-chimera
   name: 'TNG: DeepSeek R1T2 Chimera'
   provider: openrouter
@@ -2455,7 +2455,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.188569+00:00
+  updated_at: 2025-10-11 15:11:32.814847+00:00
 - model_id: morph/morph-v3-large
   name: 'Morph: Morph V3 Large'
   provider: openrouter
@@ -2480,7 +2480,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188578+00:00
+  updated_at: 2025-10-11 15:11:32.814856+00:00
 - model_id: morph/morph-v3-fast
   name: 'Morph: Morph V3 Fast'
   provider: openrouter
@@ -2505,7 +2505,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188586+00:00
+  updated_at: 2025-10-11 15:11:32.814864+00:00
 - model_id: baidu/ernie-4.5-vl-424b-a47b
   name: 'Baidu: ERNIE 4.5 VL 424B A47B '
   provider: openrouter
@@ -2534,7 +2534,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188594+00:00
+  updated_at: 2025-10-11 15:11:32.814875+00:00
 - model_id: baidu/ernie-4.5-300b-a47b
   name: 'Baidu: ERNIE 4.5 300B A47B '
   provider: openrouter
@@ -2562,7 +2562,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188604+00:00
+  updated_at: 2025-10-11 15:11:32.814887+00:00
 - model_id: thedrummer/anubis-70b-v1.1
   name: 'TheDrummer: Anubis 70B V1.1'
   provider: openrouter
@@ -2586,7 +2586,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.188612+00:00
+  updated_at: 2025-10-11 15:11:32.814895+00:00
 - model_id: inception/mercury
   name: 'Inception: Mercury'
   provider: openrouter
@@ -2612,7 +2612,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188622+00:00
+  updated_at: 2025-10-11 15:11:32.814905+00:00
 - model_id: mistralai/mistral-small-3.2-24b-instruct:free
   name: 'Mistral: Mistral Small 3.2 24B (free)'
   provider: openrouter
@@ -2642,7 +2642,7 @@ models:
     - image->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188632+00:00
+  updated_at: 2025-10-11 15:11:32.814914+00:00
 - model_id: mistralai/mistral-small-3.2-24b-instruct
   name: 'Mistral: Mistral Small 3.2 24B'
   provider: openrouter
@@ -2672,7 +2672,7 @@ models:
     - image->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188642+00:00
+  updated_at: 2025-10-11 15:11:32.814924+00:00
 - model_id: minimax/minimax-m1
   name: 'MiniMax: MiniMax M1'
   provider: openrouter
@@ -2704,7 +2704,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188650+00:00
+  updated_at: 2025-10-11 15:11:32.814935+00:00
 - model_id: google/gemini-2.5-flash-lite-preview-06-17
   name: 'Google: Gemini 2.5 Flash Lite Preview 06-17'
   provider: openrouter
@@ -2731,7 +2731,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.188659+00:00
+  updated_at: 2025-10-11 15:11:32.814946+00:00
 - model_id: google/gemini-2.5-flash
   name: 'Google: Gemini 2.5 Flash'
   provider: openrouter
@@ -2757,7 +2757,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.188669+00:00
+  updated_at: 2025-10-11 15:11:32.814954+00:00
 - model_id: google/gemini-2.5-pro
   name: 'Google: Gemini 2.5 Pro'
   provider: openrouter
@@ -2783,7 +2783,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.188679+00:00
+  updated_at: 2025-10-11 15:11:32.814964+00:00
 - model_id: moonshotai/kimi-dev-72b:free
   name: 'MoonshotAI: Kimi Dev 72B (free)'
   provider: openrouter
@@ -2809,7 +2809,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188690+00:00
+  updated_at: 2025-10-11 15:11:32.814974+00:00
 - model_id: moonshotai/kimi-dev-72b
   name: 'MoonshotAI: Kimi Dev 72B'
   provider: openrouter
@@ -2835,7 +2835,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188698+00:00
+  updated_at: 2025-10-11 15:11:32.814983+00:00
 - model_id: openai/o3-pro
   name: 'OpenAI: o3 Pro'
   provider: openrouter
@@ -2861,7 +2861,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188707+00:00
+  updated_at: 2025-10-11 15:11:32.814994+00:00
 - model_id: x-ai/grok-3-mini
   name: 'xAI: Grok 3 Mini'
   provider: openrouter
@@ -2884,7 +2884,7 @@ models:
     - text->text
   metadata:
     architecture: Grok
-  updated_at: 2025-10-11 01:46:13.188721+00:00
+  updated_at: 2025-10-11 15:11:32.815006+00:00
 - model_id: x-ai/grok-3
   name: 'xAI: Grok 3'
   provider: openrouter
@@ -2910,7 +2910,7 @@ models:
     - text->text
   metadata:
     architecture: Grok
-  updated_at: 2025-10-11 01:46:13.188729+00:00
+  updated_at: 2025-10-11 15:11:32.815014+00:00
 - model_id: mistralai/magistral-small-2506
   name: 'Mistral: Magistral Small 2506'
   provider: openrouter
@@ -2934,7 +2934,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188737+00:00
+  updated_at: 2025-10-11 15:11:32.815022+00:00
 - model_id: mistralai/magistral-medium-2506
   name: 'Mistral: Magistral Medium 2506'
   provider: openrouter
@@ -2959,7 +2959,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188748+00:00
+  updated_at: 2025-10-11 15:11:32.815032+00:00
 - model_id: mistralai/magistral-medium-2506:thinking
   name: 'Mistral: Magistral Medium 2506 (thinking)'
   provider: openrouter
@@ -2984,7 +2984,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188756+00:00
+  updated_at: 2025-10-11 15:11:32.815057+00:00
 - model_id: google/gemini-2.5-pro-preview
   name: 'Google: Gemini 2.5 Pro Preview 06-05'
   provider: openrouter
@@ -3012,7 +3012,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.188765+00:00
+  updated_at: 2025-10-11 15:11:32.815070+00:00
 - model_id: deepseek/deepseek-r1-0528-qwen3-8b:free
   name: 'DeepSeek: Deepseek R1 0528 Qwen3 8B (free)'
   provider: openrouter
@@ -3042,7 +3042,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.188778+00:00
+  updated_at: 2025-10-11 15:11:32.815079+00:00
 - model_id: deepseek/deepseek-r1-0528-qwen3-8b
   name: 'DeepSeek: Deepseek R1 0528 Qwen3 8B'
   provider: openrouter
@@ -3072,7 +3072,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.188787+00:00
+  updated_at: 2025-10-11 15:11:32.815089+00:00
 - model_id: deepseek/deepseek-r1-0528:free
   name: 'DeepSeek: R1 0528 (free)'
   provider: openrouter
@@ -3099,7 +3099,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.188797+00:00
+  updated_at: 2025-10-11 15:11:32.815097+00:00
 - model_id: deepseek/deepseek-r1-0528
   name: 'DeepSeek: R1 0528'
   provider: openrouter
@@ -3126,7 +3126,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.188806+00:00
+  updated_at: 2025-10-11 15:11:32.815105+00:00
 - model_id: anthropic/claude-opus-4
   name: 'Anthropic: Claude Opus 4'
   provider: openrouter
@@ -3152,7 +3152,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.188814+00:00
+  updated_at: 2025-10-11 15:11:32.815114+00:00
 - model_id: anthropic/claude-sonnet-4
   name: 'Anthropic: Claude Sonnet 4'
   provider: openrouter
@@ -3185,7 +3185,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.188825+00:00
+  updated_at: 2025-10-11 15:11:32.815127+00:00
 - model_id: mistralai/devstral-small-2505:free
   name: 'Mistral: Devstral Small 2505 (free)'
   provider: openrouter
@@ -3218,7 +3218,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188833+00:00
+  updated_at: 2025-10-11 15:11:32.815135+00:00
 - model_id: mistralai/devstral-small-2505
   name: 'Mistral: Devstral Small 2505'
   provider: openrouter
@@ -3251,7 +3251,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188841+00:00
+  updated_at: 2025-10-11 15:11:32.815145+00:00
 - model_id: google/gemma-3n-e4b-it:free
   name: 'Google: Gemma 3n 4B (free)'
   provider: openrouter
@@ -3285,7 +3285,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188850+00:00
+  updated_at: 2025-10-11 15:11:32.815155+00:00
 - model_id: google/gemma-3n-e4b-it
   name: 'Google: Gemma 3n 4B'
   provider: openrouter
@@ -3319,7 +3319,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188861+00:00
+  updated_at: 2025-10-11 15:11:32.815166+00:00
 - model_id: openai/codex-mini
   name: 'OpenAI: Codex Mini'
   provider: openrouter
@@ -3341,7 +3341,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.188870+00:00
+  updated_at: 2025-10-11 15:11:32.815176+00:00
 - model_id: meta-llama/llama-3.3-8b-instruct:free
   name: 'Meta: Llama 3.3 8B Instruct (free)'
   provider: openrouter
@@ -3363,7 +3363,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.188879+00:00
+  updated_at: 2025-10-11 15:11:32.815186+00:00
 - model_id: nousresearch/deephermes-3-mistral-24b-preview
   name: 'Nous: DeepHermes 3 Mistral 24B Preview'
   provider: openrouter
@@ -3399,7 +3399,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188887+00:00
+  updated_at: 2025-10-11 15:11:32.815227+00:00
 - model_id: mistralai/mistral-medium-3
   name: 'Mistral: Mistral Medium 3'
   provider: openrouter
@@ -3431,7 +3431,7 @@ models:
     - image->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.188897+00:00
+  updated_at: 2025-10-11 15:11:32.815238+00:00
 - model_id: google/gemini-2.5-pro-preview-05-06
   name: 'Google: Gemini 2.5 Pro Preview 05-06'
   provider: openrouter
@@ -3457,7 +3457,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.188905+00:00
+  updated_at: 2025-10-11 15:11:32.815247+00:00
 - model_id: arcee-ai/spotlight
   name: 'Arcee AI: Spotlight'
   provider: openrouter
@@ -3486,7 +3486,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188915+00:00
+  updated_at: 2025-10-11 15:11:32.815257+00:00
 - model_id: arcee-ai/maestro-reasoning
   name: 'Arcee AI: Maestro Reasoning'
   provider: openrouter
@@ -3515,7 +3515,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188925+00:00
+  updated_at: 2025-10-11 15:11:32.815271+00:00
 - model_id: arcee-ai/virtuoso-large
   name: 'Arcee AI: Virtuoso Large'
   provider: openrouter
@@ -3545,7 +3545,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188934+00:00
+  updated_at: 2025-10-11 15:11:32.815283+00:00
 - model_id: arcee-ai/coder-large
   name: 'Arcee AI: Coder Large'
   provider: openrouter
@@ -3576,7 +3576,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188942+00:00
+  updated_at: 2025-10-11 15:11:32.815293+00:00
 - model_id: microsoft/phi-4-reasoning-plus
   name: 'Microsoft: Phi 4 Reasoning Plus'
   provider: openrouter
@@ -3608,7 +3608,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188950+00:00
+  updated_at: 2025-10-11 15:11:32.815302+00:00
 - model_id: inception/mercury-coder
   name: 'Inception: Mercury Coder'
   provider: openrouter
@@ -3635,7 +3635,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.188957+00:00
+  updated_at: 2025-10-11 15:11:32.815310+00:00
 - model_id: qwen/qwen3-4b:free
   name: 'Qwen: Qwen3 4B (free)'
   provider: openrouter
@@ -3661,7 +3661,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189009+00:00
+  updated_at: 2025-10-11 15:11:32.815320+00:00
 - model_id: deepseek/deepseek-prover-v2
   name: 'DeepSeek: DeepSeek Prover V2'
   provider: openrouter
@@ -3685,7 +3685,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.189017+00:00
+  updated_at: 2025-10-11 15:11:32.815329+00:00
 - model_id: meta-llama/llama-guard-4-12b
   name: 'Meta: Llama Guard 4 12B'
   provider: openrouter
@@ -3720,7 +3720,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189026+00:00
+  updated_at: 2025-10-11 15:11:32.815340+00:00
 - model_id: qwen/qwen3-30b-a3b:free
   name: 'Qwen: Qwen3 30B A3B (free)'
   provider: openrouter
@@ -3753,7 +3753,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189034+00:00
+  updated_at: 2025-10-11 15:11:32.815349+00:00
 - model_id: qwen/qwen3-30b-a3b
   name: 'Qwen: Qwen3 30B A3B'
   provider: openrouter
@@ -3786,7 +3786,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189044+00:00
+  updated_at: 2025-10-11 15:11:32.815359+00:00
 - model_id: qwen/qwen3-8b:free
   name: 'Qwen: Qwen3 8B (free)'
   provider: openrouter
@@ -3813,7 +3813,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189054+00:00
+  updated_at: 2025-10-11 15:11:32.815369+00:00
 - model_id: qwen/qwen3-8b
   name: 'Qwen: Qwen3 8B'
   provider: openrouter
@@ -3840,7 +3840,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189064+00:00
+  updated_at: 2025-10-11 15:11:32.815377+00:00
 - model_id: qwen/qwen3-14b:free
   name: 'Qwen: Qwen3 14B (free)'
   provider: openrouter
@@ -3867,7 +3867,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189076+00:00
+  updated_at: 2025-10-11 15:11:32.815387+00:00
 - model_id: qwen/qwen3-14b
   name: 'Qwen: Qwen3 14B'
   provider: openrouter
@@ -3894,7 +3894,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189085+00:00
+  updated_at: 2025-10-11 15:11:32.815399+00:00
 - model_id: qwen/qwen3-32b
   name: 'Qwen: Qwen3 32B'
   provider: openrouter
@@ -3922,7 +3922,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189093+00:00
+  updated_at: 2025-10-11 15:11:32.815409+00:00
 - model_id: qwen/qwen3-235b-a22b:free
   name: 'Qwen: Qwen3 235B A22B (free)'
   provider: openrouter
@@ -3950,7 +3950,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189102+00:00
+  updated_at: 2025-10-11 15:11:32.815418+00:00
 - model_id: qwen/qwen3-235b-a22b
   name: 'Qwen: Qwen3 235B A22B'
   provider: openrouter
@@ -3978,7 +3978,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen3
-  updated_at: 2025-10-11 01:46:13.189111+00:00
+  updated_at: 2025-10-11 15:11:32.815428+00:00
 - model_id: tngtech/deepseek-r1t-chimera:free
   name: 'TNG: DeepSeek R1T Chimera (free)'
   provider: openrouter
@@ -4007,7 +4007,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.189121+00:00
+  updated_at: 2025-10-11 15:11:32.815438+00:00
 - model_id: tngtech/deepseek-r1t-chimera
   name: 'TNG: DeepSeek R1T Chimera'
   provider: openrouter
@@ -4036,7 +4036,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.189128+00:00
+  updated_at: 2025-10-11 15:11:32.815446+00:00
 - model_id: microsoft/mai-ds-r1:free
   name: 'Microsoft: MAI DS R1 (free)'
   provider: openrouter
@@ -4071,7 +4071,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.189136+00:00
+  updated_at: 2025-10-11 15:11:32.815457+00:00
 - model_id: microsoft/mai-ds-r1
   name: 'Microsoft: MAI DS R1'
   provider: openrouter
@@ -4106,7 +4106,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.189145+00:00
+  updated_at: 2025-10-11 15:11:32.815469+00:00
 - model_id: thudm/glm-z1-32b
   name: 'THUDM: GLM Z1 32B'
   provider: openrouter
@@ -4139,7 +4139,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189155+00:00
+  updated_at: 2025-10-11 15:11:32.815478+00:00
 - model_id: openai/o4-mini-high
   name: 'OpenAI: o4 Mini High'
   provider: openrouter
@@ -4171,7 +4171,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189163+00:00
+  updated_at: 2025-10-11 15:11:32.815486+00:00
 - model_id: openai/o3
   name: 'OpenAI: o3'
   provider: openrouter
@@ -4195,7 +4195,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.189173+00:00
+  updated_at: 2025-10-11 15:11:32.815498+00:00
 - model_id: openai/o4-mini
   name: 'OpenAI: o4 Mini'
   provider: openrouter
@@ -4228,7 +4228,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.189182+00:00
+  updated_at: 2025-10-11 15:11:32.815509+00:00
 - model_id: shisa-ai/shisa-v2-llama3.3-70b:free
   name: 'Shisa AI: Shisa V2 Llama 3.3 70B  (free)'
   provider: openrouter
@@ -4263,7 +4263,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.189190+00:00
+  updated_at: 2025-10-11 15:11:32.815519+00:00
 - model_id: shisa-ai/shisa-v2-llama3.3-70b
   name: 'Shisa AI: Shisa V2 Llama 3.3 70B '
   provider: openrouter
@@ -4298,7 +4298,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.189200+00:00
+  updated_at: 2025-10-11 15:11:32.815527+00:00
 - model_id: qwen/qwen2.5-coder-7b-instruct
   name: 'Qwen: Qwen2.5 Coder 7B Instruct'
   provider: openrouter
@@ -4329,7 +4329,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.189208+00:00
+  updated_at: 2025-10-11 15:11:32.815536+00:00
 - model_id: openai/gpt-4.1
   name: 'OpenAI: GPT-4.1'
   provider: openrouter
@@ -4356,7 +4356,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.189217+00:00
+  updated_at: 2025-10-11 15:11:32.815546+00:00
 - model_id: openai/gpt-4.1-mini
   name: 'OpenAI: GPT-4.1 Mini'
   provider: openrouter
@@ -4382,7 +4382,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.189227+00:00
+  updated_at: 2025-10-11 15:11:32.815555+00:00
 - model_id: openai/gpt-4.1-nano
   name: 'OpenAI: GPT-4.1 Nano'
   provider: openrouter
@@ -4407,7 +4407,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.189235+00:00
+  updated_at: 2025-10-11 15:11:32.815563+00:00
 - model_id: eleutherai/llemma_7b
   name: 'EleutherAI: Llemma 7b'
   provider: openrouter
@@ -4431,7 +4431,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189246+00:00
+  updated_at: 2025-10-11 15:11:32.815575+00:00
 - model_id: alfredpros/codellama-7b-instruct-solidity
   name: 'AlfredPros: CodeLLaMa 7B Instruct Solidity'
   provider: openrouter
@@ -4453,7 +4453,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189256+00:00
+  updated_at: 2025-10-11 15:11:32.815585+00:00
 - model_id: arliai/qwq-32b-arliai-rpr-v1:free
   name: 'ArliAI: QwQ 32B RpR v1 (free)'
   provider: openrouter
@@ -4484,7 +4484,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189264+00:00
+  updated_at: 2025-10-11 15:11:32.815597+00:00
 - model_id: arliai/qwq-32b-arliai-rpr-v1
   name: 'ArliAI: QwQ 32B RpR v1'
   provider: openrouter
@@ -4515,7 +4515,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189272+00:00
+  updated_at: 2025-10-11 15:11:32.815607+00:00
 - model_id: agentica-org/deepcoder-14b-preview:free
   name: 'Agentica: Deepcoder 14B Preview (free)'
   provider: openrouter
@@ -4540,7 +4540,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189281+00:00
+  updated_at: 2025-10-11 15:11:32.815615+00:00
 - model_id: agentica-org/deepcoder-14b-preview
   name: 'Agentica: Deepcoder 14B Preview'
   provider: openrouter
@@ -4565,7 +4565,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189293+00:00
+  updated_at: 2025-10-11 15:11:32.815625+00:00
 - model_id: x-ai/grok-3-mini-beta
   name: 'xAI: Grok 3 Mini Beta'
   provider: openrouter
@@ -4595,7 +4595,7 @@ models:
     - text->text
   metadata:
     architecture: Grok
-  updated_at: 2025-10-11 01:46:13.189301+00:00
+  updated_at: 2025-10-11 15:11:32.815635+00:00
 - model_id: x-ai/grok-3-beta
   name: 'xAI: Grok 3 Beta'
   provider: openrouter
@@ -4623,7 +4623,7 @@ models:
     - text->text
   metadata:
     architecture: Grok
-  updated_at: 2025-10-11 01:46:13.189308+00:00
+  updated_at: 2025-10-11 15:11:32.815643+00:00
 - model_id: nvidia/llama-3.1-nemotron-ultra-253b-v1
   name: 'NVIDIA: Llama 3.1 Nemotron Ultra 253B v1'
   provider: openrouter
@@ -4655,7 +4655,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.189316+00:00
+  updated_at: 2025-10-11 15:11:32.815651+00:00
 - model_id: meta-llama/llama-4-maverick:free
   name: 'Meta: Llama 4 Maverick (free)'
   provider: openrouter
@@ -4690,7 +4690,7 @@ models:
     - image->text
   metadata:
     architecture: Llama4
-  updated_at: 2025-10-11 01:46:13.189326+00:00
+  updated_at: 2025-10-11 15:11:32.815661+00:00
 - model_id: meta-llama/llama-4-maverick
   name: 'Meta: Llama 4 Maverick'
   provider: openrouter
@@ -4725,7 +4725,7 @@ models:
     - image->text
   metadata:
     architecture: Llama4
-  updated_at: 2025-10-11 01:46:13.189338+00:00
+  updated_at: 2025-10-11 15:11:32.815670+00:00
 - model_id: meta-llama/llama-4-scout:free
   name: 'Meta: Llama 4 Scout (free)'
   provider: openrouter
@@ -4758,7 +4758,7 @@ models:
     - image->text
   metadata:
     architecture: Llama4
-  updated_at: 2025-10-11 01:46:13.189347+00:00
+  updated_at: 2025-10-11 15:11:32.815683+00:00
 - model_id: meta-llama/llama-4-scout
   name: 'Meta: Llama 4 Scout'
   provider: openrouter
@@ -4791,7 +4791,7 @@ models:
     - image->text
   metadata:
     architecture: Llama4
-  updated_at: 2025-10-11 01:46:13.189357+00:00
+  updated_at: 2025-10-11 15:11:32.815697+00:00
 - model_id: allenai/molmo-7b-d
   name: 'AllenAI: Molmo 7B D'
   provider: openrouter
@@ -4830,7 +4830,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189365+00:00
+  updated_at: 2025-10-11 15:11:32.815705+00:00
 - model_id: qwen/qwen2.5-vl-32b-instruct:free
   name: 'Qwen: Qwen2.5 VL 32B Instruct (free)'
   provider: openrouter
@@ -4858,7 +4858,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.189373+00:00
+  updated_at: 2025-10-11 15:11:32.815713+00:00
 - model_id: qwen/qwen2.5-vl-32b-instruct
   name: 'Qwen: Qwen2.5 VL 32B Instruct'
   provider: openrouter
@@ -4886,7 +4886,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.189383+00:00
+  updated_at: 2025-10-11 15:11:32.815722+00:00
 - model_id: deepseek/deepseek-chat-v3-0324:free
   name: 'DeepSeek: DeepSeek V3 0324 (free)'
   provider: openrouter
@@ -4912,7 +4912,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.189395+00:00
+  updated_at: 2025-10-11 15:11:32.815732+00:00
 - model_id: deepseek/deepseek-chat-v3-0324
   name: 'DeepSeek: DeepSeek V3 0324'
   provider: openrouter
@@ -4938,7 +4938,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.189403+00:00
+  updated_at: 2025-10-11 15:11:32.815740+00:00
 - model_id: openai/o1-pro
   name: 'OpenAI: o1-pro'
   provider: openrouter
@@ -4961,7 +4961,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.189413+00:00
+  updated_at: 2025-10-11 15:11:32.815751+00:00
 - model_id: mistralai/mistral-small-3.1-24b-instruct:free
   name: 'Mistral: Mistral Small 3.1 24B (free)'
   provider: openrouter
@@ -4989,7 +4989,7 @@ models:
     - image->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.189421+00:00
+  updated_at: 2025-10-11 15:11:32.815759+00:00
 - model_id: mistralai/mistral-small-3.1-24b-instruct
   name: 'Mistral: Mistral Small 3.1 24B'
   provider: openrouter
@@ -5017,7 +5017,7 @@ models:
     - image->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.189433+00:00
+  updated_at: 2025-10-11 15:11:32.815771+00:00
 - model_id: allenai/olmo-2-0325-32b-instruct
   name: 'AllenAI: Olmo 2 32B Instruct'
   provider: openrouter
@@ -5043,7 +5043,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189441+00:00
+  updated_at: 2025-10-11 15:11:32.815782+00:00
 - model_id: google/gemma-3-4b-it:free
   name: 'Google: Gemma 3 4B (free)'
   provider: openrouter
@@ -5067,7 +5067,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.189451+00:00
+  updated_at: 2025-10-11 15:11:32.815794+00:00
 - model_id: google/gemma-3-4b-it
   name: 'Google: Gemma 3 4B'
   provider: openrouter
@@ -5091,7 +5091,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.189459+00:00
+  updated_at: 2025-10-11 15:11:32.815803+00:00
 - model_id: google/gemma-3-12b-it:free
   name: 'Google: Gemma 3 12B (free)'
   provider: openrouter
@@ -5116,7 +5116,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.189468+00:00
+  updated_at: 2025-10-11 15:11:32.815816+00:00
 - model_id: google/gemma-3-12b-it
   name: 'Google: Gemma 3 12B'
   provider: openrouter
@@ -5141,7 +5141,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.189477+00:00
+  updated_at: 2025-10-11 15:11:32.815825+00:00
 - model_id: cohere/command-a
   name: 'Cohere: Command A'
   provider: openrouter
@@ -5168,7 +5168,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189484+00:00
+  updated_at: 2025-10-11 15:11:32.815834+00:00
 - model_id: openai/gpt-4o-mini-search-preview
   name: 'OpenAI: GPT-4o-mini Search Preview'
   provider: openrouter
@@ -5190,7 +5190,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.189494+00:00
+  updated_at: 2025-10-11 15:11:32.815842+00:00
 - model_id: openai/gpt-4o-search-preview
   name: 'OpenAI: GPT-4o Search Preview'
   provider: openrouter
@@ -5212,7 +5212,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.189505+00:00
+  updated_at: 2025-10-11 15:11:32.815882+00:00
 - model_id: google/gemma-3-27b-it:free
   name: 'Google: Gemma 3 27B (free)'
   provider: openrouter
@@ -5237,7 +5237,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.189513+00:00
+  updated_at: 2025-10-11 15:11:32.815892+00:00
 - model_id: google/gemma-3-27b-it
   name: 'Google: Gemma 3 27B'
   provider: openrouter
@@ -5262,7 +5262,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.189526+00:00
+  updated_at: 2025-10-11 15:11:32.815903+00:00
 - model_id: thedrummer/skyfall-36b-v2
   name: 'TheDrummer: Skyfall 36B V2'
   provider: openrouter
@@ -5285,7 +5285,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189536+00:00
+  updated_at: 2025-10-11 15:11:32.815914+00:00
 - model_id: microsoft/phi-4-multimodal-instruct
   name: 'Microsoft: Phi 4 Multimodal Instruct'
   provider: openrouter
@@ -5318,7 +5318,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189553+00:00
+  updated_at: 2025-10-11 15:11:32.815926+00:00
 - model_id: perplexity/sonar-reasoning-pro
   name: 'Perplexity: Sonar Reasoning Pro'
   provider: openrouter
@@ -5346,7 +5346,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189564+00:00
+  updated_at: 2025-10-11 15:11:32.815935+00:00
 - model_id: perplexity/sonar-pro
   name: 'Perplexity: Sonar Pro'
   provider: openrouter
@@ -5374,7 +5374,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189577+00:00
+  updated_at: 2025-10-11 15:11:32.815943+00:00
 - model_id: perplexity/sonar-deep-research
   name: 'Perplexity: Sonar Deep Research'
   provider: openrouter
@@ -5408,7 +5408,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.189588+00:00
+  updated_at: 2025-10-11 15:11:32.815951+00:00
 - model_id: qwen/qwq-32b
   name: 'Qwen: QwQ 32B'
   provider: openrouter
@@ -5434,7 +5434,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.189602+00:00
+  updated_at: 2025-10-11 15:11:32.815963+00:00
 - model_id: nousresearch/deephermes-3-llama-3-8b-preview:free
   name: 'Nous: DeepHermes 3 Llama 3 8B Preview (free)'
   provider: openrouter
@@ -5464,7 +5464,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190668+00:00
+  updated_at: 2025-10-11 15:11:32.815973+00:00
 - model_id: nousresearch/deephermes-3-llama-3-8b-preview
   name: 'Nous: DeepHermes 3 Llama 3 8B Preview'
   provider: openrouter
@@ -5494,7 +5494,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190693+00:00
+  updated_at: 2025-10-11 15:11:32.815982+00:00
 - model_id: google/gemini-2.0-flash-lite-001
   name: 'Google: Gemini 2.0 Flash Lite'
   provider: openrouter
@@ -5518,7 +5518,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.190708+00:00
+  updated_at: 2025-10-11 15:11:32.815990+00:00
 - model_id: anthropic/claude-3.7-sonnet
   name: 'Anthropic: Claude 3.7 Sonnet'
   provider: openrouter
@@ -5547,7 +5547,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.190720+00:00
+  updated_at: 2025-10-11 15:11:32.816000+00:00
 - model_id: anthropic/claude-3.7-sonnet:thinking
   name: 'Anthropic: Claude 3.7 Sonnet (thinking)'
   provider: openrouter
@@ -5576,7 +5576,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.190727+00:00
+  updated_at: 2025-10-11 15:11:32.816012+00:00
 - model_id: perplexity/r1-1776
   name: 'Perplexity: R1 1776'
   provider: openrouter
@@ -5611,7 +5611,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.190735+00:00
+  updated_at: 2025-10-11 15:11:32.816024+00:00
 - model_id: mistralai/mistral-saba
   name: 'Mistral: Saba'
   provider: openrouter
@@ -5637,7 +5637,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.190744+00:00
+  updated_at: 2025-10-11 15:11:32.816046+00:00
 - model_id: cognitivecomputations/dolphin3.0-mistral-24b:free
   name: Dolphin3.0 Mistral 24B (free)
   provider: openrouter
@@ -5665,7 +5665,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190751+00:00
+  updated_at: 2025-10-11 15:11:32.816055+00:00
 - model_id: cognitivecomputations/dolphin3.0-mistral-24b
   name: Dolphin3.0 Mistral 24B
   provider: openrouter
@@ -5693,7 +5693,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190757+00:00
+  updated_at: 2025-10-11 15:11:32.816063+00:00
 - model_id: meta-llama/llama-guard-3-8b
   name: Llama Guard 3 8B
   provider: openrouter
@@ -5727,7 +5727,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.190765+00:00
+  updated_at: 2025-10-11 15:11:32.816071+00:00
 - model_id: openai/o3-mini-high
   name: 'OpenAI: o3 Mini High'
   provider: openrouter
@@ -5758,7 +5758,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.190802+00:00
+  updated_at: 2025-10-11 15:11:32.816082+00:00
 - model_id: google/gemini-2.0-flash-001
   name: 'Google: Gemini 2.0 Flash'
   provider: openrouter
@@ -5784,7 +5784,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.190810+00:00
+  updated_at: 2025-10-11 15:11:32.816092+00:00
 - model_id: qwen/qwen-vl-plus
   name: 'Qwen: Qwen VL Plus'
   provider: openrouter
@@ -5811,7 +5811,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.190819+00:00
+  updated_at: 2025-10-11 15:11:32.816101+00:00
 - model_id: aion-labs/aion-1.0
   name: 'AionLabs: Aion-1.0'
   provider: openrouter
@@ -5835,7 +5835,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190825+00:00
+  updated_at: 2025-10-11 15:11:32.816109+00:00
 - model_id: aion-labs/aion-1.0-mini
   name: 'AionLabs: Aion-1.0-Mini'
   provider: openrouter
@@ -5861,7 +5861,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190832+00:00
+  updated_at: 2025-10-11 15:11:32.816124+00:00
 - model_id: aion-labs/aion-rp-llama-3.1-8b
   name: 'AionLabs: Aion-RP 1.0 (8B)'
   provider: openrouter
@@ -5885,7 +5885,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190838+00:00
+  updated_at: 2025-10-11 15:11:32.816132+00:00
 - model_id: qwen/qwen-vl-max
   name: 'Qwen: Qwen VL Max'
   provider: openrouter
@@ -5910,7 +5910,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.190845+00:00
+  updated_at: 2025-10-11 15:11:32.816143+00:00
 - model_id: qwen/qwen-turbo
   name: 'Qwen: Qwen-Turbo'
   provider: openrouter
@@ -5932,7 +5932,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.190852+00:00
+  updated_at: 2025-10-11 15:11:32.816155+00:00
 - model_id: qwen/qwen2.5-vl-72b-instruct:free
   name: 'Qwen: Qwen2.5 VL 72B Instruct (free)'
   provider: openrouter
@@ -5955,7 +5955,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.190859+00:00
+  updated_at: 2025-10-11 15:11:32.816165+00:00
 - model_id: qwen/qwen2.5-vl-72b-instruct
   name: 'Qwen: Qwen2.5 VL 72B Instruct'
   provider: openrouter
@@ -5978,7 +5978,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.190866+00:00
+  updated_at: 2025-10-11 15:11:32.816175+00:00
 - model_id: qwen/qwen-plus
   name: 'Qwen: Qwen-Plus'
   provider: openrouter
@@ -6000,7 +6000,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.190871+00:00
+  updated_at: 2025-10-11 15:11:32.816183+00:00
 - model_id: qwen/qwen-max
   name: 'Qwen: Qwen-Max '
   provider: openrouter
@@ -6025,7 +6025,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.190880+00:00
+  updated_at: 2025-10-11 15:11:32.816191+00:00
 - model_id: openai/o3-mini
   name: 'OpenAI: o3 Mini'
   provider: openrouter
@@ -6065,7 +6065,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.190889+00:00
+  updated_at: 2025-10-11 15:11:32.816201+00:00
 - model_id: mistralai/mistral-small-24b-instruct-2501:free
   name: 'Mistral: Mistral Small 3 (free)'
   provider: openrouter
@@ -6094,7 +6094,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.190895+00:00
+  updated_at: 2025-10-11 15:11:32.816211+00:00
 - model_id: mistralai/mistral-small-24b-instruct-2501
   name: 'Mistral: Mistral Small 3'
   provider: openrouter
@@ -6123,7 +6123,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.190901+00:00
+  updated_at: 2025-10-11 15:11:32.816223+00:00
 - model_id: deepseek/deepseek-r1-distill-qwen-32b
   name: 'DeepSeek: R1 Distill Qwen 32B'
   provider: openrouter
@@ -6150,7 +6150,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.190907+00:00
+  updated_at: 2025-10-11 15:11:32.816231+00:00
 - model_id: deepseek/deepseek-r1-distill-qwen-14b
   name: 'DeepSeek: R1 Distill Qwen 14B'
   provider: openrouter
@@ -6189,7 +6189,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.190914+00:00
+  updated_at: 2025-10-11 15:11:32.816242+00:00
 - model_id: perplexity/sonar-reasoning
   name: 'Perplexity: Sonar Reasoning'
   provider: openrouter
@@ -6215,7 +6215,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190922+00:00
+  updated_at: 2025-10-11 15:11:32.816252+00:00
 - model_id: perplexity/sonar
   name: 'Perplexity: Sonar'
   provider: openrouter
@@ -6238,7 +6238,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190928+00:00
+  updated_at: 2025-10-11 15:11:32.816261+00:00
 - model_id: liquid/lfm-7b
   name: 'Liquid: LFM 7B'
   provider: openrouter
@@ -6265,7 +6265,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190936+00:00
+  updated_at: 2025-10-11 15:11:32.816271+00:00
 - model_id: liquid/lfm-3b
   name: 'Liquid: LFM 3B'
   provider: openrouter
@@ -6296,7 +6296,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190943+00:00
+  updated_at: 2025-10-11 15:11:32.816281+00:00
 - model_id: deepseek/deepseek-r1-distill-llama-70b:free
   name: 'DeepSeek: R1 Distill Llama 70B (free)'
   provider: openrouter
@@ -6331,7 +6331,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.190949+00:00
+  updated_at: 2025-10-11 15:11:32.816289+00:00
 - model_id: deepseek/deepseek-r1-distill-llama-70b
   name: 'DeepSeek: R1 Distill Llama 70B'
   provider: openrouter
@@ -6366,7 +6366,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.190956+00:00
+  updated_at: 2025-10-11 15:11:32.816297+00:00
 - model_id: deepseek/deepseek-r1:free
   name: 'DeepSeek: R1 (free)'
   provider: openrouter
@@ -6395,7 +6395,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.190963+00:00
+  updated_at: 2025-10-11 15:11:32.816305+00:00
 - model_id: deepseek/deepseek-r1
   name: 'DeepSeek: R1'
   provider: openrouter
@@ -6424,7 +6424,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.190971+00:00
+  updated_at: 2025-10-11 15:11:32.816317+00:00
 - model_id: minimax/minimax-01
   name: 'MiniMax: MiniMax-01'
   provider: openrouter
@@ -6455,7 +6455,7 @@ models:
     - image->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190977+00:00
+  updated_at: 2025-10-11 15:11:32.816329+00:00
 - model_id: mistralai/codestral-2501
   name: 'Mistral: Codestral 2501'
   provider: openrouter
@@ -6479,7 +6479,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.190982+00:00
+  updated_at: 2025-10-11 15:11:32.816338+00:00
 - model_id: microsoft/phi-4
   name: 'Microsoft: Phi 4'
   provider: openrouter
@@ -6506,7 +6506,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.190991+00:00
+  updated_at: 2025-10-11 15:11:32.816350+00:00
 - model_id: sao10k/l3.1-70b-hanami-x1
   name: 'Sao10K: Llama 3.1 70B Hanami x1'
   provider: openrouter
@@ -6527,7 +6527,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.190998+00:00
+  updated_at: 2025-10-11 15:11:32.816359+00:00
 - model_id: deepseek/deepseek-chat
   name: 'DeepSeek: DeepSeek V3'
   provider: openrouter
@@ -6555,7 +6555,7 @@ models:
     - text->text
   metadata:
     architecture: DeepSeek
-  updated_at: 2025-10-11 01:46:13.191008+00:00
+  updated_at: 2025-10-11 15:11:32.816367+00:00
 - model_id: sao10k/l3.3-euryale-70b
   name: 'Sao10K: Llama 3.3 Euryale 70B'
   provider: openrouter
@@ -6577,7 +6577,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191018+00:00
+  updated_at: 2025-10-11 15:11:32.816375+00:00
 - model_id: openai/o1
   name: 'OpenAI: o1'
   provider: openrouter
@@ -6603,7 +6603,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191028+00:00
+  updated_at: 2025-10-11 15:11:32.816386+00:00
 - model_id: cohere/command-r7b-12-2024
   name: 'Cohere: Command R7B (12-2024)'
   provider: openrouter
@@ -6630,7 +6630,7 @@ models:
     - text->text
   metadata:
     architecture: Cohere
-  updated_at: 2025-10-11 01:46:13.191034+00:00
+  updated_at: 2025-10-11 15:11:32.816397+00:00
 - model_id: google/gemini-2.0-flash-exp:free
   name: 'Google: Gemini 2.0 Flash Experimental (free)'
   provider: openrouter
@@ -6656,7 +6656,7 @@ models:
     - image->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.191043+00:00
+  updated_at: 2025-10-11 15:11:32.816407+00:00
 - model_id: meta-llama/llama-3.3-70b-instruct:free
   name: 'Meta: Llama 3.3 70B Instruct (free)'
   provider: openrouter
@@ -6688,7 +6688,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191049+00:00
+  updated_at: 2025-10-11 15:11:32.816416+00:00
 - model_id: meta-llama/llama-3.3-70b-instruct
   name: 'Meta: Llama 3.3 70B Instruct'
   provider: openrouter
@@ -6720,7 +6720,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191058+00:00
+  updated_at: 2025-10-11 15:11:32.816428+00:00
 - model_id: amazon/nova-lite-v1
   name: 'Amazon: Nova Lite 1.0'
   provider: openrouter
@@ -6748,7 +6748,7 @@ models:
     - image->text
   metadata:
     architecture: Nova
-  updated_at: 2025-10-11 01:46:13.191065+00:00
+  updated_at: 2025-10-11 15:11:32.816436+00:00
 - model_id: amazon/nova-micro-v1
   name: 'Amazon: Nova Micro 1.0'
   provider: openrouter
@@ -6774,7 +6774,7 @@ models:
     - text->text
   metadata:
     architecture: Nova
-  updated_at: 2025-10-11 01:46:13.191071+00:00
+  updated_at: 2025-10-11 15:11:32.816446+00:00
 - model_id: amazon/nova-pro-v1
   name: 'Amazon: Nova Pro 1.0'
   provider: openrouter
@@ -6805,7 +6805,7 @@ models:
     - image->text
   metadata:
     architecture: Nova
-  updated_at: 2025-10-11 01:46:13.191078+00:00
+  updated_at: 2025-10-11 15:11:32.816456+00:00
 - model_id: openai/gpt-4o-2024-11-20
   name: 'OpenAI: GPT-4o (2024-11-20)'
   provider: openrouter
@@ -6836,7 +6836,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191085+00:00
+  updated_at: 2025-10-11 15:11:32.816466+00:00
 - model_id: mistralai/mistral-large-2411
   name: Mistral Large 2411
   provider: openrouter
@@ -6863,7 +6863,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191090+00:00
+  updated_at: 2025-10-11 15:11:32.816474+00:00
 - model_id: mistralai/mistral-large-2407
   name: Mistral Large 2407
   provider: openrouter
@@ -6894,7 +6894,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191097+00:00
+  updated_at: 2025-10-11 15:11:32.816486+00:00
 - model_id: mistralai/pixtral-large-2411
   name: 'Mistral: Pixtral Large 2411'
   provider: openrouter
@@ -6925,7 +6925,7 @@ models:
     - image->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191103+00:00
+  updated_at: 2025-10-11 15:11:32.816494+00:00
 - model_id: qwen/qwen-2.5-coder-32b-instruct:free
   name: Qwen2.5 Coder 32B Instruct (free)
   provider: openrouter
@@ -6952,7 +6952,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.191111+00:00
+  updated_at: 2025-10-11 15:11:32.816510+00:00
 - model_id: qwen/qwen-2.5-coder-32b-instruct
   name: Qwen2.5 Coder 32B Instruct
   provider: openrouter
@@ -6979,7 +6979,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.191116+00:00
+  updated_at: 2025-10-11 15:11:32.816518+00:00
 - model_id: raifle/sorcererlm-8x22b
   name: SorcererLM 8x22B
   provider: openrouter
@@ -7008,7 +7008,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191122+00:00
+  updated_at: 2025-10-11 15:11:32.816558+00:00
 - model_id: thedrummer/unslopnemo-12b
   name: 'TheDrummer: UnslopNemo 12B'
   provider: openrouter
@@ -7030,7 +7030,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191128+00:00
+  updated_at: 2025-10-11 15:11:32.816567+00:00
 - model_id: anthropic/claude-3.5-haiku-20241022
   name: 'Anthropic: Claude 3.5 Haiku (2024-10-22)'
   provider: openrouter
@@ -7062,7 +7062,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.191136+00:00
+  updated_at: 2025-10-11 15:11:32.816588+00:00
 - model_id: anthropic/claude-3.5-haiku
   name: 'Anthropic: Claude 3.5 Haiku'
   provider: openrouter
@@ -7093,7 +7093,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.191142+00:00
+  updated_at: 2025-10-11 15:11:32.816578+00:00
 - model_id: anthropic/claude-3.5-sonnet
   name: 'Anthropic: Claude 3.5 Sonnet'
   provider: openrouter
@@ -7131,7 +7131,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.191149+00:00
+  updated_at: 2025-10-11 15:11:32.816606+00:00
 - model_id: anthracite-org/magnum-v4-72b
   name: Magnum v4 72B
   provider: openrouter
@@ -7157,7 +7157,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.191155+00:00
+  updated_at: 2025-10-11 15:11:32.816598+00:00
 - model_id: mistralai/ministral-3b
   name: 'Mistral: Ministral 3B'
   provider: openrouter
@@ -7182,7 +7182,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191164+00:00
+  updated_at: 2025-10-11 15:11:32.816625+00:00
 - model_id: mistralai/ministral-8b
   name: 'Mistral: Ministral 8B'
   provider: openrouter
@@ -7207,7 +7207,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191170+00:00
+  updated_at: 2025-10-11 15:11:32.816616+00:00
 - model_id: qwen/qwen-2.5-7b-instruct
   name: 'Qwen: Qwen2.5 7B Instruct'
   provider: openrouter
@@ -7250,7 +7250,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.191178+00:00
+  updated_at: 2025-10-11 15:11:32.816635+00:00
 - model_id: nvidia/llama-3.1-nemotron-70b-instruct
   name: 'NVIDIA: Llama 3.1 Nemotron 70B Instruct'
   provider: openrouter
@@ -7279,7 +7279,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191215+00:00
+  updated_at: 2025-10-11 15:11:32.816644+00:00
 - model_id: inflection/inflection-3-productivity
   name: 'Inflection: Inflection 3 Productivity'
   provider: openrouter
@@ -7309,7 +7309,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.191222+00:00
+  updated_at: 2025-10-11 15:11:32.816658+00:00
 - model_id: inflection/inflection-3-pi
   name: 'Inflection: Inflection 3 Pi'
   provider: openrouter
@@ -7336,7 +7336,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.191228+00:00
+  updated_at: 2025-10-11 15:11:32.816667+00:00
 - model_id: anthracite-org/magnum-v2-72b
   name: Magnum v2 72B
   provider: openrouter
@@ -7363,7 +7363,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.191234+00:00
+  updated_at: 2025-10-11 15:11:32.816686+00:00
 - model_id: thedrummer/rocinante-12b
   name: 'TheDrummer: Rocinante 12B'
   provider: openrouter
@@ -7393,7 +7393,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.191241+00:00
+  updated_at: 2025-10-11 15:11:32.816675+00:00
 - model_id: meta-llama/llama-3.2-11b-vision-instruct
   name: 'Meta: Llama 3.2 11B Vision Instruct'
   provider: openrouter
@@ -7429,7 +7429,7 @@ models:
     - image->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191249+00:00
+  updated_at: 2025-10-11 15:11:32.816735+00:00
 - model_id: meta-llama/llama-3.2-1b-instruct
   name: 'Meta: Llama 3.2 1B Instruct'
   provider: openrouter
@@ -7465,7 +7465,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191256+00:00
+  updated_at: 2025-10-11 15:11:32.816715+00:00
 - model_id: meta-llama/llama-3.2-3b-instruct:free
   name: 'Meta: Llama 3.2 3B Instruct (free)'
   provider: openrouter
@@ -7501,7 +7501,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191262+00:00
+  updated_at: 2025-10-11 15:11:32.816697+00:00
 - model_id: meta-llama/llama-3.2-3b-instruct
   name: 'Meta: Llama 3.2 3B Instruct'
   provider: openrouter
@@ -7537,7 +7537,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191269+00:00
+  updated_at: 2025-10-11 15:11:32.816705+00:00
 - model_id: meta-llama/llama-3.2-90b-vision-instruct
   name: 'Meta: Llama 3.2 90B Vision Instruct'
   provider: openrouter
@@ -7573,7 +7573,7 @@ models:
     - image->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191275+00:00
+  updated_at: 2025-10-11 15:11:32.816726+00:00
 - model_id: qwen/qwen-2.5-72b-instruct:free
   name: Qwen2.5 72B Instruct (free)
   provider: openrouter
@@ -7616,7 +7616,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.191281+00:00
+  updated_at: 2025-10-11 15:11:32.816743+00:00
 - model_id: qwen/qwen-2.5-72b-instruct
   name: Qwen2.5 72B Instruct
   provider: openrouter
@@ -7659,7 +7659,7 @@ models:
     - text->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.191288+00:00
+  updated_at: 2025-10-11 15:11:32.816752+00:00
 - model_id: neversleep/llama-3.1-lumimaid-8b
   name: 'NeverSleep: Lumimaid v0.2 8B'
   provider: openrouter
@@ -7685,7 +7685,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191295+00:00
+  updated_at: 2025-10-11 15:11:32.816763+00:00
 - model_id: openai/o1-mini
   name: 'OpenAI: o1-mini'
   provider: openrouter
@@ -7716,7 +7716,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191301+00:00
+  updated_at: 2025-10-11 15:11:32.816773+00:00
 - model_id: openai/o1-mini-2024-09-12
   name: 'OpenAI: o1-mini (2024-09-12)'
   provider: openrouter
@@ -7747,7 +7747,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191307+00:00
+  updated_at: 2025-10-11 15:11:32.816781+00:00
 - model_id: mistralai/pixtral-12b
   name: 'Mistral: Pixtral 12B'
   provider: openrouter
@@ -7769,7 +7769,7 @@ models:
     - image->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191313+00:00
+  updated_at: 2025-10-11 15:11:32.816791+00:00
 - model_id: cohere/command-r-08-2024
   name: 'Cohere: Command R (08-2024)'
   provider: openrouter
@@ -7800,7 +7800,7 @@ models:
     - text->text
   metadata:
     architecture: Cohere
-  updated_at: 2025-10-11 01:46:13.191324+00:00
+  updated_at: 2025-10-11 15:11:32.816810+00:00
 - model_id: cohere/command-r-plus-08-2024
   name: 'Cohere: Command R+ (08-2024)'
   provider: openrouter
@@ -7830,7 +7830,7 @@ models:
     - text->text
   metadata:
     architecture: Cohere
-  updated_at: 2025-10-11 01:46:13.191331+00:00
+  updated_at: 2025-10-11 15:11:32.816802+00:00
 - model_id: qwen/qwen-2.5-vl-7b-instruct
   name: 'Qwen: Qwen2.5-VL 7B Instruct'
   provider: openrouter
@@ -7879,7 +7879,7 @@ models:
     - image->text
   metadata:
     architecture: Qwen
-  updated_at: 2025-10-11 01:46:13.191337+00:00
+  updated_at: 2025-10-11 15:11:32.816820+00:00
 - model_id: sao10k/l3.1-euryale-70b
   name: 'Sao10K: Llama 3.1 Euryale 70B v2.2'
   provider: openrouter
@@ -7901,7 +7901,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191343+00:00
+  updated_at: 2025-10-11 15:11:32.816832+00:00
 - model_id: microsoft/phi-3.5-mini-128k-instruct
   name: 'Microsoft: Phi-3.5 Mini 128K Instruct'
   provider: openrouter
@@ -7934,7 +7934,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.191350+00:00
+  updated_at: 2025-10-11 15:11:32.816842+00:00
 - model_id: nousresearch/hermes-3-llama-3.1-70b
   name: 'Nous: Hermes 3 70B Instruct'
   provider: openrouter
@@ -7969,7 +7969,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191357+00:00
+  updated_at: 2025-10-11 15:11:32.816853+00:00
 - model_id: nousresearch/hermes-3-llama-3.1-405b
   name: 'Nous: Hermes 3 405B Instruct'
   provider: openrouter
@@ -8006,7 +8006,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191363+00:00
+  updated_at: 2025-10-11 15:11:32.816862+00:00
 - model_id: openai/chatgpt-4o-latest
   name: 'OpenAI: ChatGPT-4o'
   provider: openrouter
@@ -8034,7 +8034,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191370+00:00
+  updated_at: 2025-10-11 15:11:32.816870+00:00
 - model_id: sao10k/l3-lunaris-8b
   name: 'Sao10K: Llama 3 8B Lunaris'
   provider: openrouter
@@ -8065,7 +8065,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191378+00:00
+  updated_at: 2025-10-11 15:11:32.816880+00:00
 - model_id: openai/gpt-4o-2024-08-06
   name: 'OpenAI: GPT-4o (2024-08-06)'
   provider: openrouter
@@ -8098,7 +8098,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191384+00:00
+  updated_at: 2025-10-11 15:11:32.816890+00:00
 - model_id: meta-llama/llama-3.1-405b
   name: 'Meta: Llama 3.1 405B (base)'
   provider: openrouter
@@ -8128,7 +8128,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191389+00:00
+  updated_at: 2025-10-11 15:11:32.816900+00:00
 - model_id: meta-llama/llama-3.1-70b-instruct
   name: 'Meta: Llama 3.1 70B Instruct'
   provider: openrouter
@@ -8159,7 +8159,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191397+00:00
+  updated_at: 2025-10-11 15:11:32.816926+00:00
 - model_id: meta-llama/llama-3.1-405b-instruct
   name: 'Meta: Llama 3.1 405B Instruct'
   provider: openrouter
@@ -8194,7 +8194,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191404+00:00
+  updated_at: 2025-10-11 15:11:32.816918+00:00
 - model_id: meta-llama/llama-3.1-8b-instruct
   name: 'Meta: Llama 3.1 8B Instruct'
   provider: openrouter
@@ -8224,7 +8224,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191411+00:00
+  updated_at: 2025-10-11 15:11:32.816908+00:00
 - model_id: mistralai/mistral-nemo:free
   name: 'Mistral: Mistral Nemo (free)'
   provider: openrouter
@@ -8253,7 +8253,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191417+00:00
+  updated_at: 2025-10-11 15:11:32.816935+00:00
 - model_id: mistralai/mistral-nemo
   name: 'Mistral: Mistral Nemo'
   provider: openrouter
@@ -8282,7 +8282,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191423+00:00
+  updated_at: 2025-10-11 15:11:32.816948+00:00
 - model_id: openai/gpt-4o-mini
   name: 'OpenAI: GPT-4o-mini'
   provider: openrouter
@@ -8320,7 +8320,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191431+00:00
+  updated_at: 2025-10-11 15:11:32.816960+00:00
 - model_id: openai/gpt-4o-mini-2024-07-18
   name: 'OpenAI: GPT-4o-mini (2024-07-18)'
   provider: openrouter
@@ -8358,7 +8358,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191438+00:00
+  updated_at: 2025-10-11 15:11:32.816968+00:00
 - model_id: google/gemma-2-27b-it
   name: 'Google: Gemma 2 27B'
   provider: openrouter
@@ -8388,7 +8388,7 @@ models:
     - text->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.191444+00:00
+  updated_at: 2025-10-11 15:11:32.816976+00:00
 - model_id: google/gemma-2-9b-it:free
   name: 'Google: Gemma 2 9B (free)'
   provider: openrouter
@@ -8418,7 +8418,7 @@ models:
     - text->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.191452+00:00
+  updated_at: 2025-10-11 15:11:32.816987+00:00
 - model_id: google/gemma-2-9b-it
   name: 'Google: Gemma 2 9B'
   provider: openrouter
@@ -8448,7 +8448,7 @@ models:
     - text->text
   metadata:
     architecture: Gemini
-  updated_at: 2025-10-11 01:46:13.191460+00:00
+  updated_at: 2025-10-11 15:11:32.816995+00:00
 - model_id: anthropic/claude-3.5-sonnet-20240620
   name: 'Anthropic: Claude 3.5 Sonnet (2024-06-20)'
   provider: openrouter
@@ -8488,7 +8488,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.191467+00:00
+  updated_at: 2025-10-11 15:11:32.817007+00:00
 - model_id: sao10k/l3-euryale-70b
   name: 'Sao10k: Llama 3 Euryale 70B v2.1'
   provider: openrouter
@@ -8520,7 +8520,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191475+00:00
+  updated_at: 2025-10-11 15:11:32.817018+00:00
 - model_id: mistralai/mistral-7b-instruct:free
   name: 'Mistral: Mistral 7B Instruct (free)'
   provider: openrouter
@@ -8546,7 +8546,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191481+00:00
+  updated_at: 2025-10-11 15:11:32.817062+00:00
 - model_id: mistralai/mistral-7b-instruct
   name: 'Mistral: Mistral 7B Instruct'
   provider: openrouter
@@ -8572,7 +8572,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191487+00:00
+  updated_at: 2025-10-11 15:11:32.817081+00:00
 - model_id: nousresearch/hermes-2-pro-llama-3-8b
   name: 'NousResearch: Hermes 2 Pro - Llama-3 8B'
   provider: openrouter
@@ -8595,7 +8595,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191496+00:00
+  updated_at: 2025-10-11 15:11:32.817029+00:00
 - model_id: mistralai/mistral-7b-instruct-v0.3
   name: 'Mistral: Mistral 7B Instruct v0.3'
   provider: openrouter
@@ -8631,7 +8631,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191502+00:00
+  updated_at: 2025-10-11 15:11:32.817098+00:00
 - model_id: microsoft/phi-3-mini-128k-instruct
   name: 'Microsoft: Phi-3 Mini 128K Instruct'
   provider: openrouter
@@ -8660,7 +8660,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.191509+00:00
+  updated_at: 2025-10-11 15:11:32.817111+00:00
 - model_id: microsoft/phi-3-medium-128k-instruct
   name: 'Microsoft: Phi-3 Medium 128K Instruct'
   provider: openrouter
@@ -8692,7 +8692,7 @@ models:
     - text->text
   metadata:
     architecture: Other
-  updated_at: 2025-10-11 01:46:13.191514+00:00
+  updated_at: 2025-10-11 15:11:32.817119+00:00
 - model_id: openai/gpt-4o
   name: 'OpenAI: GPT-4o'
   provider: openrouter
@@ -8723,7 +8723,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191519+00:00
+  updated_at: 2025-10-11 15:11:32.817128+00:00
 - model_id: openai/gpt-4o:extended
   name: 'OpenAI: GPT-4o (extended)'
   provider: openrouter
@@ -8754,7 +8754,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191524+00:00
+  updated_at: 2025-10-11 15:11:32.817136+00:00
 - model_id: meta-llama/llama-guard-2-8b
   name: 'Meta: LlamaGuard 2 8B'
   provider: openrouter
@@ -8794,7 +8794,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191531+00:00
+  updated_at: 2025-10-11 15:11:32.817148+00:00
 - model_id: openai/gpt-4o-2024-05-13
   name: 'OpenAI: GPT-4o (2024-05-13)'
   provider: openrouter
@@ -8825,7 +8825,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191539+00:00
+  updated_at: 2025-10-11 15:11:32.817157+00:00
 - model_id: meta-llama/llama-3-8b-instruct
   name: 'Meta: Llama 3 8B Instruct'
   provider: openrouter
@@ -8856,7 +8856,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191545+00:00
+  updated_at: 2025-10-11 15:11:32.817167+00:00
 - model_id: meta-llama/llama-3-70b-instruct
   name: 'Meta: Llama 3 70B Instruct'
   provider: openrouter
@@ -8887,7 +8887,7 @@ models:
     - text->text
   metadata:
     architecture: Llama3
-  updated_at: 2025-10-11 01:46:13.191551+00:00
+  updated_at: 2025-10-11 15:11:32.817175+00:00
 - model_id: mistralai/mixtral-8x22b-instruct
   name: 'Mistral: Mixtral 8x22B Instruct'
   provider: openrouter
@@ -8921,7 +8921,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191558+00:00
+  updated_at: 2025-10-11 15:11:32.817187+00:00
 - model_id: microsoft/wizardlm-2-8x22b
   name: WizardLM-2 8x22B
   provider: openrouter
@@ -8953,7 +8953,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191563+00:00
+  updated_at: 2025-10-11 15:11:32.817197+00:00
 - model_id: openai/gpt-4-turbo
   name: 'OpenAI: GPT-4 Turbo'
   provider: openrouter
@@ -8978,7 +8978,7 @@ models:
     - image->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191571+00:00
+  updated_at: 2025-10-11 15:11:32.817205+00:00
 - model_id: anthropic/claude-3-haiku
   name: 'Anthropic: Claude 3 Haiku'
   provider: openrouter
@@ -9007,7 +9007,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.191576+00:00
+  updated_at: 2025-10-11 15:11:32.817242+00:00
 - model_id: anthropic/claude-3-opus
   name: 'Anthropic: Claude 3 Opus'
   provider: openrouter
@@ -9035,7 +9035,7 @@ models:
     - image->text
   metadata:
     architecture: Claude
-  updated_at: 2025-10-11 01:46:13.191585+00:00
+  updated_at: 2025-10-11 15:11:32.817260+00:00
 - model_id: mistralai/mistral-large
   name: Mistral Large
   provider: openrouter
@@ -9064,7 +9064,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191590+00:00
+  updated_at: 2025-10-11 15:11:32.817268+00:00
 - model_id: openai/gpt-3.5-turbo-0613
   name: 'OpenAI: GPT-3.5 Turbo (older v0613)'
   provider: openrouter
@@ -9090,7 +9090,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191595+00:00
+  updated_at: 2025-10-11 15:11:32.817278+00:00
 - model_id: openai/gpt-4-turbo-preview
   name: 'OpenAI: GPT-4 Turbo Preview'
   provider: openrouter
@@ -9116,7 +9116,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191601+00:00
+  updated_at: 2025-10-11 15:11:32.817289+00:00
 - model_id: mistralai/mistral-tiny
   name: Mistral Tiny
   provider: openrouter
@@ -9144,7 +9144,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191609+00:00
+  updated_at: 2025-10-11 15:11:32.817307+00:00
 - model_id: mistralai/mistral-small
   name: Mistral Small
   provider: openrouter
@@ -9170,7 +9170,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191614+00:00
+  updated_at: 2025-10-11 15:11:32.817299+00:00
 - model_id: mistralai/mistral-7b-instruct-v0.2
   name: 'Mistral: Mistral 7B Instruct v0.2'
   provider: openrouter
@@ -9203,7 +9203,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191619+00:00
+  updated_at: 2025-10-11 15:11:32.817317+00:00
 - model_id: mistralai/mixtral-8x7b-instruct
   name: 'Mistral: Mixtral 8x7B Instruct'
   provider: openrouter
@@ -9229,7 +9229,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191625+00:00
+  updated_at: 2025-10-11 15:11:32.817327+00:00
 - model_id: neversleep/noromaid-20b
   name: Noromaid 20B
   provider: openrouter
@@ -9254,7 +9254,7 @@ models:
     - text->text
   metadata:
     architecture: Llama2
-  updated_at: 2025-10-11 01:46:13.191632+00:00
+  updated_at: 2025-10-11 15:11:32.817337+00:00
 - model_id: alpindale/goliath-120b
   name: Goliath 120B
   provider: openrouter
@@ -9287,7 +9287,7 @@ models:
     - text->text
   metadata:
     architecture: Llama2
-  updated_at: 2025-10-11 01:46:13.191663+00:00
+  updated_at: 2025-10-11 15:11:32.817345+00:00
 - model_id: openrouter/auto
   name: Auto Router
   provider: openrouter
@@ -9379,7 +9379,7 @@ models:
     - text->text
   metadata:
     architecture: Router
-  updated_at: 2025-10-11 01:46:13.191671+00:00
+  updated_at: 2025-10-11 15:11:32.817354+00:00
 - model_id: openai/gpt-4-1106-preview
   name: 'OpenAI: GPT-4 Turbo (older v1106)'
   provider: openrouter
@@ -9404,7 +9404,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191677+00:00
+  updated_at: 2025-10-11 15:11:32.817364+00:00
 - model_id: mistralai/mistral-7b-instruct-v0.1
   name: 'Mistral: Mistral 7B Instruct v0.1'
   provider: openrouter
@@ -9426,7 +9426,7 @@ models:
     - text->text
   metadata:
     architecture: Mistral
-  updated_at: 2025-10-11 01:46:13.191684+00:00
+  updated_at: 2025-10-11 15:11:32.817385+00:00
 - model_id: openai/gpt-3.5-turbo-instruct
   name: 'OpenAI: GPT-3.5 Turbo Instruct'
   provider: openrouter
@@ -9448,7 +9448,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191689+00:00
+  updated_at: 2025-10-11 15:11:32.817375+00:00
 - model_id: openai/gpt-3.5-turbo-16k
   name: 'OpenAI: GPT-3.5 Turbo 16k'
   provider: openrouter
@@ -9471,7 +9471,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191697+00:00
+  updated_at: 2025-10-11 15:11:32.817393+00:00
 - model_id: mancer/weaver
   name: 'Mancer: Weaver (alpha)'
   provider: openrouter
@@ -9493,7 +9493,7 @@ models:
     - text->text
   metadata:
     architecture: Llama2
-  updated_at: 2025-10-11 01:46:13.191704+00:00
+  updated_at: 2025-10-11 15:11:32.817404+00:00
 - model_id: undi95/remm-slerp-l2-13b
   name: ReMM SLERP 13B
   provider: openrouter
@@ -9515,7 +9515,7 @@ models:
     - text->text
   metadata:
     architecture: Llama2
-  updated_at: 2025-10-11 01:46:13.191710+00:00
+  updated_at: 2025-10-11 15:11:32.817412+00:00
 - model_id: gryphe/mythomax-l2-13b
   name: MythoMax 13B
   provider: openrouter
@@ -9537,7 +9537,7 @@ models:
     - text->text
   metadata:
     architecture: Llama2
-  updated_at: 2025-10-11 01:46:13.191715+00:00
+  updated_at: 2025-10-11 15:11:32.817426+00:00
 - model_id: openai/gpt-3.5-turbo
   name: 'OpenAI: GPT-3.5 Turbo'
   provider: openrouter
@@ -9563,7 +9563,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191720+00:00
+  updated_at: 2025-10-11 15:11:32.817438+00:00
 - model_id: openai/gpt-4-0314
   name: 'OpenAI: GPT-4 (older v0314)'
   provider: openrouter
@@ -9586,7 +9586,7 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191728+00:00
+  updated_at: 2025-10-11 15:11:32.817456+00:00
 - model_id: openai/gpt-4
   name: 'OpenAI: GPT-4'
   provider: openrouter
@@ -9610,10 +9610,3042 @@ models:
     - text->text
   metadata:
     architecture: GPT
-  updated_at: 2025-10-11 01:46:13.191734+00:00
+  updated_at: 2025-10-11 15:11:32.817448+00:00
+- model_id: claude-sonnet-4-5-20250929
+  name: Claude Sonnet 4.5
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Sonnet 4.5'
+  context_length: 200000
+  pricing:
+    prompt: 3.0
+    completion: 15.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    type: model
+    created_at: '2025-09-29T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971677+00:00
+- model_id: claude-opus-4-1-20250805
+  name: Claude Opus 4.1
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Opus 4.1'
+  context_length: 200000
+  pricing:
+    prompt: 15.0
+    completion: 75.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    type: model
+    created_at: '2025-08-05T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971700+00:00
+- model_id: claude-opus-4-20250514
+  name: Claude Opus 4
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Opus 4'
+  context_length: 200000
+  pricing:
+    prompt: 15.0
+    completion: 75.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    type: model
+    created_at: '2025-05-22T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971711+00:00
+- model_id: claude-sonnet-4-20250514
+  name: Claude Sonnet 4
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Sonnet 4'
+  context_length: 200000
+  pricing:
+    prompt: 3.0
+    completion: 15.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    type: model
+    created_at: '2025-05-22T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971721+00:00
+- model_id: claude-3-7-sonnet-20250219
+  name: Claude Sonnet 3.7
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Sonnet 3.7'
+  context_length: 200000
+  pricing:
+    prompt: 3.0
+    completion: 15.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    type: model
+    created_at: '2025-02-24T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971730+00:00
+- model_id: claude-3-5-sonnet-20241022
+  name: Claude Sonnet 3.5 (New)
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Sonnet 3.5 (New)'
+  context_length: 200000
+  pricing:
+    prompt: 3.0
+    completion: 15.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    type: model
+    created_at: '2024-10-22T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971740+00:00
+- model_id: claude-3-5-haiku-20241022
+  name: Claude Haiku 3.5
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Haiku 3.5'
+  context_length: 200000
+  pricing:
+    prompt: 0.8
+    completion: 4.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    type: model
+    created_at: '2024-10-22T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971749+00:00
+- model_id: claude-3-5-sonnet-20240620
+  name: Claude Sonnet 3.5 (Old)
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Sonnet 3.5 (Old)'
+  context_length: 200000
+  pricing:
+    prompt: 3.0
+    completion: 15.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    type: model
+    created_at: '2024-06-20T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971761+00:00
+- model_id: claude-3-haiku-20240307
+  name: Claude Haiku 3
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Haiku 3'
+  context_length: 200000
+  pricing:
+    prompt: 0.25
+    completion: 1.25
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    type: model
+    created_at: '2024-03-07T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971774+00:00
+- model_id: claude-3-opus-20240229
+  name: Claude Opus 3
+  provider: anthropic
+  description: 'Anthropic Claude model: Claude Opus 3'
+  context_length: 200000
+  pricing:
+    prompt: 15.0
+    completion: 75.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    type: model
+    created_at: '2024-02-29T00:00:00Z'
+  updated_at: 2025-10-11 15:11:32.971784+00:00
+- model_id: gpt-3.5-turbo
+  name: gpt-3.5-turbo
+  provider: openai
+  description: OpenAI GPT-3.5 Turbo - fast and cost-effective
+  context_length: 16385
+  pricing:
+    prompt: 0.5
+    completion: 1.5
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1677610602
+    owned_by: openai
+  updated_at: 2025-10-11 15:11:33.502019+00:00
+- model_id: sora-2-pro
+  name: sora-2-pro
+  provider: openai
+  description: 'OpenAI model: sora-2-pro'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1759708663
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502060+00:00
+- model_id: gpt-5-pro
+  name: gpt-5-pro
+  provider: openai
+  description: OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1759469822
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502074+00:00
+- model_id: gpt-audio-mini
+  name: gpt-audio-mini
+  provider: openai
+  description: 'OpenAI model: gpt-audio-mini'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1759512027
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502082+00:00
+- model_id: gpt-audio-mini-2025-10-06
+  name: gpt-audio-mini-2025-10-06
+  provider: openai
+  description: 'OpenAI model: gpt-audio-mini-2025-10-06'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1759512137
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502089+00:00
+- model_id: sora-2
+  name: sora-2
+  provider: openai
+  description: 'OpenAI model: sora-2'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1759708615
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502097+00:00
+- model_id: davinci-002
+  name: davinci-002
+  provider: openai
+  description: 'OpenAI model: davinci-002'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1692634301
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502104+00:00
+- model_id: babbage-002
+  name: babbage-002
+  provider: openai
+  description: 'OpenAI model: babbage-002'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1692634615
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502116+00:00
+- model_id: gpt-3.5-turbo-instruct
+  name: gpt-3.5-turbo-instruct
+  provider: openai
+  description: OpenAI GPT-3.5 Turbo - fast and cost-effective
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1692901427
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502124+00:00
+- model_id: gpt-3.5-turbo-instruct-0914
+  name: gpt-3.5-turbo-instruct-0914
+  provider: openai
+  description: OpenAI GPT-3.5 Turbo - fast and cost-effective
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1694122472
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502132+00:00
+- model_id: dall-e-3
+  name: dall-e-3
+  provider: openai
+  description: 'OpenAI model: dall-e-3'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1698785189
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502142+00:00
+- model_id: dall-e-2
+  name: dall-e-2
+  provider: openai
+  description: 'OpenAI model: dall-e-2'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1698798177
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502148+00:00
+- model_id: gpt-3.5-turbo-1106
+  name: gpt-3.5-turbo-1106
+  provider: openai
+  description: OpenAI GPT-3.5 Turbo - fast and cost-effective
+  context_length: 16385
+  pricing:
+    prompt: 1.0
+    completion: 2.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1698959748
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502161+00:00
+- model_id: tts-1-hd
+  name: tts-1-hd
+  provider: openai
+  description: 'OpenAI model: tts-1-hd'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1699046015
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502169+00:00
+- model_id: tts-1-1106
+  name: tts-1-1106
+  provider: openai
+  description: 'OpenAI model: tts-1-1106'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1699053241
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502175+00:00
+- model_id: tts-1-hd-1106
+  name: tts-1-hd-1106
+  provider: openai
+  description: 'OpenAI model: tts-1-hd-1106'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1699053533
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502182+00:00
+- model_id: text-embedding-3-small
+  name: text-embedding-3-small
+  provider: openai
+  description: 'OpenAI embedding model: text-embedding-3-small'
+  context_length: 8191
+  pricing:
+    prompt: 0.02
+    completion: 0.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1705948997
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502191+00:00
+- model_id: text-embedding-3-large
+  name: text-embedding-3-large
+  provider: openai
+  description: 'OpenAI embedding model: text-embedding-3-large'
+  context_length: 8191
+  pricing:
+    prompt: 0.13
+    completion: 0.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1705953180
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502199+00:00
+- model_id: gpt-3.5-turbo-0125
+  name: gpt-3.5-turbo-0125
+  provider: openai
+  description: OpenAI GPT-3.5 Turbo - fast and cost-effective
+  context_length: 16385
+  pricing:
+    prompt: 0.5
+    completion: 1.5
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1706048358
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502210+00:00
+- model_id: gpt-4o
+  name: gpt-4o
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: 128000
+  pricing:
+    prompt: 2.5
+    completion: 10.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1715367049
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502221+00:00
+- model_id: gpt-4o-2024-05-13
+  name: gpt-4o-2024-05-13
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: 128000
+  pricing:
+    prompt: 5.0
+    completion: 15.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1715368132
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502229+00:00
+- model_id: gpt-4o-mini-2024-07-18
+  name: gpt-4o-mini-2024-07-18
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: 128000
+  pricing:
+    prompt: 0.15
+    completion: 0.6
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1721172717
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502236+00:00
+- model_id: gpt-4o-mini
+  name: gpt-4o-mini
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: 128000
+  pricing:
+    prompt: 0.15
+    completion: 0.6
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1721172741
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502244+00:00
+- model_id: gpt-4o-2024-08-06
+  name: gpt-4o-2024-08-06
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: 128000
+  pricing:
+    prompt: 2.5
+    completion: 10.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1722814719
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502251+00:00
+- model_id: o1-mini-2024-09-12
+  name: o1-mini-2024-09-12
+  provider: openai
+  description: OpenAI o1 - advanced reasoning model
+  context_length: 128000
+  pricing:
+    prompt: 3.0
+    completion: 12.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1725648979
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502259+00:00
+- model_id: o1-mini
+  name: o1-mini
+  provider: openai
+  description: OpenAI o1 - advanced reasoning model
+  context_length: 128000
+  pricing:
+    prompt: 3.0
+    completion: 12.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1725649008
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502270+00:00
+- model_id: gpt-4o-audio-preview-2024-10-01
+  name: gpt-4o-audio-preview-2024-10-01
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1727389042
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502276+00:00
+- model_id: gpt-4o-audio-preview
+  name: gpt-4o-audio-preview
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1727460443
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502282+00:00
+- model_id: omni-moderation-latest
+  name: omni-moderation-latest
+  provider: openai
+  description: 'OpenAI model: omni-moderation-latest'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1731689265
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502291+00:00
+- model_id: omni-moderation-2024-09-26
+  name: omni-moderation-2024-09-26
+  provider: openai
+  description: 'OpenAI model: omni-moderation-2024-09-26'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1732734466
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502297+00:00
+- model_id: gpt-4o-audio-preview-2024-12-17
+  name: gpt-4o-audio-preview-2024-12-17
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1734034239
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502303+00:00
+- model_id: gpt-4o-mini-audio-preview-2024-12-17
+  name: gpt-4o-mini-audio-preview-2024-12-17
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1734115920
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502309+00:00
+- model_id: o1-2024-12-17
+  name: o1-2024-12-17
+  provider: openai
+  description: OpenAI o1 - advanced reasoning model
+  context_length: 200000
+  pricing:
+    prompt: 15.0
+    completion: 60.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1734326976
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502317+00:00
+- model_id: o1
+  name: o1
+  provider: openai
+  description: OpenAI o1 - advanced reasoning model
+  context_length: 200000
+  pricing:
+    prompt: 15.0
+    completion: 60.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1734375816
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502325+00:00
+- model_id: gpt-4o-mini-audio-preview
+  name: gpt-4o-mini-audio-preview
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1734387424
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502332+00:00
+- model_id: o3-mini
+  name: o3-mini
+  provider: openai
+  description: OpenAI o3/o4 - next-generation reasoning model with vision and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1737146383
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502338+00:00
+- model_id: o3-mini-2025-01-31
+  name: o3-mini-2025-01-31
+  provider: openai
+  description: OpenAI o3/o4 - next-generation reasoning model with vision and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1738010200
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502343+00:00
+- model_id: gpt-4o-2024-11-20
+  name: gpt-4o-2024-11-20
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: 128000
+  pricing:
+    prompt: 2.5
+    completion: 10.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1739331543
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502351+00:00
+- model_id: gpt-4o-search-preview-2025-03-11
+  name: gpt-4o-search-preview-2025-03-11
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1741388170
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502357+00:00
+- model_id: gpt-4o-search-preview
+  name: gpt-4o-search-preview
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1741388720
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502363+00:00
+- model_id: gpt-4o-mini-search-preview-2025-03-11
+  name: gpt-4o-mini-search-preview-2025-03-11
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1741390858
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502369+00:00
+- model_id: gpt-4o-mini-search-preview
+  name: gpt-4o-mini-search-preview
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1741391161
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502375+00:00
+- model_id: gpt-4o-transcribe
+  name: gpt-4o-transcribe
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1742068463
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502381+00:00
+- model_id: gpt-4o-mini-transcribe
+  name: gpt-4o-mini-transcribe
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1742068596
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502386+00:00
+- model_id: gpt-4o-mini-tts
+  name: gpt-4o-mini-tts
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1742403959
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502392+00:00
+- model_id: o3-2025-04-16
+  name: o3-2025-04-16
+  provider: openai
+  description: OpenAI o3/o4 - next-generation reasoning model with vision and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1744133301
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502399+00:00
+- model_id: o4-mini-2025-04-16
+  name: o4-mini-2025-04-16
+  provider: openai
+  description: OpenAI o3/o4 - next-generation reasoning model with vision and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1744133506
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.502405+00:00
+- model_id: o3
+  name: o3
+  provider: openai
+  description: OpenAI o3/o4 - next-generation reasoning model with vision and multimodal
+    capabilities
+  context_length: 200000
+  pricing:
+    prompt: 2.0
+    completion: 8.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1744225308
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503271+00:00
+- model_id: o4-mini
+  name: o4-mini
+  provider: openai
+  description: OpenAI o3/o4 - next-generation reasoning model with vision and multimodal
+    capabilities
+  context_length: 200000
+  pricing:
+    prompt: 1.1
+    completion: 4.4
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1744225351
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503462+00:00
+- model_id: gpt-4.1-2025-04-14
+  name: gpt-4.1-2025-04-14
+  provider: openai
+  description: OpenAI GPT-4.1 - advanced model with 1M token context window
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1744315746
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503478+00:00
+- model_id: gpt-4.1
+  name: gpt-4.1
+  provider: openai
+  description: OpenAI GPT-4.1 - advanced model with 1M token context window
+  context_length: 1000000
+  pricing:
+    prompt: 2.0
+    completion: 8.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1744316542
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503486+00:00
+- model_id: gpt-4.1-mini-2025-04-14
+  name: gpt-4.1-mini-2025-04-14
+  provider: openai
+  description: OpenAI GPT-4.1 - advanced model with 1M token context window
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1744317547
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503492+00:00
+- model_id: gpt-4.1-mini
+  name: gpt-4.1-mini
+  provider: openai
+  description: OpenAI GPT-4.1 - advanced model with 1M token context window
+  context_length: 1000000
+  pricing:
+    prompt: 0.4
+    completion: 1.6
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1744318173
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503500+00:00
+- model_id: gpt-4.1-nano-2025-04-14
+  name: gpt-4.1-nano-2025-04-14
+  provider: openai
+  description: OpenAI GPT-4.1 - advanced model with 1M token context window
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1744321025
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503505+00:00
+- model_id: gpt-4.1-nano
+  name: gpt-4.1-nano
+  provider: openai
+  description: OpenAI GPT-4.1 - advanced model with 1M token context window
+  context_length: 1000000
+  pricing:
+    prompt: 0.1
+    completion: 0.4
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1744321707
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503513+00:00
+- model_id: gpt-image-1
+  name: gpt-image-1
+  provider: openai
+  description: 'OpenAI model: gpt-image-1'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1745517030
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503520+00:00
+- model_id: gpt-4o-audio-preview-2025-06-03
+  name: gpt-4o-audio-preview-2025-06-03
+  provider: openai
+  description: OpenAI GPT-4o - flagship model with vision and function calling
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1748908498
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503526+00:00
+- model_id: gpt-5-chat-latest
+  name: gpt-5-chat-latest
+  provider: openai
+  description: OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1754073306
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503534+00:00
+- model_id: gpt-5-2025-08-07
+  name: gpt-5-2025-08-07
+  provider: openai
+  description: OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1754075360
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503539+00:00
+- model_id: gpt-5
+  name: gpt-5
+  provider: openai
+  description: OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal
+    capabilities
+  context_length: 272000
+  pricing:
+    prompt: 1.25
+    completion: 10.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1754425777
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503547+00:00
+- model_id: gpt-5-mini-2025-08-07
+  name: gpt-5-mini-2025-08-07
+  provider: openai
+  description: OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1754425867
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503553+00:00
+- model_id: gpt-5-mini
+  name: gpt-5-mini
+  provider: openai
+  description: OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal
+    capabilities
+  context_length: 272000
+  pricing:
+    prompt: 0.25
+    completion: 2.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1754425928
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503560+00:00
+- model_id: gpt-5-nano-2025-08-07
+  name: gpt-5-nano-2025-08-07
+  provider: openai
+  description: OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1754426303
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503565+00:00
+- model_id: gpt-5-nano
+  name: gpt-5-nano
+  provider: openai
+  description: OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal
+    capabilities
+  context_length: 272000
+  pricing:
+    prompt: 0.1
+    completion: 0.5
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1754426384
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503572+00:00
+- model_id: gpt-audio-2025-08-28
+  name: gpt-audio-2025-08-28
+  provider: openai
+  description: 'OpenAI model: gpt-audio-2025-08-28'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1756256146
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503579+00:00
+- model_id: gpt-audio
+  name: gpt-audio
+  provider: openai
+  description: 'OpenAI model: gpt-audio'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1756339249
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503587+00:00
+- model_id: gpt-5-codex
+  name: gpt-5-codex
+  provider: openai
+  description: OpenAI GPT-5 Codex - specialized coding model with multimodal capabilities
+  context_length: 400000
+  pricing:
+    prompt: 1.25
+    completion: 10.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+  metadata:
+    object: model
+    created: 1757527818
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503593+00:00
+- model_id: gpt-image-1-mini
+  name: gpt-image-1-mini
+  provider: openai
+  description: 'OpenAI model: gpt-image-1-mini'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1758845821
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503600+00:00
+- model_id: gpt-5-pro-2025-10-06
+  name: gpt-5-pro-2025-10-06
+  provider: openai
+  description: OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal
+    capabilities
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1759469707
+    owned_by: system
+  updated_at: 2025-10-11 15:11:33.503605+00:00
+- model_id: whisper-1
+  name: whisper-1
+  provider: openai
+  description: 'OpenAI model: whisper-1'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1677532384
+    owned_by: openai-internal
+  updated_at: 2025-10-11 15:11:33.503611+00:00
+- model_id: tts-1
+  name: tts-1
+  provider: openai
+  description: 'OpenAI model: tts-1'
+  context_length: null
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1681940951
+    owned_by: openai-internal
+  updated_at: 2025-10-11 15:11:33.503618+00:00
+- model_id: gpt-3.5-turbo-16k
+  name: gpt-3.5-turbo-16k
+  provider: openai
+  description: OpenAI GPT-3.5 Turbo - fast and cost-effective
+  context_length: 16385
+  pricing:
+    prompt: 3.0
+    completion: 4.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1683758102
+    owned_by: openai-internal
+  updated_at: 2025-10-11 15:11:33.503626+00:00
+- model_id: text-embedding-ada-002
+  name: text-embedding-ada-002
+  provider: openai
+  description: 'OpenAI embedding model: text-embedding-ada-002'
+  context_length: 8191
+  pricing:
+    prompt: 0.1
+    completion: 0.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: false
+    supports_function_calling: false
+    supports_streaming: false
+    modalities:
+    - text
+  metadata:
+    object: model
+    created: 1671217299
+    owned_by: openai-internal
+  updated_at: 2025-10-11 15:11:33.503635+00:00
+- model_id: embedding-gecko-001
+  name: Embedding Gecko
+  provider: google
+  description: Obtain a distributed representation of a text.
+  context_length: 1024
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/embedding-gecko-001
+    output_token_limit: 1
+    supported_methods:
+    - embedText
+    - countTextTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.592906+00:00
+- model_id: gemini-2.5-pro-preview-03-25
+  name: Gemini 2.5 Pro Preview 03-25
+  provider: google
+  description: Gemini 2.5 Pro Preview 03-25
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-pro-preview-03-25
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-preview-03-25
+  updated_at: 2025-10-11 15:11:33.592930+00:00
+- model_id: gemini-2.5-flash-preview-05-20
+  name: Gemini 2.5 Flash Preview 05-20
+  provider: google
+  description: Preview release (April 17th, 2025) of Gemini 2.5 Flash
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-preview-05-20
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-preview-05-20
+  updated_at: 2025-10-11 15:11:33.592939+00:00
+- model_id: gemini-2.5-flash
+  name: Gemini 2.5 Flash
+  provider: google
+  description: Stable version of Gemini 2.5 Flash, our mid-size multimodal model that
+    supports up to 1 million tokens, released in June of 2025.
+  context_length: 1048576
+  pricing:
+    prompt: 0.075
+    completion: 0.3
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+    - video
+    - audio
+  metadata:
+    full_name: models/gemini-2.5-flash
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.592954+00:00
+- model_id: gemini-2.5-flash-lite-preview-06-17
+  name: Gemini 2.5 Flash-Lite Preview 06-17
+  provider: google
+  description: Preview release (June 11th, 2025) of Gemini 2.5 Flash-Lite
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-lite-preview-06-17
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-preview-06-17
+  updated_at: 2025-10-11 15:11:33.592962+00:00
+- model_id: gemini-2.5-pro-preview-05-06
+  name: Gemini 2.5 Pro Preview 05-06
+  provider: google
+  description: Preview release (May 6th, 2025) of Gemini 2.5 Pro
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-pro-preview-05-06
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-preview-05-06
+  updated_at: 2025-10-11 15:11:33.592969+00:00
+- model_id: gemini-2.5-pro-preview-06-05
+  name: Gemini 2.5 Pro Preview
+  provider: google
+  description: Preview release (June 5th, 2025) of Gemini 2.5 Pro
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-pro-preview-06-05
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-preview-06-05
+  updated_at: 2025-10-11 15:11:33.592976+00:00
+- model_id: gemini-2.5-pro
+  name: Gemini 2.5 Pro
+  provider: google
+  description: Stable release (June 17th, 2025) of Gemini 2.5 Pro
+  context_length: 1048576
+  pricing:
+    prompt: 1.25
+    completion: 5.0
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+    - video
+    - audio
+  metadata:
+    full_name: models/gemini-2.5-pro
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: '2.5'
+  updated_at: 2025-10-11 15:11:33.592990+00:00
+- model_id: gemini-2.0-flash-exp
+  name: Gemini 2.0 Flash Experimental
+  provider: google
+  description: Gemini 2.0 Flash Experimental
+  context_length: 1048576
+  pricing:
+    prompt: 0.1
+    completion: 0.4
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+    - video
+    - audio
+  metadata:
+    full_name: models/gemini-2.0-flash-exp
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    - bidiGenerateContent
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593002+00:00
+- model_id: gemini-2.0-flash
+  name: Gemini 2.0 Flash
+  provider: google
+  description: Gemini 2.0 Flash
+  context_length: 1048576
+  pricing:
+    prompt: 0.1
+    completion: 0.4
+    image: null
+    request: null
+    currency: USD
+  capabilities:
+    supports_vision: true
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+    - image
+    - video
+    - audio
+  metadata:
+    full_name: models/gemini-2.0-flash
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593012+00:00
+- model_id: gemini-2.0-flash-001
+  name: Gemini 2.0 Flash 001
+  provider: google
+  description: Stable version of Gemini 2.0 Flash, our fast and versatile multimodal
+    model for scaling across diverse tasks, released in January of 2025.
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-001
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593019+00:00
+- model_id: gemini-2.0-flash-exp-image-generation
+  name: Gemini 2.0 Flash (Image Generation) Experimental
+  provider: google
+  description: Gemini 2.0 Flash (Image Generation) Experimental
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-exp-image-generation
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    - bidiGenerateContent
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593026+00:00
+- model_id: gemini-2.0-flash-lite-001
+  name: Gemini 2.0 Flash-Lite 001
+  provider: google
+  description: Stable version of Gemini 2.0 Flash-Lite
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-lite-001
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593049+00:00
+- model_id: gemini-2.0-flash-lite
+  name: Gemini 2.0 Flash-Lite
+  provider: google
+  description: Gemini 2.0 Flash-Lite
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-lite
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593058+00:00
+- model_id: gemini-2.0-flash-preview-image-generation
+  name: Gemini 2.0 Flash Preview Image Generation
+  provider: google
+  description: Gemini 2.0 Flash Preview Image Generation
+  context_length: 32768
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-preview-image-generation
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    - batchGenerateContent
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593064+00:00
+- model_id: gemini-2.0-flash-lite-preview-02-05
+  name: Gemini 2.0 Flash-Lite Preview 02-05
+  provider: google
+  description: Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-lite-preview-02-05
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: preview-02-05
+  updated_at: 2025-10-11 15:11:33.593070+00:00
+- model_id: gemini-2.0-flash-lite-preview
+  name: Gemini 2.0 Flash-Lite Preview
+  provider: google
+  description: Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-lite-preview
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: preview-02-05
+  updated_at: 2025-10-11 15:11:33.593076+00:00
+- model_id: gemini-2.0-pro-exp
+  name: Gemini 2.0 Pro Experimental
+  provider: google
+  description: Experimental release (March 25th, 2025) of Gemini 2.5 Pro
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-pro-exp
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-exp-03-25
+  updated_at: 2025-10-11 15:11:33.593083+00:00
+- model_id: gemini-2.0-pro-exp-02-05
+  name: Gemini 2.0 Pro Experimental 02-05
+  provider: google
+  description: Experimental release (March 25th, 2025) of Gemini 2.5 Pro
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-pro-exp-02-05
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-exp-03-25
+  updated_at: 2025-10-11 15:11:33.593090+00:00
+- model_id: gemini-exp-1206
+  name: Gemini Experimental 1206
+  provider: google
+  description: Experimental release (March 25th, 2025) of Gemini 2.5 Pro
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-exp-1206
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-exp-03-25
+  updated_at: 2025-10-11 15:11:33.593096+00:00
+- model_id: gemini-2.0-flash-thinking-exp-01-21
+  name: Gemini 2.5 Flash Preview 05-20
+  provider: google
+  description: Preview release (April 17th, 2025) of Gemini 2.5 Flash
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-thinking-exp-01-21
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-preview-05-20
+  updated_at: 2025-10-11 15:11:33.593103+00:00
+- model_id: gemini-2.0-flash-thinking-exp
+  name: Gemini 2.5 Flash Preview 05-20
+  provider: google
+  description: Preview release (April 17th, 2025) of Gemini 2.5 Flash
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-thinking-exp
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-preview-05-20
+  updated_at: 2025-10-11 15:11:33.593109+00:00
+- model_id: gemini-2.0-flash-thinking-exp-1219
+  name: Gemini 2.5 Flash Preview 05-20
+  provider: google
+  description: Preview release (April 17th, 2025) of Gemini 2.5 Flash
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-thinking-exp-1219
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-preview-05-20
+  updated_at: 2025-10-11 15:11:33.593115+00:00
+- model_id: gemini-2.5-flash-preview-tts
+  name: Gemini 2.5 Flash Preview TTS
+  provider: google
+  description: Gemini 2.5 Flash Preview TTS
+  context_length: 8192
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-preview-tts
+    output_token_limit: 16384
+    supported_methods:
+    - countTokens
+    - generateContent
+    version: gemini-2.5-flash-exp-tts-2025-05-19
+  updated_at: 2025-10-11 15:11:33.593121+00:00
+- model_id: gemini-2.5-pro-preview-tts
+  name: Gemini 2.5 Pro Preview TTS
+  provider: google
+  description: Gemini 2.5 Pro Preview TTS
+  context_length: 8192
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-pro-preview-tts
+    output_token_limit: 16384
+    supported_methods:
+    - countTokens
+    - generateContent
+    version: gemini-2.5-pro-preview-tts-2025-05-19
+  updated_at: 2025-10-11 15:11:33.593127+00:00
+- model_id: learnlm-2.0-flash-experimental
+  name: LearnLM 2.0 Flash Experimental
+  provider: google
+  description: LearnLM 2.0 Flash Experimental
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/learnlm-2.0-flash-experimental
+    output_token_limit: 32768
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593134+00:00
+- model_id: gemma-3-1b-it
+  name: Gemma 3 1B
+  provider: google
+  description: 'Google Gemini model: Gemma 3 1B'
+  context_length: 32768
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemma-3-1b-it
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593140+00:00
+- model_id: gemma-3-4b-it
+  name: Gemma 3 4B
+  provider: google
+  description: 'Google Gemini model: Gemma 3 4B'
+  context_length: 32768
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemma-3-4b-it
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593147+00:00
+- model_id: gemma-3-12b-it
+  name: Gemma 3 12B
+  provider: google
+  description: 'Google Gemini model: Gemma 3 12B'
+  context_length: 32768
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemma-3-12b-it
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593153+00:00
+- model_id: gemma-3-27b-it
+  name: Gemma 3 27B
+  provider: google
+  description: 'Google Gemini model: Gemma 3 27B'
+  context_length: 131072
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemma-3-27b-it
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593159+00:00
+- model_id: gemma-3n-e4b-it
+  name: Gemma 3n E4B
+  provider: google
+  description: 'Google Gemini model: Gemma 3n E4B'
+  context_length: 8192
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemma-3n-e4b-it
+    output_token_limit: 2048
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593165+00:00
+- model_id: gemma-3n-e2b-it
+  name: Gemma 3n E2B
+  provider: google
+  description: 'Google Gemini model: Gemma 3n E2B'
+  context_length: 8192
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemma-3n-e2b-it
+    output_token_limit: 2048
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593171+00:00
+- model_id: gemini-flash-latest
+  name: Gemini Flash Latest
+  provider: google
+  description: Latest release of Gemini Flash
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-flash-latest
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: Gemini Flash Latest
+  updated_at: 2025-10-11 15:11:33.593177+00:00
+- model_id: gemini-flash-lite-latest
+  name: Gemini Flash-Lite Latest
+  provider: google
+  description: Latest release of Gemini Flash-Lite
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-flash-lite-latest
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: Gemini Flash-Lite Latest
+  updated_at: 2025-10-11 15:11:33.593184+00:00
+- model_id: gemini-pro-latest
+  name: Gemini Pro Latest
+  provider: google
+  description: Latest release of Gemini Pro
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-pro-latest
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: Gemini Pro Latest
+  updated_at: 2025-10-11 15:11:33.593190+00:00
+- model_id: gemini-2.5-flash-lite
+  name: Gemini 2.5 Flash-Lite
+  provider: google
+  description: Stable version of Gemini 2.5 Flash-Lite, released in July of 2025
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-lite
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593196+00:00
+- model_id: gemini-2.5-flash-image-preview
+  name: Nano Banana
+  provider: google
+  description: Gemini 2.5 Flash Preview Image
+  context_length: 32768
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-image-preview
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593202+00:00
+- model_id: gemini-2.5-flash-image
+  name: Nano Banana
+  provider: google
+  description: Gemini 2.5 Flash Preview Image
+  context_length: 32768
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-image
+    output_token_limit: 8192
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.593207+00:00
+- model_id: gemini-2.5-flash-preview-09-2025
+  name: Gemini 2.5 Flash Preview Sep 2025
+  provider: google
+  description: Gemini 2.5 Flash Preview Sep 2025
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-preview-09-2025
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: Gemini 2.5 Flash Preview 09-2025
+  updated_at: 2025-10-11 15:11:33.593213+00:00
+- model_id: gemini-2.5-flash-lite-preview-09-2025
+  name: Gemini 2.5 Flash-Lite Preview Sep 2025
+  provider: google
+  description: Preview release (Septempber 25th, 2025) of Gemini 2.5 Flash-Lite
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-lite-preview-09-2025
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    - createCachedContent
+    - batchGenerateContent
+    version: 2.5-preview-09-25
+  updated_at: 2025-10-11 15:11:33.593219+00:00
+- model_id: gemini-robotics-er-1.5-preview
+  name: Gemini Robotics-ER 1.5 Preview
+  provider: google
+  description: Gemini Robotics-ER 1.5 Preview
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-robotics-er-1.5-preview
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: 1.5-preview
+  updated_at: 2025-10-11 15:11:33.593225+00:00
+- model_id: gemini-2.5-computer-use-preview-10-2025
+  name: Gemini 2.5 Computer Use Preview 10-2025
+  provider: google
+  description: Gemini 2.5 Computer Use Preview 10-2025
+  context_length: 131072
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-computer-use-preview-10-2025
+    output_token_limit: 65536
+    supported_methods:
+    - generateContent
+    - countTokens
+    version: Gemini 2.5 Computer Use Preview 10-2025
+  updated_at: 2025-10-11 15:11:33.593231+00:00
+- model_id: embedding-001
+  name: Embedding 001
+  provider: google
+  description: Obtain a distributed representation of a text.
+  context_length: 2048
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/embedding-001
+    output_token_limit: 1
+    supported_methods:
+    - embedContent
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593236+00:00
+- model_id: text-embedding-004
+  name: Text Embedding 004
+  provider: google
+  description: Obtain a distributed representation of a text.
+  context_length: 2048
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/text-embedding-004
+    output_token_limit: 1
+    supported_methods:
+    - embedContent
+    version: '004'
+  updated_at: 2025-10-11 15:11:33.593242+00:00
+- model_id: gemini-embedding-exp-03-07
+  name: Gemini Embedding Experimental 03-07
+  provider: google
+  description: Obtain a distributed representation of a text.
+  context_length: 8192
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-embedding-exp-03-07
+    output_token_limit: 1
+    supported_methods:
+    - embedContent
+    - countTextTokens
+    - countTokens
+    version: exp-03-07
+  updated_at: 2025-10-11 15:11:33.593247+00:00
+- model_id: gemini-embedding-exp
+  name: Gemini Embedding Experimental
+  provider: google
+  description: Obtain a distributed representation of a text.
+  context_length: 8192
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-embedding-exp
+    output_token_limit: 1
+    supported_methods:
+    - embedContent
+    - countTextTokens
+    - countTokens
+    version: exp-03-07
+  updated_at: 2025-10-11 15:11:33.593253+00:00
+- model_id: gemini-embedding-001
+  name: Gemini Embedding 001
+  provider: google
+  description: Obtain a distributed representation of a text.
+  context_length: 2048
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-embedding-001
+    output_token_limit: 1
+    supported_methods:
+    - embedContent
+    - countTextTokens
+    - countTokens
+    - asyncBatchEmbedContent
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593342+00:00
+- model_id: aqa
+  name: Model that performs Attributed Question Answering.
+  provider: google
+  description: Model trained to return answers to questions that are grounded in provided
+    sources, along with estimating answerable probability.
+  context_length: 7168
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/aqa
+    output_token_limit: 1024
+    supported_methods:
+    - generateAnswer
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.593350+00:00
+- model_id: imagen-3.0-generate-002
+  name: Imagen 3.0
+  provider: google
+  description: Vertex served Imagen 3.0 002 model
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/imagen-3.0-generate-002
+    output_token_limit: 8192
+    supported_methods:
+    - predict
+    version: '002'
+  updated_at: 2025-10-11 15:11:33.593356+00:00
+- model_id: imagen-4.0-generate-preview-06-06
+  name: Imagen 4 (Preview)
+  provider: google
+  description: Vertex served Imagen 4.0 model
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/imagen-4.0-generate-preview-06-06
+    output_token_limit: 8192
+    supported_methods:
+    - predict
+    version: '01'
+  updated_at: 2025-10-11 15:11:33.593362+00:00
+- model_id: imagen-4.0-ultra-generate-preview-06-06
+  name: Imagen 4 Ultra (Preview)
+  provider: google
+  description: Vertex served Imagen 4.0 ultra model
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/imagen-4.0-ultra-generate-preview-06-06
+    output_token_limit: 8192
+    supported_methods:
+    - predict
+    version: '01'
+  updated_at: 2025-10-11 15:11:33.635375+00:00
+- model_id: imagen-4.0-generate-001
+  name: Imagen 4
+  provider: google
+  description: Vertex served Imagen 4.0 model
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/imagen-4.0-generate-001
+    output_token_limit: 8192
+    supported_methods:
+    - predict
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.635395+00:00
+- model_id: imagen-4.0-ultra-generate-001
+  name: Imagen 4 Ultra
+  provider: google
+  description: Vertex served Imagen 4.0 ultra model
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/imagen-4.0-ultra-generate-001
+    output_token_limit: 8192
+    supported_methods:
+    - predict
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.635404+00:00
+- model_id: imagen-4.0-fast-generate-001
+  name: Imagen 4 Fast
+  provider: google
+  description: Vertex served Imagen 4.0 Fast model
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/imagen-4.0-fast-generate-001
+    output_token_limit: 8192
+    supported_methods:
+    - predict
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.635412+00:00
+- model_id: veo-2.0-generate-001
+  name: Veo 2
+  provider: google
+  description: Vertex served Veo 2 model. Access to this model requires billing to
+    be enabled on the associated Google Cloud Platform account. Please visit https://console.cloud.google.com/billing
+    to enable it.
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/veo-2.0-generate-001
+    output_token_limit: 8192
+    supported_methods:
+    - predictLongRunning
+    version: '2.0'
+  updated_at: 2025-10-11 15:11:33.635420+00:00
+- model_id: veo-3.0-generate-preview
+  name: Veo 3
+  provider: google
+  description: Veo 3 preview.
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/veo-3.0-generate-preview
+    output_token_limit: 8192
+    supported_methods:
+    - predictLongRunning
+    version: '3.0'
+  updated_at: 2025-10-11 15:11:33.635428+00:00
+- model_id: veo-3.0-fast-generate-preview
+  name: Veo 3 fast
+  provider: google
+  description: Veo 3 fast preview.
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/veo-3.0-fast-generate-preview
+    output_token_limit: 8192
+    supported_methods:
+    - predictLongRunning
+    version: '3.0'
+  updated_at: 2025-10-11 15:11:33.635436+00:00
+- model_id: veo-3.0-generate-001
+  name: Veo 3
+  provider: google
+  description: Veo 3
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/veo-3.0-generate-001
+    output_token_limit: 8192
+    supported_methods:
+    - predictLongRunning
+    version: '3.0'
+  updated_at: 2025-10-11 15:11:33.635443+00:00
+- model_id: veo-3.0-fast-generate-001
+  name: Veo 3 fast
+  provider: google
+  description: Veo 3 fast
+  context_length: 480
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/veo-3.0-fast-generate-001
+    output_token_limit: 8192
+    supported_methods:
+    - predictLongRunning
+    version: '3.0'
+  updated_at: 2025-10-11 15:11:33.635451+00:00
+- model_id: gemini-2.5-flash-preview-native-audio-dialog
+  name: Gemini 2.5 Flash Preview Native Audio Dialog
+  provider: google
+  description: Gemini 2.5 Flash Preview Native Audio Dialog
+  context_length: 131072
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-preview-native-audio-dialog
+    output_token_limit: 8192
+    supported_methods:
+    - countTokens
+    - bidiGenerateContent
+    version: gemini-2.5-flash-preview-native-audio-dialog-2025-05-19
+  updated_at: 2025-10-11 15:11:33.635459+00:00
+- model_id: gemini-2.5-flash-exp-native-audio-thinking-dialog
+  name: Gemini 2.5 Flash Exp Native Audio Thinking Dialog
+  provider: google
+  description: Gemini 2.5 Flash Exp Native Audio Thinking Dialog
+  context_length: 131072
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-exp-native-audio-thinking-dialog
+    output_token_limit: 8192
+    supported_methods:
+    - countTokens
+    - bidiGenerateContent
+    version: gemini-2.5-flash-exp-native-audio-thinking-dialog-2025-05-19
+  updated_at: 2025-10-11 15:11:33.635467+00:00
+- model_id: gemini-2.0-flash-live-001
+  name: Gemini 2.0 Flash 001
+  provider: google
+  description: Gemini 2.0 Flash 001
+  context_length: 131072
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.0-flash-live-001
+    output_token_limit: 8192
+    supported_methods:
+    - bidiGenerateContent
+    - countTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.635475+00:00
+- model_id: gemini-live-2.5-flash-preview
+  name: Gemini Live 2.5 Flash Preview
+  provider: google
+  description: Gemini Live 2.5 Flash Preview
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-live-2.5-flash-preview
+    output_token_limit: 65536
+    supported_methods:
+    - bidiGenerateContent
+    - countTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.635482+00:00
+- model_id: gemini-2.5-flash-live-preview
+  name: Gemini 2.5 Flash Live Preview
+  provider: google
+  description: Gemini 2.5 Flash Live Preview
+  context_length: 1048576
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-live-preview
+    output_token_limit: 65536
+    supported_methods:
+    - bidiGenerateContent
+    - countTokens
+    version: '001'
+  updated_at: 2025-10-11 15:11:33.635490+00:00
+- model_id: gemini-2.5-flash-native-audio-latest
+  name: Gemini 2.5 Flash Native Audio Latest
+  provider: google
+  description: Latest release of Gemini 2.5 Flash Native Audio
+  context_length: 131072
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-native-audio-latest
+    output_token_limit: 8192
+    supported_methods:
+    - countTokens
+    - bidiGenerateContent
+    version: Gemini 2.5 Flash Native Audio Latest
+  updated_at: 2025-10-11 15:11:33.635498+00:00
+- model_id: gemini-2.5-flash-native-audio-preview-09-2025
+  name: Gemini 2.5 Flash Native Audio Preview 09-2025
+  provider: google
+  description: Gemini 2.5 Flash Native Audio Preview 09-2025
+  context_length: 131072
+  pricing: null
+  capabilities:
+    supports_vision: false
+    supports_function_calling: true
+    supports_streaming: true
+    modalities:
+    - text
+  metadata:
+    full_name: models/gemini-2.5-flash-native-audio-preview-09-2025
+    output_token_limit: 8192
+    supported_methods:
+    - countTokens
+    - bidiGenerateContent
+    version: gemini-2.5-flash-preview-native-audio-dialog-2025-05-19
+  updated_at: 2025-10-11 15:11:33.635506+00:00
 providers:
   openrouter:
     name: openrouter
     model_count: 330
-    last_updated: 2025-10-10 21:46:13.192385
-last_updated: 2025-10-10 21:46:13.192385
+    last_updated: 2025-10-10 21:47:10.983757
+  anthropic:
+    name: anthropic
+    model_count: 10
+    last_updated: 2025-10-11 14:59:26.728980
+  openai:
+    name: openai
+    model_count: 73
+    last_updated: 2025-10-11 14:59:26.729132
+  google:
+    name: google
+    model_count: 66
+    last_updated: 2025-10-11 14:59:26.729266
+last_updated: 2025-10-11 14:59:26.729266
