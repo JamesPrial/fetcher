@@ -1,6 +1,7 @@
+---
 name: Fetch AI Models
 
-on:
+'on':
   # Run daily at midnight UTC
   schedule:
     - cron: '0 0 * * *'
@@ -9,7 +10,9 @@ on:
   workflow_dispatch:
     inputs:
       provider:
-        description: 'Provider to fetch from (all, openrouter, anthropic, openai, google)'
+        description: >-
+          Provider to fetch from
+          (all, openrouter, anthropic, openai, google)
         required: false
         default: 'all'
         type: choice
@@ -61,7 +64,8 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code data/ || echo "has_changes=true" >> $GITHUB_OUTPUT
+          git diff --exit-code data/ || \
+            echo "has_changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.git-check.outputs.has_changes == 'true'
@@ -76,13 +80,11 @@ jobs:
             PROVIDER="all"
           fi
 
-          git commit -m "$(cat <<EOF
-Update model catalog from $PROVIDER provider(s)
-
-Automated update via GitHub Actions
-Triggered: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
-EOF
-)"
+          TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
+          MSG="Update model catalog from $PROVIDER provider(s)"
+          MSG="$MSG\n\nAutomated update via GitHub Actions"
+          MSG="$MSG - Triggered: $TIMESTAMP"
+          git commit -m "$MSG"
 
           git push
 
