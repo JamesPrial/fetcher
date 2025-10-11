@@ -182,6 +182,143 @@ def list(provider: Optional[str], data_dir: Optional[Path], limit: Optional[int]
 
 
 @cli.command()
+@click.argument("query", required=False)
+@click.option(
+    "--provider",
+    "-p",
+    help="Filter by provider name",
+)
+@click.option(
+    "--min-context",
+    type=int,
+    help="Minimum context length",
+)
+@click.option(
+    "--max-context",
+    type=int,
+    help="Maximum context length",
+)
+@click.option(
+    "--max-prompt-price",
+    type=float,
+    help="Maximum prompt token price",
+)
+@click.option(
+    "--max-completion-price",
+    type=float,
+    help="Maximum completion token price",
+)
+@click.option(
+    "--supports-vision",
+    is_flag=True,
+    help="Filter models with vision support",
+)
+@click.option(
+    "--supports-function-calling",
+    is_flag=True,
+    help="Filter models with function calling support",
+)
+@click.option(
+    "--supports-streaming",
+    is_flag=True,
+    help="Filter models with streaming support",
+)
+@click.option(
+    "--modality",
+    "-m",
+    multiple=True,
+    help="Filter by modality (can be specified multiple times)",
+)
+@click.option(
+    "--limit",
+    "-l",
+    type=int,
+    help="Limit number of models to display",
+)
+@click.option(
+    "--data-dir",
+    type=click.Path(path_type=Path),
+    help="Custom data directory",
+)
+def search(
+    query: Optional[str],
+    provider: Optional[str],
+    min_context: Optional[int],
+    max_context: Optional[int],
+    max_prompt_price: Optional[float],
+    max_completion_price: Optional[float],
+    supports_vision: bool,
+    supports_function_calling: bool,
+    supports_streaming: bool,
+    modality: tuple,
+    limit: Optional[int],
+    data_dir: Optional[Path],
+):
+    """Search for models using various filters."""
+    # Read configuration from environment
+    dir_path = data_dir or get_data_dir()
+
+    fetcher = Fetcher(data_dir=dir_path)
+
+    try:
+        # Convert tuple to list for modalities
+        modalities = list(modality) if modality else None
+
+        # Convert flags to Optional[bool] (None if not set, True if set)
+        vision_filter = True if supports_vision else None
+        function_calling_filter = True if supports_function_calling else None
+        streaming_filter = True if supports_streaming else None
+
+        models = fetcher.search(
+            query=query,
+            provider=provider,
+            min_context=min_context,
+            max_context=max_context,
+            max_prompt_price=max_prompt_price,
+            max_completion_price=max_completion_price,
+            supports_vision=vision_filter,
+            supports_function_calling=function_calling_filter,
+            supports_streaming=streaming_filter,
+            modalities=modalities,
+            limit=limit,
+        )
+
+        if not models:
+            click.echo("No models found matching the search criteria.")
+            return
+
+        click.echo(f"\nFound {len(models)} model(s):\n")
+        for model in models:
+            context = f"{model.context_length}k" if model.context_length else "N/A"
+            pricing = ""
+            if model.pricing and model.pricing.prompt:
+                pricing = f" (${model.pricing.prompt:.6f}/tok)"
+
+            click.echo(f"  {model.model_id}")
+            click.echo(f"    Provider: {model.provider}")
+            click.echo(f"    Name: {model.name}")
+            click.echo(f"    Context: {context}{pricing}")
+            if model.capabilities.modalities:
+                click.echo(f"    Modalities: {', '.join(model.capabilities.modalities)}")
+
+            # Show capabilities if any are enabled
+            caps = []
+            if model.capabilities.supports_vision:
+                caps.append("vision")
+            if model.capabilities.supports_function_calling:
+                caps.append("function_calling")
+            if model.capabilities.supports_streaming:
+                caps.append("streaming")
+            if caps:
+                click.echo(f"    Capabilities: {', '.join(caps)}")
+            click.echo()
+
+    except Exception as e:
+        click.echo(f"Error: {e}", err=True)
+        sys.exit(1)
+
+
+@cli.command()
 @click.option(
     "--format",
     "-f",

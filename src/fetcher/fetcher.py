@@ -135,6 +135,122 @@ class Fetcher:
 
         return models
 
+    def search(
+        self,
+        query: Optional[str] = None,
+        provider: Optional[str] = None,
+        min_context: Optional[int] = None,
+        max_context: Optional[int] = None,
+        max_prompt_price: Optional[float] = None,
+        max_completion_price: Optional[float] = None,
+        supports_vision: Optional[bool] = None,
+        supports_function_calling: Optional[bool] = None,
+        supports_streaming: Optional[bool] = None,
+        modalities: Optional[List[str]] = None,
+        limit: Optional[int] = None,
+    ) -> List[ModelInfo]:
+        """
+        Search for models using multiple filter criteria.
+
+        Args:
+            query: Text search in model_id, name, and description (case-insensitive)
+            provider: Filter by provider name
+            min_context: Minimum context length
+            max_context: Maximum context length
+            max_prompt_price: Maximum prompt token price
+            max_completion_price: Maximum completion token price
+            supports_vision: Filter by vision support
+            supports_function_calling: Filter by function calling support
+            supports_streaming: Filter by streaming support
+            modalities: Filter by modalities (must support all specified)
+            limit: Limit number of results
+
+        Returns:
+            List of ModelInfo objects matching all specified criteria
+
+        Raises:
+            Exception: If catalog cannot be loaded
+        """
+        catalog = self.storage.load_catalog()
+        models = catalog.models
+
+        # Text search in model_id, name, and description
+        if query:
+            query_lower = query.lower()
+            models = [
+                m
+                for m in models
+                if query_lower in m.model_id.lower()
+                or query_lower in m.name.lower()
+                or (m.description and query_lower in m.description.lower())
+            ]
+
+        # Provider filter
+        if provider:
+            models = [m for m in models if m.provider.lower() == provider.lower()]
+
+        # Context length filters
+        if min_context is not None:
+            models = [
+                m for m in models if m.context_length and m.context_length >= min_context
+            ]
+
+        if max_context is not None:
+            models = [
+                m for m in models if m.context_length and m.context_length <= max_context
+            ]
+
+        # Pricing filters
+        if max_prompt_price is not None:
+            models = [
+                m
+                for m in models
+                if m.pricing and m.pricing.prompt and m.pricing.prompt <= max_prompt_price
+            ]
+
+        if max_completion_price is not None:
+            models = [
+                m
+                for m in models
+                if m.pricing
+                and m.pricing.completion
+                and m.pricing.completion <= max_completion_price
+            ]
+
+        # Capability filters
+        if supports_vision is not None:
+            models = [
+                m for m in models if m.capabilities.supports_vision == supports_vision
+            ]
+
+        if supports_function_calling is not None:
+            models = [
+                m
+                for m in models
+                if m.capabilities.supports_function_calling == supports_function_calling
+            ]
+
+        if supports_streaming is not None:
+            models = [
+                m
+                for m in models
+                if m.capabilities.supports_streaming == supports_streaming
+            ]
+
+        # Modality filter (must support all specified modalities)
+        if modalities:
+            models = [
+                m
+                for m in models
+                if all(mod in m.capabilities.modalities for mod in modalities)
+            ]
+
+        # Apply limit
+        if limit:
+            models = models[:limit]
+
+        return models
+
     def export(
         self, format: str = "json", output_path: Optional[Path] = None
     ) -> Path:
@@ -158,7 +274,6 @@ class Fetcher:
             return self.storage.export_to_yaml(output_path)
         elif format == "json":
             # JSON is the default storage format
-            catalog = self.storage.load_catalog()
             return self.storage.catalog_path
         else:
             raise ValueError(f"Unsupported format: {format}")
