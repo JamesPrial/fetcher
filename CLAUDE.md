@@ -12,7 +12,7 @@ ALWAYS checkout a new branch before beginning implementing anything, and when yo
 
 ## Project Overview
 
-This package fetches available AI models from various providers (OpenRouter, Anthropic) and stores them in structured JSON format. It provides both a CLI and programmatic API for model catalog management.
+This package fetches available AI models from various providers (OpenRouter, Anthropic, OpenAI) and stores them in structured JSON format. It provides both a CLI and programmatic API for model catalog management.
 
 ## Development Commands
 
@@ -47,7 +47,7 @@ pytest tests/test_file.py::test_function_name
 
 **Fetcher** (`src/fetcher/fetcher.py`): Main programmatic API that coordinates between providers and storage. Accepts all configuration as constructor arguments (api_keys, base_urls, timeout, debug, data_dir). Returns `(ModelCatalog, summary_dict)` tuples from fetch operations.
 
-**Provider System** (`src/fetcher/providers/`): Abstract `BaseProvider` class with async context manager support and lazy HTTP client initialization. Providers implement `fetch_models()` to return `List[ModelInfo]`. Currently implements `OpenRouterProvider` and `AnthropicProvider`.
+**Provider System** (`src/fetcher/providers/`): Abstract `BaseProvider` class with async context manager support and lazy HTTP client initialization. Providers implement `fetch_models()` to return `List[ModelInfo]`. Currently implements `OpenRouterProvider`, `AnthropicProvider`, and `OpenAIProvider`.
 
 **Storage** (`src/fetcher/storage.py`): Handles persistence to JSON (primary format), CSV, and YAML. Implements merge logic that updates existing models by `model_id` or adds new ones. Default storage location: `data/models.json`.
 
@@ -152,5 +152,64 @@ models = fetcher.search(
     provider="anthropic",
     supports_vision=True,
     min_context=100000
+)
+```
+
+### OpenAIProvider
+
+The OpenAI provider fetches models from the OpenAI API. Key characteristics:
+
+- **Authentication**: Optional API key (set via `OPENAI_API_KEY` environment variable or passed programmatically)
+- **Headers**: Uses standard Bearer authentication
+- **API Endpoint**: `GET /v1/models` returns minimal model information
+- **Static Mappings**: Pricing and detailed capabilities are maintained via static mappings, as the OpenAI API only returns id, created, owned_by
+- **Model Coverage**: Includes GPT-4o, GPT-4 Turbo, GPT-4, GPT-3.5 Turbo, o1 reasoning models, and embedding models
+- **Fine-tuned Models**: Automatically detects and includes fine-tuned models (starting with "ft:")
+
+**CLI Usage:**
+```bash
+# Set API key (optional but recommended)
+export OPENAI_API_KEY="sk-..."
+
+# Fetch OpenAI models
+fetcher fetch --provider openai
+
+# Fetch from all providers
+fetcher fetch --provider all
+
+# List OpenAI models
+fetcher list --provider openai
+
+# Search for specific OpenAI models
+fetcher search --provider openai --supports-vision --min-context 100000
+```
+
+**Programmatic Usage:**
+```python
+from pathlib import Path
+from fetcher import Fetcher
+
+# Initialize with OpenAI API key
+fetcher = Fetcher(
+    api_keys={"openai": "sk-..."},
+    timeout=60.0,
+    data_dir=Path("data")
+)
+
+# Fetch OpenAI models
+catalog, summary = await fetcher.fetch(provider="openai", merge=True)
+
+# Search for GPT-4o models with vision
+models = fetcher.search(
+    provider="openai",
+    query="gpt-4o",
+    supports_vision=True
+)
+
+# Search for cost-effective models
+models = fetcher.search(
+    provider="openai",
+    max_prompt_price=1.0,  # Per 1M tokens
+    supports_function_calling=True
 )
 ```

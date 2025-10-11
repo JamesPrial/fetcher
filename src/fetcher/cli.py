@@ -65,7 +65,7 @@ def cli():
 @click.option(
     "--provider",
     "-p",
-    type=click.Choice(["openrouter", "anthropic", "all"], case_sensitive=False),
+    type=click.Choice(["openrouter", "anthropic", "openai", "all"], case_sensitive=False),
     default="openrouter",
     help="Provider to fetch from",
 )
