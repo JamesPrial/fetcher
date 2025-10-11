@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ALWAYS use the context7 MCP for Inspect AI, library id = /websites/inspect_aisi_uk
 
+## Version Control
+
+ALWAYS checkout a new branch before beginning implementing anything, and when you finish, commit -> open pull request
+
 ## Project Overview
 
 This package fetches available AI models from various providers (currently OpenRouter) and stores them in structured JSON format. It provides both a CLI and programmatic API for model catalog management.
