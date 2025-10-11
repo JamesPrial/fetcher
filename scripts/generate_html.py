@@ -687,10 +687,10 @@ def main():
     print(f"✨ Generated HTML viewer: {html_path}")
 
     # Display stats
-    with open(target_json, 'r') as f:
+    with open(target_json, "r") as f:
         data = json.load(f)
-        model_count = len(data.get('models', []))
-        providers = set(m['provider'] for m in data.get('models', []))
+        model_count = len(data.get("models", []))
+        providers = set(m["provider"] for m in data.get("models", []))
         print(f"\n📊 Stats:")
         print(f"   Models: {model_count}")
         print(f"   Providers: {', '.join(sorted(providers))}")

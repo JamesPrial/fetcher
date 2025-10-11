@@ -20,9 +20,7 @@ class OpenRouterProvider(BaseProvider):
             api_key: Optional API key (not required for listing models)
             timeout: Request timeout in seconds
         """
-        super().__init__(
-            api_key=api_key, base_url=self.DEFAULT_BASE_URL, timeout=timeout
-        )
+        super().__init__(api_key=api_key, base_url=self.DEFAULT_BASE_URL, timeout=timeout)
 
     @property
     def name(self) -> str:
