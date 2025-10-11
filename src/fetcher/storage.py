@@ -134,12 +134,8 @@ class Storage:
                             "name": model.name,
                             "provider": model.provider,
                             "context_length": model.context_length or "",
-                            "price_prompt": (
-                                model.pricing.prompt if model.pricing else ""
-                            ),
-                            "price_completion": (
-                                model.pricing.completion if model.pricing else ""
-                            ),
+                            "price_prompt": (model.pricing.prompt if model.pricing else ""),
+                            "price_completion": (model.pricing.completion if model.pricing else ""),
                             "supports_vision": model.capabilities.supports_vision,
                             "supports_function_calling": (
                                 model.capabilities.supports_function_calling

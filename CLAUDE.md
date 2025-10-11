@@ -4,11 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Context7 MCP Integration
 
-ALWAYS use the context7 MCP for Inspect AI, library id = /websites/inspect_aisi_uk
+ALWAYS use the context7 MCP for Inspect AI, library id = /websites/inspect_aisi_uk.
 
 ## Version Control
 
-ALWAYS checkout a new branch before beginning implementing anything, and when you finish, commit -> open pull request
+ALWAYS use agent-git-ops to checkout a new branch before beginning implementing anything, and when you finish, use agent-gh-cli to commit -> open pull request and switch back to main.
+
+## Context Management and Parallelization
+
+Use your Task tool to parallelize and reduce context bloat where ever appropriate.
 
 ## Project Overview
 

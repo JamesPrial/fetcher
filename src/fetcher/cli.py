@@ -71,7 +71,9 @@ def cli():
 @click.option(
     "--provider",
     "-p",
-    type=click.Choice(["openrouter", "anthropic", "openai", "google", "all"], case_sensitive=False),
+    type=click.Choice(
+        ["openrouter", "anthropic", "openai", "google", "all"], case_sensitive=False
+    ),
     default="openrouter",
     help="Provider to fetch from",
 )
@@ -115,9 +117,13 @@ async def fetch_async(provider: str, output: Optional[Path], merge: bool):
 
         # Show success message
         if merge:
-            click.echo(f"\n✓ Merged {summary['fetched_count']} models into catalog")
+            click.echo(
+                f"\n✓ Merged {summary['fetched_count']} models into catalog"
+            )
         else:
-            click.echo(f"\n✓ Created new catalog with {summary['fetched_count']} models")
+            click.echo(
+                f"\n✓ Created new catalog with {summary['fetched_count']} models"
+            )
 
         # Show summary
         click.echo("\nSummary:")
@@ -179,7 +185,9 @@ def list(provider: Optional[str], data_dir: Optional[Path], limit: Optional[int]
             click.echo(f"    Name: {model.name}")
             click.echo(f"    Context: {context}{pricing}")
             if model.capabilities.modalities:
-                click.echo(f"    Modalities: {', '.join(model.capabilities.modalities)}")
+                click.echo(
+                    f"    Modalities: {', '.join(model.capabilities.modalities)}"
+                )
             click.echo()
 
     except Exception as e:
@@ -305,7 +313,9 @@ def search(
             click.echo(f"    Name: {model.name}")
             click.echo(f"    Context: {context}{pricing}")
             if model.capabilities.modalities:
-                click.echo(f"    Modalities: {', '.join(model.capabilities.modalities)}")
+                click.echo(
+                    f"    Modalities: {', '.join(model.capabilities.modalities)}"
+                )
 
             # Show capabilities if any are enabled
             caps = []
