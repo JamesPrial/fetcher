@@ -13,7 +13,6 @@ name: CI Tests
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Run Tests and Code Quality Checks
 
     steps:
       - name: Checkout repository
