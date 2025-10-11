@@ -123,7 +123,7 @@ async def fetch_async(provider: str, output: Optional[Path], merge: bool):
         click.echo("\nSummary:")
         click.echo(f"  Total models: {summary['total_models']}")
         click.echo(f"  Providers: {len(summary['providers'])}")
-        for prov_name, model_count in summary['providers'].items():
+        for prov_name, model_count in summary["providers"].items():
             click.echo(f"    - {prov_name}: {model_count} models")
 
     except Exception as e:

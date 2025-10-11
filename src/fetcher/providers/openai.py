@@ -28,9 +28,7 @@ class OpenAIProvider(BaseProvider):
             api_key: Optional API key (recommended for production use)
             timeout: Request timeout in seconds
         """
-        super().__init__(
-            api_key=api_key, base_url=self.DEFAULT_BASE_URL, timeout=timeout
-        )
+        super().__init__(api_key=api_key, base_url=self.DEFAULT_BASE_URL, timeout=timeout)
 
     @property
     def name(self) -> str:
@@ -118,7 +116,9 @@ class OpenAIProvider(BaseProvider):
             if is_fine_tuned:
                 description = f"Fine-tuned OpenAI model: {model_id}"
             elif model_id == "gpt-5-codex":
-                description = "OpenAI GPT-5 Codex - specialized coding model with multimodal capabilities"
+                description = (
+                    "OpenAI GPT-5 Codex - specialized coding model with multimodal capabilities"
+                )
             elif model_id.startswith("gpt-5"):
                 description = "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities"
             elif model_id.startswith("gpt-4.1"):

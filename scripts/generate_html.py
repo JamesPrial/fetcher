@@ -120,6 +120,44 @@ def generate_html_template() -> str:
             border-color: var(--accent-color);
         }
 
+        .header-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .download-section {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .download-label {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-right: 4px;
+        }
+
+        .download-btn {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            background: var(--success-color);
+            color: white;
+            border-color: var(--success-color);
+        }
+
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -330,7 +368,15 @@ def generate_html_template() -> str:
     <header>
         <div class="header-content">
             <h1>🤖 AI Model Catalog</h1>
-            <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+            <div class="header-controls">
+                <div class="download-section">
+                    <span class="download-label">📥 Download:</span>
+                    <a href="models.json" download class="download-btn">JSON</a>
+                    <a href="models.csv" download class="download-btn">CSV</a>
+                    <a href="models.yaml" download class="download-btn">YAML</a>
+                </div>
+                <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+            </div>
         </div>
     </header>
 
@@ -687,10 +733,10 @@ def main():
     print(f"✨ Generated HTML viewer: {html_path}")
 
     # Display stats
-    with open(target_json, 'r') as f:
+    with open(target_json, "r") as f:
         data = json.load(f)
-        model_count = len(data.get('models', []))
-        providers = set(m['provider'] for m in data.get('models', []))
+        model_count = len(data.get("models", []))
+        providers = set(m["provider"] for m in data.get("models", []))
         print(f"\n📊 Stats:")
         print(f"   Models: {model_count}")
         print(f"   Providers: {', '.join(sorted(providers))}")

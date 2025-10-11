@@ -35,7 +35,10 @@ class ModelInfo(BaseModel):
     context_length: Optional[int] = Field(None, description="Maximum context window size")
     pricing: Optional[PricingInfo] = Field(None, description="Pricing information")
     capabilities: ModelCapabilities = Field(
-        default_factory=lambda: ModelCapabilities(supports_function_calling=False, supports_vision=False, supports_streaming=False), description="Model capabilities"
+        default_factory=lambda: ModelCapabilities(
+            supports_function_calling=False, supports_vision=False, supports_streaming=False
+        ),
+        description="Model capabilities",
     )
     metadata: Dict[str, Any] = Field(
         default_factory=dict, description="Additional provider-specific metadata"
@@ -69,7 +72,8 @@ class ModelCatalog(BaseModel):
         default_factory=dict, description="Provider information"
     )
     last_updated: datetime = Field(
-        default_factory=lambda: datetime.now(timezone.utc), description="Catalog last update timestamp"
+        default_factory=lambda: datetime.now(timezone.utc),
+        description="Catalog last update timestamp",
     )
 
     class Config:
