@@ -1,0 +1,69 @@
+{
+  "api_version": "1.0.0",
+  "title": "AI Model Catalog API",
+  "description": "RESTful API for querying AI model information from multiple providers",
+  "base_url": "https://jamesprial.github.io/fetcher/api",
+  "endpoints": {
+    "dynamic": {
+      "url": "/api/",
+      "description": "Dynamic query endpoint with filtering, sorting, and pagination",
+      "method": "GET",
+      "parameters": {
+        "provider": "Filter by provider (comma-separated)",
+        "capability": "Filter by capability (comma-separated)",
+        "search": "Search in model name, ID, or description",
+        "min_context": "Minimum context length",
+        "max_context": "Maximum context length",
+        "min_prompt_price": "Minimum prompt price per token",
+        "max_prompt_price": "Maximum prompt price per token",
+        "supports_vision": "Filter by vision support (true/false)",
+        "supports_function_calling": "Filter by function calling (true/false)",
+        "supports_streaming": "Filter by streaming support (true/false)",
+        "sort": "Sort field (name, provider, context, prompt-price, etc.)",
+        "order": "Sort order (asc, desc)",
+        "limit": "Number of results",
+        "offset": "Pagination offset",
+        "format": "Output format (json, csv)"
+      }
+    },
+    "static": {
+      "providers": {
+        "url": "/api/providers/",
+        "description": "List all providers",
+        "files": "Individual provider files at /api/providers/{provider}.json"
+      },
+      "capabilities": {
+        "url": "/api/capabilities/",
+        "description": "List all capabilities",
+        "files": "Individual capability files at /api/capabilities/{capability}.json"
+      },
+      "stats": {
+        "url": "/api/stats.json",
+        "description": "Summary statistics for all models and providers"
+      },
+      "all_models": {
+        "url": "/models.json",
+        "description": "Complete model catalog (raw data)"
+      }
+    }
+  },
+  "examples": [
+    {
+      "description": "Get all OpenAI models",
+      "url": "/api/?provider=openai"
+    },
+    {
+      "description": "Get models with vision support",
+      "url": "/api/?supports_vision=true"
+    },
+    {
+      "description": "Search for GPT-4 models",
+      "url": "/api/?search=gpt-4"
+    },
+    {
+      "description": "Get cheapest models with 100k+ context",
+      "url": "/api/?min_context=100000&sort=prompt-price&order=asc"
+    }
+  ],
+  "generated_at": "2025-10-11T21:49:17.195283+00:00"
+}

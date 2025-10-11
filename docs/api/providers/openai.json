@@ -1,0 +1,1785 @@
+{
+  "api_version": "1.0.0",
+  "provider": "openai",
+  "total_count": 73,
+  "models": [
+    {
+      "model_id": "gpt-3.5-turbo",
+      "name": "gpt-3.5-turbo",
+      "provider": "openai",
+      "description": "OpenAI GPT-3.5 Turbo - fast and cost-effective",
+      "context_length": 16385,
+      "pricing": {
+        "prompt": 5e-07,
+        "completion": 1.5e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1677610602,
+        "owned_by": "openai"
+      },
+      "updated_at": "2025-10-11 16:13:40.931899+00:00"
+    },
+    {
+      "model_id": "sora-2-pro",
+      "name": "sora-2-pro",
+      "provider": "openai",
+      "description": "OpenAI model: sora-2-pro",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1759708663,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931920+00:00"
+    },
+    {
+      "model_id": "gpt-5-pro",
+      "name": "gpt-5-pro",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1759469822,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931929+00:00"
+    },
+    {
+      "model_id": "gpt-audio-mini",
+      "name": "gpt-audio-mini",
+      "provider": "openai",
+      "description": "OpenAI model: gpt-audio-mini",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1759512027,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931937+00:00"
+    },
+    {
+      "model_id": "gpt-audio-mini-2025-10-06",
+      "name": "gpt-audio-mini-2025-10-06",
+      "provider": "openai",
+      "description": "OpenAI model: gpt-audio-mini-2025-10-06",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1759512137,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931944+00:00"
+    },
+    {
+      "model_id": "sora-2",
+      "name": "sora-2",
+      "provider": "openai",
+      "description": "OpenAI model: sora-2",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1759708615,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931952+00:00"
+    },
+    {
+      "model_id": "davinci-002",
+      "name": "davinci-002",
+      "provider": "openai",
+      "description": "OpenAI model: davinci-002",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1692634301,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931959+00:00"
+    },
+    {
+      "model_id": "babbage-002",
+      "name": "babbage-002",
+      "provider": "openai",
+      "description": "OpenAI model: babbage-002",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1692634615,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931970+00:00"
+    },
+    {
+      "model_id": "gpt-3.5-turbo-instruct",
+      "name": "gpt-3.5-turbo-instruct",
+      "provider": "openai",
+      "description": "OpenAI GPT-3.5 Turbo - fast and cost-effective",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1692901427,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931978+00:00"
+    },
+    {
+      "model_id": "gpt-3.5-turbo-instruct-0914",
+      "name": "gpt-3.5-turbo-instruct-0914",
+      "provider": "openai",
+      "description": "OpenAI GPT-3.5 Turbo - fast and cost-effective",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1694122472,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931986+00:00"
+    },
+    {
+      "model_id": "dall-e-3",
+      "name": "dall-e-3",
+      "provider": "openai",
+      "description": "OpenAI model: dall-e-3",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1698785189,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.931997+00:00"
+    },
+    {
+      "model_id": "dall-e-2",
+      "name": "dall-e-2",
+      "provider": "openai",
+      "description": "OpenAI model: dall-e-2",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1698798177,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932004+00:00"
+    },
+    {
+      "model_id": "gpt-3.5-turbo-1106",
+      "name": "gpt-3.5-turbo-1106",
+      "provider": "openai",
+      "description": "OpenAI GPT-3.5 Turbo - fast and cost-effective",
+      "context_length": 16385,
+      "pricing": {
+        "prompt": 1e-06,
+        "completion": 2e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1698959748,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932014+00:00"
+    },
+    {
+      "model_id": "tts-1-hd",
+      "name": "tts-1-hd",
+      "provider": "openai",
+      "description": "OpenAI model: tts-1-hd",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1699046015,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932022+00:00"
+    },
+    {
+      "model_id": "tts-1-1106",
+      "name": "tts-1-1106",
+      "provider": "openai",
+      "description": "OpenAI model: tts-1-1106",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1699053241,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932028+00:00"
+    },
+    {
+      "model_id": "tts-1-hd-1106",
+      "name": "tts-1-hd-1106",
+      "provider": "openai",
+      "description": "OpenAI model: tts-1-hd-1106",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1699053533,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932035+00:00"
+    },
+    {
+      "model_id": "text-embedding-3-small",
+      "name": "text-embedding-3-small",
+      "provider": "openai",
+      "description": "OpenAI embedding model: text-embedding-3-small",
+      "context_length": 8191,
+      "pricing": {
+        "prompt": 2e-08,
+        "completion": 0.0,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1705948997,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932044+00:00"
+    },
+    {
+      "model_id": "text-embedding-3-large",
+      "name": "text-embedding-3-large",
+      "provider": "openai",
+      "description": "OpenAI embedding model: text-embedding-3-large",
+      "context_length": 8191,
+      "pricing": {
+        "prompt": 1.3e-07,
+        "completion": 0.0,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1705953180,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932053+00:00"
+    },
+    {
+      "model_id": "gpt-3.5-turbo-0125",
+      "name": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "description": "OpenAI GPT-3.5 Turbo - fast and cost-effective",
+      "context_length": 16385,
+      "pricing": {
+        "prompt": 5e-07,
+        "completion": 1.5e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1706048358,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932065+00:00"
+    },
+    {
+      "model_id": "gpt-4o",
+      "name": "gpt-4o",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5e-06,
+        "completion": 1e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1715367049,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932073+00:00"
+    },
+    {
+      "model_id": "gpt-4o-2024-05-13",
+      "name": "gpt-4o-2024-05-13",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 5e-06,
+        "completion": 1.5e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1715368132,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932082+00:00"
+    },
+    {
+      "model_id": "gpt-4o-mini-2024-07-18",
+      "name": "gpt-4o-mini-2024-07-18",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 1.5e-07,
+        "completion": 6e-07,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1721172717,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932089+00:00"
+    },
+    {
+      "model_id": "gpt-4o-mini",
+      "name": "gpt-4o-mini",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 1.5e-07,
+        "completion": 6e-07,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1721172741,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932097+00:00"
+    },
+    {
+      "model_id": "gpt-4o-2024-08-06",
+      "name": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5e-06,
+        "completion": 1e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1722814719,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932105+00:00"
+    },
+    {
+      "model_id": "o1-mini-2024-09-12",
+      "name": "o1-mini-2024-09-12",
+      "provider": "openai",
+      "description": "OpenAI o1 - advanced reasoning model",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 3e-06,
+        "completion": 1.2e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1725648979,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932113+00:00"
+    },
+    {
+      "model_id": "o1-mini",
+      "name": "o1-mini",
+      "provider": "openai",
+      "description": "OpenAI o1 - advanced reasoning model",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 3e-06,
+        "completion": 1.2e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1725649008,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932121+00:00"
+    },
+    {
+      "model_id": "gpt-4o-audio-preview-2024-10-01",
+      "name": "gpt-4o-audio-preview-2024-10-01",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1727389042,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932128+00:00"
+    },
+    {
+      "model_id": "gpt-4o-audio-preview",
+      "name": "gpt-4o-audio-preview",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1727460443,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932134+00:00"
+    },
+    {
+      "model_id": "omni-moderation-latest",
+      "name": "omni-moderation-latest",
+      "provider": "openai",
+      "description": "OpenAI model: omni-moderation-latest",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1731689265,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932141+00:00"
+    },
+    {
+      "model_id": "omni-moderation-2024-09-26",
+      "name": "omni-moderation-2024-09-26",
+      "provider": "openai",
+      "description": "OpenAI model: omni-moderation-2024-09-26",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1732734466,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932147+00:00"
+    },
+    {
+      "model_id": "gpt-4o-audio-preview-2024-12-17",
+      "name": "gpt-4o-audio-preview-2024-12-17",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1734034239,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932153+00:00"
+    },
+    {
+      "model_id": "gpt-4o-mini-audio-preview-2024-12-17",
+      "name": "gpt-4o-mini-audio-preview-2024-12-17",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1734115920,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932159+00:00"
+    },
+    {
+      "model_id": "o1-2024-12-17",
+      "name": "o1-2024-12-17",
+      "provider": "openai",
+      "description": "OpenAI o1 - advanced reasoning model",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 1.5e-05,
+        "completion": 6e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1734326976,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932167+00:00"
+    },
+    {
+      "model_id": "o1",
+      "name": "o1",
+      "provider": "openai",
+      "description": "OpenAI o1 - advanced reasoning model",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 1.5e-05,
+        "completion": 6e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1734375816,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932176+00:00"
+    },
+    {
+      "model_id": "gpt-4o-mini-audio-preview",
+      "name": "gpt-4o-mini-audio-preview",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1734387424,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932183+00:00"
+    },
+    {
+      "model_id": "o3-mini",
+      "name": "o3-mini",
+      "provider": "openai",
+      "description": "OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1737146383,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932189+00:00"
+    },
+    {
+      "model_id": "o3-mini-2025-01-31",
+      "name": "o3-mini-2025-01-31",
+      "provider": "openai",
+      "description": "OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1738010200,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932195+00:00"
+    },
+    {
+      "model_id": "gpt-4o-2024-11-20",
+      "name": "gpt-4o-2024-11-20",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5e-06,
+        "completion": 1e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1739331543,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932203+00:00"
+    },
+    {
+      "model_id": "gpt-4o-search-preview-2025-03-11",
+      "name": "gpt-4o-search-preview-2025-03-11",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1741388170,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932210+00:00"
+    },
+    {
+      "model_id": "gpt-4o-search-preview",
+      "name": "gpt-4o-search-preview",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1741388720,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932216+00:00"
+    },
+    {
+      "model_id": "gpt-4o-mini-search-preview-2025-03-11",
+      "name": "gpt-4o-mini-search-preview-2025-03-11",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1741390858,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932222+00:00"
+    },
+    {
+      "model_id": "gpt-4o-mini-search-preview",
+      "name": "gpt-4o-mini-search-preview",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1741391161,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932227+00:00"
+    },
+    {
+      "model_id": "gpt-4o-transcribe",
+      "name": "gpt-4o-transcribe",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1742068463,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932233+00:00"
+    },
+    {
+      "model_id": "gpt-4o-mini-transcribe",
+      "name": "gpt-4o-mini-transcribe",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1742068596,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932238+00:00"
+    },
+    {
+      "model_id": "gpt-4o-mini-tts",
+      "name": "gpt-4o-mini-tts",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1742403959,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932244+00:00"
+    },
+    {
+      "model_id": "o3-2025-04-16",
+      "name": "o3-2025-04-16",
+      "provider": "openai",
+      "description": "OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744133301,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932249+00:00"
+    },
+    {
+      "model_id": "o4-mini-2025-04-16",
+      "name": "o4-mini-2025-04-16",
+      "provider": "openai",
+      "description": "OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744133506,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.932255+00:00"
+    },
+    {
+      "model_id": "o3",
+      "name": "o3",
+      "provider": "openai",
+      "description": "OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 2e-06,
+        "completion": 8e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744225308,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933112+00:00"
+    },
+    {
+      "model_id": "o4-mini",
+      "name": "o4-mini",
+      "provider": "openai",
+      "description": "OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 1.1e-06,
+        "completion": 4.4e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744225351,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933310+00:00"
+    },
+    {
+      "model_id": "gpt-4.1-2025-04-14",
+      "name": "gpt-4.1-2025-04-14",
+      "provider": "openai",
+      "description": "OpenAI GPT-4.1 - advanced model with 1M token context window",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744315746,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933323+00:00"
+    },
+    {
+      "model_id": "gpt-4.1",
+      "name": "gpt-4.1",
+      "provider": "openai",
+      "description": "OpenAI GPT-4.1 - advanced model with 1M token context window",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 2e-06,
+        "completion": 8e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744316542,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933331+00:00"
+    },
+    {
+      "model_id": "gpt-4.1-mini-2025-04-14",
+      "name": "gpt-4.1-mini-2025-04-14",
+      "provider": "openai",
+      "description": "OpenAI GPT-4.1 - advanced model with 1M token context window",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744317547,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933338+00:00"
+    },
+    {
+      "model_id": "gpt-4.1-mini",
+      "name": "gpt-4.1-mini",
+      "provider": "openai",
+      "description": "OpenAI GPT-4.1 - advanced model with 1M token context window",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 4.0000000000000003e-07,
+        "completion": 1.6000000000000001e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744318173,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933346+00:00"
+    },
+    {
+      "model_id": "gpt-4.1-nano-2025-04-14",
+      "name": "gpt-4.1-nano-2025-04-14",
+      "provider": "openai",
+      "description": "OpenAI GPT-4.1 - advanced model with 1M token context window",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744321025,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933352+00:00"
+    },
+    {
+      "model_id": "gpt-4.1-nano",
+      "name": "gpt-4.1-nano",
+      "provider": "openai",
+      "description": "OpenAI GPT-4.1 - advanced model with 1M token context window",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 1.0000000000000001e-07,
+        "completion": 4.0000000000000003e-07,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1744321707,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933360+00:00"
+    },
+    {
+      "model_id": "gpt-image-1",
+      "name": "gpt-image-1",
+      "provider": "openai",
+      "description": "OpenAI model: gpt-image-1",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1745517030,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933367+00:00"
+    },
+    {
+      "model_id": "gpt-4o-audio-preview-2025-06-03",
+      "name": "gpt-4o-audio-preview-2025-06-03",
+      "provider": "openai",
+      "description": "OpenAI GPT-4o - flagship model with vision and function calling",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1748908498,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933373+00:00"
+    },
+    {
+      "model_id": "gpt-5-chat-latest",
+      "name": "gpt-5-chat-latest",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1754073306,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933379+00:00"
+    },
+    {
+      "model_id": "gpt-5-2025-08-07",
+      "name": "gpt-5-2025-08-07",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1754075360,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933385+00:00"
+    },
+    {
+      "model_id": "gpt-5",
+      "name": "gpt-5",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities",
+      "context_length": 272000,
+      "pricing": {
+        "prompt": 1.25e-06,
+        "completion": 1e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1754425777,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933392+00:00"
+    },
+    {
+      "model_id": "gpt-5-mini-2025-08-07",
+      "name": "gpt-5-mini-2025-08-07",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1754425867,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933398+00:00"
+    },
+    {
+      "model_id": "gpt-5-mini",
+      "name": "gpt-5-mini",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities",
+      "context_length": 272000,
+      "pricing": {
+        "prompt": 2.5e-07,
+        "completion": 2e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1754425928,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933405+00:00"
+    },
+    {
+      "model_id": "gpt-5-nano-2025-08-07",
+      "name": "gpt-5-nano-2025-08-07",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1754426303,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933411+00:00"
+    },
+    {
+      "model_id": "gpt-5-nano",
+      "name": "gpt-5-nano",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities",
+      "context_length": 272000,
+      "pricing": {
+        "prompt": 1.0000000000000001e-07,
+        "completion": 5e-07,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1754426384,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933419+00:00"
+    },
+    {
+      "model_id": "gpt-audio-2025-08-28",
+      "name": "gpt-audio-2025-08-28",
+      "provider": "openai",
+      "description": "OpenAI model: gpt-audio-2025-08-28",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1756256146,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933427+00:00"
+    },
+    {
+      "model_id": "gpt-audio",
+      "name": "gpt-audio",
+      "provider": "openai",
+      "description": "OpenAI model: gpt-audio",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1756339249,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933433+00:00"
+    },
+    {
+      "model_id": "gpt-5-codex",
+      "name": "gpt-5-codex",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 Codex - specialized coding model with multimodal capabilities",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 1.25e-06,
+        "completion": 1e-05,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1757527818,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933441+00:00"
+    },
+    {
+      "model_id": "gpt-image-1-mini",
+      "name": "gpt-image-1-mini",
+      "provider": "openai",
+      "description": "OpenAI model: gpt-image-1-mini",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1758845821,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933448+00:00"
+    },
+    {
+      "model_id": "gpt-5-pro-2025-10-06",
+      "name": "gpt-5-pro-2025-10-06",
+      "provider": "openai",
+      "description": "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1759469707,
+        "owned_by": "system"
+      },
+      "updated_at": "2025-10-11 16:13:40.933453+00:00"
+    },
+    {
+      "model_id": "whisper-1",
+      "name": "whisper-1",
+      "provider": "openai",
+      "description": "OpenAI model: whisper-1",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1677532384,
+        "owned_by": "openai-internal"
+      },
+      "updated_at": "2025-10-11 16:13:40.933459+00:00"
+    },
+    {
+      "model_id": "tts-1",
+      "name": "tts-1",
+      "provider": "openai",
+      "description": "OpenAI model: tts-1",
+      "context_length": null,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1681940951,
+        "owned_by": "openai-internal"
+      },
+      "updated_at": "2025-10-11 16:13:40.933465+00:00"
+    },
+    {
+      "model_id": "gpt-3.5-turbo-16k",
+      "name": "gpt-3.5-turbo-16k",
+      "provider": "openai",
+      "description": "OpenAI GPT-3.5 Turbo - fast and cost-effective",
+      "context_length": 16385,
+      "pricing": {
+        "prompt": 3e-06,
+        "completion": 4e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1683758102,
+        "owned_by": "openai-internal"
+      },
+      "updated_at": "2025-10-11 16:13:40.933473+00:00"
+    },
+    {
+      "model_id": "text-embedding-ada-002",
+      "name": "text-embedding-ada-002",
+      "provider": "openai",
+      "description": "OpenAI embedding model: text-embedding-ada-002",
+      "context_length": 8191,
+      "pricing": {
+        "prompt": 1.0000000000000001e-07,
+        "completion": 0.0,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": false,
+        "supports_streaming": false,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "object": "model",
+        "created": 1671217299,
+        "owned_by": "openai-internal"
+      },
+      "updated_at": "2025-10-11 16:13:40.933481+00:00"
+    }
+  ],
+  "generated_at": "2025-10-11T21:49:17.145849+00:00"
+}

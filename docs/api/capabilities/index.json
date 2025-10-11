@@ -1,0 +1,21 @@
+{
+  "api_version": "1.0.0",
+  "capabilities": [
+    {
+      "name": "vision",
+      "model_count": 129,
+      "endpoint": "capabilities/vision.json"
+    },
+    {
+      "name": "function_calling",
+      "model_count": 278,
+      "endpoint": "capabilities/function-calling.json"
+    },
+    {
+      "name": "streaming",
+      "model_count": 425,
+      "endpoint": "capabilities/streaming.json"
+    }
+  ],
+  "generated_at": "2025-10-11T21:49:17.193630+00:00"
+}

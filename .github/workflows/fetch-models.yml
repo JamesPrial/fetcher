@@ -90,6 +90,11 @@ jobs:
           echo "Generating interactive HTML viewer..."
           python scripts/generate_html.py
 
+      - name: Generate API endpoints
+        run: |
+          echo "Generating static API endpoints..."
+          python scripts/generate_api_endpoints.py
+
       - name: Check for changes
         id: git-check
         run: |
@@ -110,9 +115,9 @@ jobs:
           fi
 
           TIMESTAMP="${{ steps.timestamp.outputs.timestamp }}"
-          MSG="Update model catalog and HTML viewer from $PROVIDER provider(s)"
+          MSG="Update model catalog, HTML viewer, and API endpoints from $PROVIDER provider(s)"
           MSG="$MSG\n\nFiles saved with timestamp: $TIMESTAMP"
-          MSG="$MSG\nGenerated interactive HTML viewer"
+          MSG="$MSG\nGenerated interactive HTML viewer and API endpoints"
           MSG="$MSG\nAutomated update via GitHub Actions"
           git commit -m "$MSG"
 
