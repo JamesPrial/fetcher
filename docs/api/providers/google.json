@@ -1,0 +1,1803 @@
+{
+  "api_version": "1.0.0",
+  "provider": "google",
+  "total_count": 66,
+  "models": [
+    {
+      "model_id": "embedding-gecko-001",
+      "name": "Embedding Gecko",
+      "provider": "google",
+      "description": "Obtain a distributed representation of a text.",
+      "context_length": 1024,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/embedding-gecko-001",
+        "output_token_limit": 1,
+        "supported_methods": [
+          "embedText",
+          "countTextTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.024879+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-pro-preview-03-25",
+      "name": "Gemini 2.5 Pro Preview 03-25",
+      "provider": "google",
+      "description": "Gemini 2.5 Pro Preview 03-25",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-pro-preview-03-25",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-preview-03-25"
+      },
+      "updated_at": "2025-10-11 16:13:41.024895+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-preview-05-20",
+      "name": "Gemini 2.5 Flash Preview 05-20",
+      "provider": "google",
+      "description": "Preview release (April 17th, 2025) of Gemini 2.5 Flash",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-preview-05-20",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-preview-05-20"
+      },
+      "updated_at": "2025-10-11 16:13:41.024904+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash",
+      "name": "Gemini 2.5 Flash",
+      "provider": "google",
+      "description": "Stable version of Gemini 2.5 Flash, our mid-size multimodal model that supports up to 1 million tokens, released in June of 2025.",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 7.5e-08,
+        "completion": 3e-07,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.024916+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-lite-preview-06-17",
+      "name": "Gemini 2.5 Flash-Lite Preview 06-17",
+      "provider": "google",
+      "description": "Preview release (June 11th, 2025) of Gemini 2.5 Flash-Lite",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-lite-preview-06-17",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-preview-06-17"
+      },
+      "updated_at": "2025-10-11 16:13:41.024923+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-pro-preview-05-06",
+      "name": "Gemini 2.5 Pro Preview 05-06",
+      "provider": "google",
+      "description": "Preview release (May 6th, 2025) of Gemini 2.5 Pro",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-pro-preview-05-06",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-preview-05-06"
+      },
+      "updated_at": "2025-10-11 16:13:41.024930+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-pro-preview-06-05",
+      "name": "Gemini 2.5 Pro Preview",
+      "provider": "google",
+      "description": "Preview release (June 5th, 2025) of Gemini 2.5 Pro",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-pro-preview-06-05",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-preview-06-05"
+      },
+      "updated_at": "2025-10-11 16:13:41.024937+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-pro",
+      "name": "Gemini 2.5 Pro",
+      "provider": "google",
+      "description": "Stable release (June 17th, 2025) of Gemini 2.5 Pro",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 1.25e-06,
+        "completion": 5e-06,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-pro",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5"
+      },
+      "updated_at": "2025-10-11 16:13:41.024950+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-exp",
+      "name": "Gemini 2.0 Flash Experimental",
+      "provider": "google",
+      "description": "Gemini 2.0 Flash Experimental",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 1.0000000000000001e-07,
+        "completion": 4.0000000000000003e-07,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-exp",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "bidiGenerateContent"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.024961+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash",
+      "name": "Gemini 2.0 Flash",
+      "provider": "google",
+      "description": "Gemini 2.0 Flash",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 1.0000000000000001e-07,
+        "completion": 4.0000000000000003e-07,
+        "image": null,
+        "request": null,
+        "currency": "USD"
+      },
+      "capabilities": {
+        "supports_vision": true,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.024970+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-001",
+      "name": "Gemini 2.0 Flash 001",
+      "provider": "google",
+      "description": "Stable version of Gemini 2.0 Flash, our fast and versatile multimodal model for scaling across diverse tasks, released in January of 2025.",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-001",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.024976+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-exp-image-generation",
+      "name": "Gemini 2.0 Flash (Image Generation) Experimental",
+      "provider": "google",
+      "description": "Gemini 2.0 Flash (Image Generation) Experimental",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-exp-image-generation",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "bidiGenerateContent"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.024983+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-lite-001",
+      "name": "Gemini 2.0 Flash-Lite 001",
+      "provider": "google",
+      "description": "Stable version of Gemini 2.0 Flash-Lite",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-lite-001",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.024990+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-lite",
+      "name": "Gemini 2.0 Flash-Lite",
+      "provider": "google",
+      "description": "Gemini 2.0 Flash-Lite",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-lite",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.024996+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-preview-image-generation",
+      "name": "Gemini 2.0 Flash Preview Image Generation",
+      "provider": "google",
+      "description": "Gemini 2.0 Flash Preview Image Generation",
+      "context_length": 32768,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-preview-image-generation",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "batchGenerateContent"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.025002+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-lite-preview-02-05",
+      "name": "Gemini 2.0 Flash-Lite Preview 02-05",
+      "provider": "google",
+      "description": "Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-lite-preview-02-05",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "preview-02-05"
+      },
+      "updated_at": "2025-10-11 16:13:41.025008+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-lite-preview",
+      "name": "Gemini 2.0 Flash-Lite Preview",
+      "provider": "google",
+      "description": "Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-lite-preview",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "preview-02-05"
+      },
+      "updated_at": "2025-10-11 16:13:41.025014+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-pro-exp",
+      "name": "Gemini 2.0 Pro Experimental",
+      "provider": "google",
+      "description": "Experimental release (March 25th, 2025) of Gemini 2.5 Pro",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-pro-exp",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-exp-03-25"
+      },
+      "updated_at": "2025-10-11 16:13:41.025021+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-pro-exp-02-05",
+      "name": "Gemini 2.0 Pro Experimental 02-05",
+      "provider": "google",
+      "description": "Experimental release (March 25th, 2025) of Gemini 2.5 Pro",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-pro-exp-02-05",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-exp-03-25"
+      },
+      "updated_at": "2025-10-11 16:13:41.025027+00:00"
+    },
+    {
+      "model_id": "gemini-exp-1206",
+      "name": "Gemini Experimental 1206",
+      "provider": "google",
+      "description": "Experimental release (March 25th, 2025) of Gemini 2.5 Pro",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-exp-1206",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-exp-03-25"
+      },
+      "updated_at": "2025-10-11 16:13:41.025033+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-thinking-exp-01-21",
+      "name": "Gemini 2.5 Flash Preview 05-20",
+      "provider": "google",
+      "description": "Preview release (April 17th, 2025) of Gemini 2.5 Flash",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-thinking-exp-01-21",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-preview-05-20"
+      },
+      "updated_at": "2025-10-11 16:13:41.025039+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-thinking-exp",
+      "name": "Gemini 2.5 Flash Preview 05-20",
+      "provider": "google",
+      "description": "Preview release (April 17th, 2025) of Gemini 2.5 Flash",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-thinking-exp",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-preview-05-20"
+      },
+      "updated_at": "2025-10-11 16:13:41.025045+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-thinking-exp-1219",
+      "name": "Gemini 2.5 Flash Preview 05-20",
+      "provider": "google",
+      "description": "Preview release (April 17th, 2025) of Gemini 2.5 Flash",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-thinking-exp-1219",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-preview-05-20"
+      },
+      "updated_at": "2025-10-11 16:13:41.025050+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-preview-tts",
+      "name": "Gemini 2.5 Flash Preview TTS",
+      "provider": "google",
+      "description": "Gemini 2.5 Flash Preview TTS",
+      "context_length": 8192,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-preview-tts",
+        "output_token_limit": 16384,
+        "supported_methods": [
+          "countTokens",
+          "generateContent"
+        ],
+        "version": "gemini-2.5-flash-exp-tts-2025-05-19"
+      },
+      "updated_at": "2025-10-11 16:13:41.025056+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-pro-preview-tts",
+      "name": "Gemini 2.5 Pro Preview TTS",
+      "provider": "google",
+      "description": "Gemini 2.5 Pro Preview TTS",
+      "context_length": 8192,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-pro-preview-tts",
+        "output_token_limit": 16384,
+        "supported_methods": [
+          "countTokens",
+          "generateContent"
+        ],
+        "version": "gemini-2.5-pro-preview-tts-2025-05-19"
+      },
+      "updated_at": "2025-10-11 16:13:41.025062+00:00"
+    },
+    {
+      "model_id": "learnlm-2.0-flash-experimental",
+      "name": "LearnLM 2.0 Flash Experimental",
+      "provider": "google",
+      "description": "LearnLM 2.0 Flash Experimental",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/learnlm-2.0-flash-experimental",
+        "output_token_limit": 32768,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.025068+00:00"
+    },
+    {
+      "model_id": "gemma-3-1b-it",
+      "name": "Gemma 3 1B",
+      "provider": "google",
+      "description": "Google Gemini model: Gemma 3 1B",
+      "context_length": 32768,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemma-3-1b-it",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025074+00:00"
+    },
+    {
+      "model_id": "gemma-3-4b-it",
+      "name": "Gemma 3 4B",
+      "provider": "google",
+      "description": "Google Gemini model: Gemma 3 4B",
+      "context_length": 32768,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemma-3-4b-it",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025080+00:00"
+    },
+    {
+      "model_id": "gemma-3-12b-it",
+      "name": "Gemma 3 12B",
+      "provider": "google",
+      "description": "Google Gemini model: Gemma 3 12B",
+      "context_length": 32768,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemma-3-12b-it",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025085+00:00"
+    },
+    {
+      "model_id": "gemma-3-27b-it",
+      "name": "Gemma 3 27B",
+      "provider": "google",
+      "description": "Google Gemini model: Gemma 3 27B",
+      "context_length": 131072,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemma-3-27b-it",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025091+00:00"
+    },
+    {
+      "model_id": "gemma-3n-e4b-it",
+      "name": "Gemma 3n E4B",
+      "provider": "google",
+      "description": "Google Gemini model: Gemma 3n E4B",
+      "context_length": 8192,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemma-3n-e4b-it",
+        "output_token_limit": 2048,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025097+00:00"
+    },
+    {
+      "model_id": "gemma-3n-e2b-it",
+      "name": "Gemma 3n E2B",
+      "provider": "google",
+      "description": "Google Gemini model: Gemma 3n E2B",
+      "context_length": 8192,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemma-3n-e2b-it",
+        "output_token_limit": 2048,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025103+00:00"
+    },
+    {
+      "model_id": "gemini-flash-latest",
+      "name": "Gemini Flash Latest",
+      "provider": "google",
+      "description": "Latest release of Gemini Flash",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-flash-latest",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "Gemini Flash Latest"
+      },
+      "updated_at": "2025-10-11 16:13:41.025109+00:00"
+    },
+    {
+      "model_id": "gemini-flash-lite-latest",
+      "name": "Gemini Flash-Lite Latest",
+      "provider": "google",
+      "description": "Latest release of Gemini Flash-Lite",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-flash-lite-latest",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "Gemini Flash-Lite Latest"
+      },
+      "updated_at": "2025-10-11 16:13:41.025115+00:00"
+    },
+    {
+      "model_id": "gemini-pro-latest",
+      "name": "Gemini Pro Latest",
+      "provider": "google",
+      "description": "Latest release of Gemini Pro",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-pro-latest",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "Gemini Pro Latest"
+      },
+      "updated_at": "2025-10-11 16:13:41.025120+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-lite",
+      "name": "Gemini 2.5 Flash-Lite",
+      "provider": "google",
+      "description": "Stable version of Gemini 2.5 Flash-Lite, released in July of 2025",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-lite",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025126+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-image-preview",
+      "name": "Nano Banana",
+      "provider": "google",
+      "description": "Gemini 2.5 Flash Preview Image",
+      "context_length": 32768,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-image-preview",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.025132+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-image",
+      "name": "Nano Banana",
+      "provider": "google",
+      "description": "Gemini 2.5 Flash Preview Image",
+      "context_length": 32768,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-image",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.025138+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-preview-09-2025",
+      "name": "Gemini 2.5 Flash Preview Sep 2025",
+      "provider": "google",
+      "description": "Gemini 2.5 Flash Preview Sep 2025",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-preview-09-2025",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "Gemini 2.5 Flash Preview 09-2025"
+      },
+      "updated_at": "2025-10-11 16:13:41.025144+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-lite-preview-09-2025",
+      "name": "Gemini 2.5 Flash-Lite Preview Sep 2025",
+      "provider": "google",
+      "description": "Preview release (Septempber 25th, 2025) of Gemini 2.5 Flash-Lite",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-lite-preview-09-2025",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens",
+          "createCachedContent",
+          "batchGenerateContent"
+        ],
+        "version": "2.5-preview-09-25"
+      },
+      "updated_at": "2025-10-11 16:13:41.025149+00:00"
+    },
+    {
+      "model_id": "gemini-robotics-er-1.5-preview",
+      "name": "Gemini Robotics-ER 1.5 Preview",
+      "provider": "google",
+      "description": "Gemini Robotics-ER 1.5 Preview",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-robotics-er-1.5-preview",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "1.5-preview"
+      },
+      "updated_at": "2025-10-11 16:13:41.025155+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-computer-use-preview-10-2025",
+      "name": "Gemini 2.5 Computer Use Preview 10-2025",
+      "provider": "google",
+      "description": "Gemini 2.5 Computer Use Preview 10-2025",
+      "context_length": 131072,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-computer-use-preview-10-2025",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "generateContent",
+          "countTokens"
+        ],
+        "version": "Gemini 2.5 Computer Use Preview 10-2025"
+      },
+      "updated_at": "2025-10-11 16:13:41.025161+00:00"
+    },
+    {
+      "model_id": "embedding-001",
+      "name": "Embedding 001",
+      "provider": "google",
+      "description": "Obtain a distributed representation of a text.",
+      "context_length": 2048,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/embedding-001",
+        "output_token_limit": 1,
+        "supported_methods": [
+          "embedContent"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025167+00:00"
+    },
+    {
+      "model_id": "text-embedding-004",
+      "name": "Text Embedding 004",
+      "provider": "google",
+      "description": "Obtain a distributed representation of a text.",
+      "context_length": 2048,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/text-embedding-004",
+        "output_token_limit": 1,
+        "supported_methods": [
+          "embedContent"
+        ],
+        "version": "004"
+      },
+      "updated_at": "2025-10-11 16:13:41.025173+00:00"
+    },
+    {
+      "model_id": "gemini-embedding-exp-03-07",
+      "name": "Gemini Embedding Experimental 03-07",
+      "provider": "google",
+      "description": "Obtain a distributed representation of a text.",
+      "context_length": 8192,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-embedding-exp-03-07",
+        "output_token_limit": 1,
+        "supported_methods": [
+          "embedContent",
+          "countTextTokens",
+          "countTokens"
+        ],
+        "version": "exp-03-07"
+      },
+      "updated_at": "2025-10-11 16:13:41.025179+00:00"
+    },
+    {
+      "model_id": "gemini-embedding-exp",
+      "name": "Gemini Embedding Experimental",
+      "provider": "google",
+      "description": "Obtain a distributed representation of a text.",
+      "context_length": 8192,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-embedding-exp",
+        "output_token_limit": 1,
+        "supported_methods": [
+          "embedContent",
+          "countTextTokens",
+          "countTokens"
+        ],
+        "version": "exp-03-07"
+      },
+      "updated_at": "2025-10-11 16:13:41.025185+00:00"
+    },
+    {
+      "model_id": "gemini-embedding-001",
+      "name": "Gemini Embedding 001",
+      "provider": "google",
+      "description": "Obtain a distributed representation of a text.",
+      "context_length": 2048,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-embedding-001",
+        "output_token_limit": 1,
+        "supported_methods": [
+          "embedContent",
+          "countTextTokens",
+          "countTokens",
+          "asyncBatchEmbedContent"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025262+00:00"
+    },
+    {
+      "model_id": "aqa",
+      "name": "Model that performs Attributed Question Answering.",
+      "provider": "google",
+      "description": "Model trained to return answers to questions that are grounded in provided sources, along with estimating answerable probability.",
+      "context_length": 7168,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/aqa",
+        "output_token_limit": 1024,
+        "supported_methods": [
+          "generateAnswer"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.025270+00:00"
+    },
+    {
+      "model_id": "imagen-3.0-generate-002",
+      "name": "Imagen 3.0",
+      "provider": "google",
+      "description": "Vertex served Imagen 3.0 002 model",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/imagen-3.0-generate-002",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predict"
+        ],
+        "version": "002"
+      },
+      "updated_at": "2025-10-11 16:13:41.025280+00:00"
+    },
+    {
+      "model_id": "imagen-4.0-generate-preview-06-06",
+      "name": "Imagen 4 (Preview)",
+      "provider": "google",
+      "description": "Vertex served Imagen 4.0 model",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/imagen-4.0-generate-preview-06-06",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predict"
+        ],
+        "version": "01"
+      },
+      "updated_at": "2025-10-11 16:13:41.025286+00:00"
+    },
+    {
+      "model_id": "imagen-4.0-ultra-generate-preview-06-06",
+      "name": "Imagen 4 Ultra (Preview)",
+      "provider": "google",
+      "description": "Vertex served Imagen 4.0 ultra model",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/imagen-4.0-ultra-generate-preview-06-06",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predict"
+        ],
+        "version": "01"
+      },
+      "updated_at": "2025-10-11 16:13:41.067106+00:00"
+    },
+    {
+      "model_id": "imagen-4.0-generate-001",
+      "name": "Imagen 4",
+      "provider": "google",
+      "description": "Vertex served Imagen 4.0 model",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/imagen-4.0-generate-001",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predict"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.067122+00:00"
+    },
+    {
+      "model_id": "imagen-4.0-ultra-generate-001",
+      "name": "Imagen 4 Ultra",
+      "provider": "google",
+      "description": "Vertex served Imagen 4.0 ultra model",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/imagen-4.0-ultra-generate-001",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predict"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.067130+00:00"
+    },
+    {
+      "model_id": "imagen-4.0-fast-generate-001",
+      "name": "Imagen 4 Fast",
+      "provider": "google",
+      "description": "Vertex served Imagen 4.0 Fast model",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/imagen-4.0-fast-generate-001",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predict"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.067138+00:00"
+    },
+    {
+      "model_id": "veo-2.0-generate-001",
+      "name": "Veo 2",
+      "provider": "google",
+      "description": "Vertex served Veo 2 model. Access to this model requires billing to be enabled on the associated Google Cloud Platform account. Please visit https://console.cloud.google.com/billing to enable it.",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/veo-2.0-generate-001",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predictLongRunning"
+        ],
+        "version": "2.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.067145+00:00"
+    },
+    {
+      "model_id": "veo-3.0-generate-preview",
+      "name": "Veo 3",
+      "provider": "google",
+      "description": "Veo 3 preview.",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/veo-3.0-generate-preview",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predictLongRunning"
+        ],
+        "version": "3.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.067151+00:00"
+    },
+    {
+      "model_id": "veo-3.0-fast-generate-preview",
+      "name": "Veo 3 fast",
+      "provider": "google",
+      "description": "Veo 3 fast preview.",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/veo-3.0-fast-generate-preview",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predictLongRunning"
+        ],
+        "version": "3.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.067157+00:00"
+    },
+    {
+      "model_id": "veo-3.0-generate-001",
+      "name": "Veo 3",
+      "provider": "google",
+      "description": "Veo 3",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/veo-3.0-generate-001",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predictLongRunning"
+        ],
+        "version": "3.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.067164+00:00"
+    },
+    {
+      "model_id": "veo-3.0-fast-generate-001",
+      "name": "Veo 3 fast",
+      "provider": "google",
+      "description": "Veo 3 fast",
+      "context_length": 480,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/veo-3.0-fast-generate-001",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "predictLongRunning"
+        ],
+        "version": "3.0"
+      },
+      "updated_at": "2025-10-11 16:13:41.067170+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-preview-native-audio-dialog",
+      "name": "Gemini 2.5 Flash Preview Native Audio Dialog",
+      "provider": "google",
+      "description": "Gemini 2.5 Flash Preview Native Audio Dialog",
+      "context_length": 131072,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-preview-native-audio-dialog",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "countTokens",
+          "bidiGenerateContent"
+        ],
+        "version": "gemini-2.5-flash-preview-native-audio-dialog-2025-05-19"
+      },
+      "updated_at": "2025-10-11 16:13:41.067177+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-exp-native-audio-thinking-dialog",
+      "name": "Gemini 2.5 Flash Exp Native Audio Thinking Dialog",
+      "provider": "google",
+      "description": "Gemini 2.5 Flash Exp Native Audio Thinking Dialog",
+      "context_length": 131072,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-exp-native-audio-thinking-dialog",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "countTokens",
+          "bidiGenerateContent"
+        ],
+        "version": "gemini-2.5-flash-exp-native-audio-thinking-dialog-2025-05-19"
+      },
+      "updated_at": "2025-10-11 16:13:41.067184+00:00"
+    },
+    {
+      "model_id": "gemini-2.0-flash-live-001",
+      "name": "Gemini 2.0 Flash 001",
+      "provider": "google",
+      "description": "Gemini 2.0 Flash 001",
+      "context_length": 131072,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.0-flash-live-001",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "bidiGenerateContent",
+          "countTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.067190+00:00"
+    },
+    {
+      "model_id": "gemini-live-2.5-flash-preview",
+      "name": "Gemini Live 2.5 Flash Preview",
+      "provider": "google",
+      "description": "Gemini Live 2.5 Flash Preview",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-live-2.5-flash-preview",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "bidiGenerateContent",
+          "countTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.067197+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-live-preview",
+      "name": "Gemini 2.5 Flash Live Preview",
+      "provider": "google",
+      "description": "Gemini 2.5 Flash Live Preview",
+      "context_length": 1048576,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-live-preview",
+        "output_token_limit": 65536,
+        "supported_methods": [
+          "bidiGenerateContent",
+          "countTokens"
+        ],
+        "version": "001"
+      },
+      "updated_at": "2025-10-11 16:13:41.067203+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-native-audio-latest",
+      "name": "Gemini 2.5 Flash Native Audio Latest",
+      "provider": "google",
+      "description": "Latest release of Gemini 2.5 Flash Native Audio",
+      "context_length": 131072,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-native-audio-latest",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "countTokens",
+          "bidiGenerateContent"
+        ],
+        "version": "Gemini 2.5 Flash Native Audio Latest"
+      },
+      "updated_at": "2025-10-11 16:13:41.067210+00:00"
+    },
+    {
+      "model_id": "gemini-2.5-flash-native-audio-preview-09-2025",
+      "name": "Gemini 2.5 Flash Native Audio Preview 09-2025",
+      "provider": "google",
+      "description": "Gemini 2.5 Flash Native Audio Preview 09-2025",
+      "context_length": 131072,
+      "pricing": null,
+      "capabilities": {
+        "supports_vision": false,
+        "supports_function_calling": true,
+        "supports_streaming": true,
+        "modalities": [
+          "text"
+        ]
+      },
+      "metadata": {
+        "full_name": "models/gemini-2.5-flash-native-audio-preview-09-2025",
+        "output_token_limit": 8192,
+        "supported_methods": [
+          "countTokens",
+          "bidiGenerateContent"
+        ],
+        "version": "gemini-2.5-flash-preview-native-audio-dialog-2025-05-19"
+      },
+      "updated_at": "2025-10-11 16:13:41.067216+00:00"
+    }
+  ],
+  "generated_at": "2025-10-11T21:49:17.147969+00:00"
+}
