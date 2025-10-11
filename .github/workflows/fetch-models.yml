@@ -76,10 +76,13 @@ jobs:
             PROVIDER="all"
           fi
 
-          git commit -m "Update model catalog from $PROVIDER provider(s)
+          git commit -m "$(cat <<EOF
+Update model catalog from $PROVIDER provider(s)
 
 Automated update via GitHub Actions
-Triggered: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+Triggered: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
+EOF
+)"
 
           git push
 
