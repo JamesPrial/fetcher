@@ -16,6 +16,10 @@ class OpenAIProvider(BaseProvider):
     # Static pricing mapping (per million tokens) based on official pricing
     # Source: https://openai.com/api/pricing/
     PRICING_MAP = {
+        # GPT-5 series
+        "gpt-5": {"prompt": 1.25, "completion": 10.00},
+        "gpt-5-mini": {"prompt": 0.25, "completion": 2.00},
+        "gpt-5-nano": {"prompt": 0.10, "completion": 0.50},
         # GPT-4o series
         "gpt-4o": {"prompt": 2.50, "completion": 10.00},
         "gpt-4o-2024-11-20": {"prompt": 2.50, "completion": 10.00},
@@ -56,6 +60,28 @@ class OpenAIProvider(BaseProvider):
 
     # Capabilities mapping
     CAPABILITIES_MAP = {
+        # GPT-5 series
+        "gpt-5": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 272000,
+            "modalities": ["text", "image"],
+        },
+        "gpt-5-mini": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 272000,
+            "modalities": ["text", "image"],
+        },
+        "gpt-5-nano": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 272000,
+            "modalities": ["text", "image"],
+        },
         # GPT-4o series
         "gpt-4o": {
             "vision": True,
@@ -371,6 +397,8 @@ class OpenAIProvider(BaseProvider):
             # Generate description
             if is_fine_tuned:
                 description = f"Fine-tuned OpenAI model: {model_id}"
+            elif model_id.startswith("gpt-5"):
+                description = "OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities"
             elif model_id.startswith("gpt-4o"):
                 description = "OpenAI GPT-4o - flagship model with vision and function calling"
             elif model_id.startswith("o1"):

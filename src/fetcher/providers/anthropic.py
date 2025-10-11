@@ -17,6 +17,10 @@ class AnthropicProvider(BaseProvider):
     # Static pricing mapping (per million tokens) based on official pricing
     # Source: https://www.anthropic.com/pricing
     PRICING_MAP = {
+        # Claude 4.5 Sonnet
+        "claude-sonnet-4-5-20250929": {"prompt": 3.00, "completion": 15.00},
+        # Claude 4.1 Opus
+        "claude-opus-4-1-20250805": {"prompt": 15.00, "completion": 75.00},
         # Claude 3.5 Haiku
         "claude-3-5-haiku-20241022": {"prompt": 0.80, "completion": 4.00},
         # Claude 3.5 Sonnet
@@ -32,6 +36,22 @@ class AnthropicProvider(BaseProvider):
 
     # Capabilities mapping
     CAPABILITIES_MAP = {
+        # Claude 4.5 models
+        "claude-sonnet-4-5-20250929": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 200000,
+            "modalities": ["text", "image"],
+        },
+        # Claude 4.1 models
+        "claude-opus-4-1-20250805": {
+            "vision": True,
+            "function_calling": True,
+            "streaming": True,
+            "context_length": 200000,
+            "modalities": ["text", "image"],
+        },
         # Claude 3.5 models
         "claude-3-5-haiku-20241022": {
             "vision": False,
