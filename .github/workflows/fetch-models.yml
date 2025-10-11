@@ -90,6 +90,14 @@ jobs:
           echo "Generating interactive HTML viewer..."
           python scripts/generate_html.py
 
+      - name: Copy export files to docs
+        run: |
+          echo "Copying CSV and YAML files to docs directory..."
+          TIMESTAMP="${{ steps.timestamp.outputs.timestamp }}"
+          cp "data/${TIMESTAMP}.csv" docs/models.csv
+          cp "data/${TIMESTAMP}.yaml" docs/models.yaml
+          echo "Export files copied successfully"
+
       - name: Check for changes
         id: git-check
         run: |
