@@ -1,0 +1,650 @@
+#!/usr/bin/env python3
+"""
+Generate HTML viewer for AI model catalog.
+
+This script:
+1. Finds the latest timestamped JSON file in data/
+2. Copies it to docs/models.json
+3. Generates an interactive HTML viewer in docs/index.html
+"""
+
+import json
+import shutil
+from pathlib import Path
+from datetime import datetime
+
+
+def find_latest_json(data_dir: Path) -> Path:
+    """Find the most recent timestamped JSON file."""
+    json_files = sorted(data_dir.glob("*.json"), reverse=True)
+    if not json_files:
+        raise FileNotFoundError(f"No JSON files found in {data_dir}")
+    return json_files[0]
+
+
+def generate_html_template() -> str:
+    """Generate the HTML template with embedded CSS and JavaScript."""
+    return """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Catalog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent-color: #2563eb;
+            --accent-hover: #1d4ed8;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2d2d2d;
+            --bg-card: #252525;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border-color: #404040;
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .theme-toggle {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--text-primary);
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .controls {
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+
+        .filters {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            background: var(--accent-hover);
+            color: white;
+            border-color: var(--accent-hover);
+        }
+
+        .filter-btn.active {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        .sort-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .sort-label {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        select {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .table-container {
+            background: var(--bg-card);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: var(--bg-secondary);
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tr:hover {
+            background: var(--bg-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            margin: 2px;
+        }
+
+        .badge-provider {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .badge-success {
+            background: var(--success-color);
+            color: white;
+        }
+
+        .badge-warning {
+            background: var(--warning-color);
+            color: white;
+        }
+
+        .price {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+        }
+
+        .error {
+            background: var(--danger-color);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .table-container {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🤖 AI Model Catalog</h1>
+            <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <div class="stat-value" id="totalModels">-</div>
+                <div class="stat-label">Total Models</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="totalProviders">-</div>
+                <div class="stat-label">Providers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgPromptPrice">-</div>
+                <div class="stat-label">Avg Prompt Price ($/1M tokens)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="lastUpdated">-</div>
+                <div class="stat-label">Last Updated</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" id="searchBox" placeholder="Search models by name or description...">
+
+            <div class="filters">
+                <div class="filter-group" id="providerFilters"></div>
+                <div class="filter-group">
+                    <button class="filter-btn" data-filter="vision">👁️ Vision</button>
+                    <button class="filter-btn" data-filter="function-calling">⚙️ Function Calling</button>
+                    <button class="filter-btn" data-filter="streaming">🔄 Streaming</button>
+                </div>
+            </div>
+
+            <div class="sort-controls">
+                <span class="sort-label">Sort by:</span>
+                <select id="sortSelect">
+                    <option value="name">Name</option>
+                    <option value="provider">Provider</option>
+                    <option value="context">Context Length</option>
+                    <option value="prompt-price">Prompt Price</option>
+                    <option value="completion-price">Completion Price</option>
+                    <option value="updated">Last Updated</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-sort="name">Model Name</th>
+                        <th data-sort="provider">Provider</th>
+                        <th data-sort="context">Context</th>
+                        <th data-sort="prompt-price">Prompt Price</th>
+                        <th data-sort="completion-price">Completion Price</th>
+                        <th>Capabilities</th>
+                    </tr>
+                </thead>
+                <tbody id="modelsTable">
+                    <tr>
+                        <td colspan="6" class="loading">Loading models...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        let allModels = [];
+        let filteredModels = [];
+        let activeProviders = new Set();
+        let activeCapabilities = new Set();
+        let currentSort = 'name';
+
+        // Theme management
+        const themeToggle = document.getElementById('themeToggle');
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeButton();
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton();
+        });
+
+        function updateThemeButton() {
+            const theme = document.documentElement.getAttribute('data-theme');
+            themeToggle.textContent = theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode';
+        }
+
+        // Load models
+        async function loadModels() {
+            try {
+                const response = await fetch('models.json');
+                if (!response.ok) throw new Error('Failed to load models');
+
+                const data = await response.json();
+                allModels = data.models || [];
+                filteredModels = [...allModels];
+
+                updateStats(data);
+                createProviderFilters();
+                renderModels();
+            } catch (error) {
+                document.getElementById('modelsTable').innerHTML =
+                    `<tr><td colspan="6" class="error">Error loading models: ${error.message}</td></tr>`;
+            }
+        }
+
+        function updateStats(data) {
+            document.getElementById('totalModels').textContent = allModels.length;
+
+            const providers = new Set(allModels.map(m => m.provider));
+            document.getElementById('totalProviders').textContent = providers.size;
+
+            const avgPrice = allModels.reduce((sum, m) => sum + (m.pricing?.prompt || 0), 0) / allModels.length;
+            document.getElementById('avgPromptPrice').textContent = (avgPrice * 1000000).toFixed(4);
+
+            const latestUpdate = allModels.reduce((latest, m) => {
+                const date = new Date(m.updated_at);
+                return date > latest ? date : latest;
+            }, new Date(0));
+            document.getElementById('lastUpdated').textContent = latestUpdate.toLocaleDateString();
+        }
+
+        function createProviderFilters() {
+            const providers = [...new Set(allModels.map(m => m.provider))].sort();
+            const container = document.getElementById('providerFilters');
+
+            providers.forEach(provider => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.textContent = provider.charAt(0).toUpperCase() + provider.slice(1);
+                btn.dataset.provider = provider;
+                btn.addEventListener('click', () => toggleProviderFilter(provider, btn));
+                container.appendChild(btn);
+            });
+        }
+
+        function toggleProviderFilter(provider, btn) {
+            if (activeProviders.has(provider)) {
+                activeProviders.delete(provider);
+                btn.classList.remove('active');
+            } else {
+                activeProviders.add(provider);
+                btn.classList.add('active');
+            }
+            applyFilters();
+        }
+
+        // Capability filters
+        document.querySelectorAll('[data-filter]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                if (activeCapabilities.has(filter)) {
+                    activeCapabilities.delete(filter);
+                    btn.classList.remove('active');
+                } else {
+                    activeCapabilities.add(filter);
+                    btn.classList.add('active');
+                }
+                applyFilters();
+            });
+        });
+
+        // Search
+        document.getElementById('searchBox').addEventListener('input', (e) => {
+            applyFilters();
+        });
+
+        // Sort
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            renderModels();
+        });
+
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+
+            filteredModels = allModels.filter(model => {
+                // Provider filter
+                if (activeProviders.size > 0 && !activeProviders.has(model.provider)) {
+                    return false;
+                }
+
+                // Capability filters
+                if (activeCapabilities.has('vision') && !model.capabilities?.supports_vision) {
+                    return false;
+                }
+                if (activeCapabilities.has('function-calling') && !model.capabilities?.supports_function_calling) {
+                    return false;
+                }
+                if (activeCapabilities.has('streaming') && !model.capabilities?.supports_streaming) {
+                    return false;
+                }
+
+                // Search filter
+                if (searchTerm) {
+                    const searchableText = `${model.name} ${model.model_id} ${model.description || ''}`.toLowerCase();
+                    if (!searchableText.includes(searchTerm)) {
+                        return false;
+                    }
+                }
+
+                return true;
+            });
+
+            renderModels();
+        }
+
+        function sortModels() {
+            filteredModels.sort((a, b) => {
+                switch (currentSort) {
+                    case 'name':
+                        return a.name.localeCompare(b.name);
+                    case 'provider':
+                        return a.provider.localeCompare(b.provider);
+                    case 'context':
+                        return (b.context_length || 0) - (a.context_length || 0);
+                    case 'prompt-price':
+                        return (a.pricing?.prompt || 0) - (b.pricing?.prompt || 0);
+                    case 'completion-price':
+                        return (a.pricing?.completion || 0) - (b.pricing?.completion || 0);
+                    case 'updated':
+                        return new Date(b.updated_at) - new Date(a.updated_at);
+                    default:
+                        return 0;
+                }
+            });
+        }
+
+        function renderModels() {
+            sortModels();
+            const tbody = document.getElementById('modelsTable');
+
+            if (filteredModels.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" class="loading">No models match your filters</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = filteredModels.map(model => {
+                const capabilities = [];
+                if (model.capabilities?.supports_vision) capabilities.push('<span class="badge badge-success">Vision</span>');
+                if (model.capabilities?.supports_function_calling) capabilities.push('<span class="badge badge-success">Functions</span>');
+                if (model.capabilities?.supports_streaming) capabilities.push('<span class="badge badge-warning">Streaming</span>');
+
+                const promptPrice = ((model.pricing?.prompt || 0) * 1000000).toFixed(4);
+                const completionPrice = ((model.pricing?.completion || 0) * 1000000).toFixed(4);
+
+                return `
+                    <tr>
+                        <td><strong>${model.name}</strong><br><small style="color: var(--text-secondary)">${model.model_id}</small></td>
+                        <td><span class="badge badge-provider">${model.provider}</span></td>
+                        <td>${(model.context_length || 0).toLocaleString()}</td>
+                        <td class="price">$${promptPrice}</td>
+                        <td class="price">$${completionPrice}</td>
+                        <td>${capabilities.join(' ')}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Initialize
+        loadModels();
+    </script>
+</body>
+</html>
+"""
+
+
+def main():
+    """Main execution function."""
+    # Set up paths
+    repo_root = Path(__file__).parent.parent
+    data_dir = repo_root / "data"
+    docs_dir = repo_root / "docs"
+
+    print("🔍 Finding latest model data...")
+    latest_json = find_latest_json(data_dir)
+    print(f"✅ Found: {latest_json.name}")
+
+    # Create docs directory
+    docs_dir.mkdir(exist_ok=True)
+    print(f"📁 Created docs directory: {docs_dir}")
+
+    # Copy latest JSON to docs/models.json
+    target_json = docs_dir / "models.json"
+    shutil.copy2(latest_json, target_json)
+    print(f"📄 Copied to: {target_json}")
+
+    # Generate HTML
+    html_path = docs_dir / "index.html"
+    html_content = generate_html_template()
+    html_path.write_text(html_content, encoding="utf-8")
+    print(f"✨ Generated HTML viewer: {html_path}")
+
+    # Display stats
+    with open(target_json, 'r') as f:
+        data = json.load(f)
+        model_count = len(data.get('models', []))
+        providers = set(m['provider'] for m in data.get('models', []))
+        print(f"\n📊 Stats:")
+        print(f"   Models: {model_count}")
+        print(f"   Providers: {', '.join(sorted(providers))}")
+
+    print("\n✅ HTML generation complete!")
+    print(f"   View locally: file://{html_path.absolute()}")
+    print(f"   After pushing, view at: https://jamesprial.github.io/fetcher/")
+
+
+if __name__ == "__main__":
+    main()
