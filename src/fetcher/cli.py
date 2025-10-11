@@ -15,18 +15,24 @@ def get_api_keys() -> Dict[str, str]:
     """Get API keys from environment variables."""
     api_keys = {}
     # Check for common provider API keys
-    for provider in ["openrouter", "openai", "anthropic"]:
+    for provider in ["openrouter", "openai", "anthropic", "google"]:
         env_var = f"{provider.upper()}_API_KEY"
         key = os.getenv(env_var)
         if key:
             api_keys[provider] = key
+
+    # Also check for GEMINI_API_KEY as an alias for Google
+    gemini_key = os.getenv("GEMINI_API_KEY")
+    if gemini_key and "google" not in api_keys:
+        api_keys["google"] = gemini_key
+
     return api_keys
 
 
 def get_base_urls() -> Dict[str, str]:
     """Get base URLs from environment variables."""
     base_urls = {}
-    for provider in ["openrouter", "openai", "anthropic"]:
+    for provider in ["openrouter", "openai", "anthropic", "google"]:
         env_var = f"{provider.upper()}_BASE_URL"
         url = os.getenv(env_var)
         if url:
@@ -65,7 +71,7 @@ def cli():
 @click.option(
     "--provider",
     "-p",
-    type=click.Choice(["openrouter", "anthropic", "openai", "all"], case_sensitive=False),
+    type=click.Choice(["openrouter", "anthropic", "openai", "google", "all"], case_sensitive=False),
     default="openrouter",
     help="Provider to fetch from",
 )
