@@ -1,0 +1,49 @@
+{
+  "api_version": "1.0.0",
+  "overall": {
+    "total_models": 479,
+    "total_providers": 4,
+    "models_with_vision": 129,
+    "models_with_function_calling": 278,
+    "models_with_streaming": 425,
+    "avg_context_length": 237905.6064814815,
+    "avg_prompt_price": 2.071680912327044e-06,
+    "avg_prompt_price_per_1m_tokens": 2.071680912327044
+  },
+  "by_provider": {
+    "openrouter": {
+      "model_count": 330,
+      "models_with_vision": 101,
+      "models_with_function_calling": 183,
+      "models_with_streaming": 330,
+      "avg_context_length": 184716.28181818183,
+      "avg_prompt_price": 1.919854424892086e-06
+    },
+    "anthropic": {
+      "model_count": 10,
+      "models_with_vision": 9,
+      "models_with_function_calling": 10,
+      "models_with_streaming": 10,
+      "avg_context_length": 200000.0,
+      "avg_prompt_price": 6.105000000000001e-06
+    },
+    "openai": {
+      "model_count": 73,
+      "models_with_vision": 15,
+      "models_with_function_calling": 19,
+      "models_with_streaming": 19,
+      "avg_context_length": 235773.57692307694,
+      "avg_prompt_price": 2.403846153846154e-06
+    },
+    "google": {
+      "model_count": 66,
+      "models_with_vision": 4,
+      "models_with_function_calling": 66,
+      "models_with_streaming": 66,
+      "avg_context_length": 510435.3939393939,
+      "avg_prompt_price": 3.8125000000000006e-07
+    }
+  },
+  "last_updated": "2025-10-11 16:13:41.068461",
+  "generated_at": "2025-10-11T21:49:17.194999+00:00"
+}

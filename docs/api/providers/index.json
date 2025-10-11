@@ -1,0 +1,26 @@
+{
+  "api_version": "1.0.0",
+  "providers": [
+    {
+      "name": "anthropic",
+      "model_count": 10,
+      "endpoint": "providers/anthropic.json"
+    },
+    {
+      "name": "google",
+      "model_count": 66,
+      "endpoint": "providers/google.json"
+    },
+    {
+      "name": "openai",
+      "model_count": 73,
+      "endpoint": "providers/openai.json"
+    },
+    {
+      "name": "openrouter",
+      "model_count": 330,
+      "endpoint": "providers/openrouter.json"
+    }
+  ],
+  "generated_at": "2025-10-11T21:49:17.152712+00:00"
+}
