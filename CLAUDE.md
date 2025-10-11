@@ -8,7 +8,7 @@ ALWAYS use the context7 MCP for Inspect AI, library id = /websites/inspect_aisi_
 
 ## Version Control
 
-ALWAYS use agent-git-ops to checkout a new branch before beginning implementing anything, and when you finish, use agent-gh-cli to commit -> open pull request and switch back to main.
+ALWAYS use agent-git-ops to checkout a new branch before beginning implementing anything, and when you finish, use agent-gh-cli to commit and merge with dev-> open pull request to main and switch back to main.
 
 ## Context Management and Parallelization
 
