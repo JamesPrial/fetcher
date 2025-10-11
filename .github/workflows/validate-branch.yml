@@ -1,0 +1,42 @@
+---
+name: Validate PR Source Branch
+
+'on':
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+
+jobs:
+  validate-source-branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check source branch
+        run: |
+          SOURCE_BRANCH="${{ github.head_ref }}"
+          TARGET_BRANCH="${{ github.base_ref }}"
+
+          echo "Source branch: $SOURCE_BRANCH"
+          echo "Target branch: $TARGET_BRANCH"
+
+          if [ "$TARGET_BRANCH" = "main" ]; then
+            if [ "$SOURCE_BRANCH" = "dev" ]; then
+              echo "✅ SUCCESS: PR from 'dev' branch to 'main' is allowed"
+              exit 0
+            else
+              echo "❌ ERROR: PRs to 'main' must come from 'dev' branch"
+              echo ""
+              echo "Current source branch: $SOURCE_BRANCH"
+              echo "Required source branch: dev"
+              echo ""
+              echo "Please merge your changes to 'dev' first, then create a PR from 'dev' to 'main'."
+              echo ""
+              echo "Workflow:"
+              echo "1. Merge your feature branch to 'dev'"
+              echo "2. Create a new PR from 'dev' to 'main'"
+              echo ""
+              echo "See CONTRIBUTING.md for detailed branching workflow."
+              exit 1
+            fi
+          fi
