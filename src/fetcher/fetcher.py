@@ -73,27 +73,19 @@ class Fetcher:
 
         if provider == "openrouter" or provider == "all":
             api_key = self._get_api_key("openrouter")
-            providers_to_fetch.append(
-                OpenRouterProvider(api_key=api_key, timeout=self._timeout)
-            )
+            providers_to_fetch.append(OpenRouterProvider(api_key=api_key, timeout=self._timeout))
 
         if provider == "anthropic" or provider == "all":
             api_key = self._get_api_key("anthropic")
-            providers_to_fetch.append(
-                AnthropicProvider(api_key=api_key, timeout=self._timeout)
-            )
+            providers_to_fetch.append(AnthropicProvider(api_key=api_key, timeout=self._timeout))
 
         if provider == "openai" or provider == "all":
             api_key = self._get_api_key("openai")
-            providers_to_fetch.append(
-                OpenAIProvider(api_key=api_key, timeout=self._timeout)
-            )
+            providers_to_fetch.append(OpenAIProvider(api_key=api_key, timeout=self._timeout))
 
         if provider == "google" or provider == "all":
             api_key = self._get_api_key("google")
-            providers_to_fetch.append(
-                GoogleProvider(api_key=api_key, timeout=self._timeout)
-            )
+            providers_to_fetch.append(GoogleProvider(api_key=api_key, timeout=self._timeout))
 
         # Fetch from all specified providers
         all_models = []
@@ -127,9 +119,7 @@ class Fetcher:
 
         return catalog, summary
 
-    def list(
-        self, provider: Optional[str] = None, limit: Optional[int] = None
-    ) -> List[ModelInfo]:
+    def list(self, provider: Optional[str] = None, limit: Optional[int] = None) -> List[ModelInfo]:
         """
         List fetched models.
 
@@ -212,14 +202,10 @@ class Fetcher:
 
         # Context length filters
         if min_context is not None:
-            models = [
-                m for m in models if m.context_length and m.context_length >= min_context
-            ]
+            models = [m for m in models if m.context_length and m.context_length >= min_context]
 
         if max_context is not None:
-            models = [
-                m for m in models if m.context_length and m.context_length <= max_context
-            ]
+            models = [m for m in models if m.context_length and m.context_length <= max_context]
 
         # Pricing filters
         if max_prompt_price is not None:
@@ -240,9 +226,7 @@ class Fetcher:
 
         # Capability filters
         if supports_vision is not None:
-            models = [
-                m for m in models if m.capabilities.supports_vision == supports_vision
-            ]
+            models = [m for m in models if m.capabilities.supports_vision == supports_vision]
 
         if supports_function_calling is not None:
             models = [
@@ -252,18 +236,12 @@ class Fetcher:
             ]
 
         if supports_streaming is not None:
-            models = [
-                m
-                for m in models
-                if m.capabilities.supports_streaming == supports_streaming
-            ]
+            models = [m for m in models if m.capabilities.supports_streaming == supports_streaming]
 
         # Modality filter (must support all specified modalities)
         if modalities:
             models = [
-                m
-                for m in models
-                if all(mod in m.capabilities.modalities for mod in modalities)
+                m for m in models if all(mod in m.capabilities.modalities for mod in modalities)
             ]
 
         # Apply limit
@@ -272,9 +250,7 @@ class Fetcher:
 
         return models
 
-    def export(
-        self, format: str = "json", output_path: Optional[Path] = None
-    ) -> Path:
+    def export(self, format: str = "json", output_path: Optional[Path] = None) -> Path:
         """
         Export catalog to different formats.
 
