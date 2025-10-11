@@ -167,8 +167,8 @@ class TestGoogleProvider:
 
         # Check pricing (from static mapping)
         assert model.pricing is not None
-        assert model.pricing.prompt == 0.075
-        assert model.pricing.completion == 0.30
+        assert model.pricing.prompt == 0.000000075
+        assert model.pricing.completion == 0.0000003
         assert model.pricing.currency == "USD"
 
     def test_parse_model_with_capabilities(self):

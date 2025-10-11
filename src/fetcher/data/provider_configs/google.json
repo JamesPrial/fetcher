@@ -1,125 +1,257 @@
 {
   "pricing": {
-    "gemini-2.5-pro": {"prompt": 1.25, "completion": 5.0},
-    "gemini-2.5-pro-preview": {"prompt": 1.25, "completion": 5.0},
-    "gemini-2.5-pro-latest": {"prompt": 1.25, "completion": 5.0},
-    "gemini-2.5-flash": {"prompt": 0.075, "completion": 0.3},
-    "gemini-2.5-flash-preview": {"prompt": 0.075, "completion": 0.3},
-    "gemini-2.5-flash-latest": {"prompt": 0.075, "completion": 0.3},
-    "gemini-2.0-flash": {"prompt": 0.1, "completion": 0.4},
-    "gemini-2.0-flash-exp": {"prompt": 0.1, "completion": 0.4},
-    "gemini-2.0-flash-preview": {"prompt": 0.1, "completion": 0.4},
-    "gemini-1.5-pro": {"prompt": 1.25, "completion": 5.0},
-    "gemini-1.5-pro-latest": {"prompt": 1.25, "completion": 5.0},
-    "gemini-1.5-flash": {"prompt": 0.075, "completion": 0.3},
-    "gemini-1.5-flash-latest": {"prompt": 0.075, "completion": 0.3},
-    "gemini-1.5-flash-8b": {"prompt": 0.0375, "completion": 0.15},
-    "gemini-1.5-flash-8b-latest": {"prompt": 0.0375, "completion": 0.15},
-    "gemini-1.0-pro": {"prompt": 0.5, "completion": 1.5},
-    "gemini-1.0-pro-latest": {"prompt": 0.5, "completion": 1.5}
+    "gemini-2.5-pro": {
+      "prompt": 1.25e-06,
+      "completion": 5e-06
+    },
+    "gemini-2.5-pro-preview": {
+      "prompt": 1.25e-06,
+      "completion": 5e-06
+    },
+    "gemini-2.5-pro-latest": {
+      "prompt": 1.25e-06,
+      "completion": 5e-06
+    },
+    "gemini-2.5-flash": {
+      "prompt": 7.5e-08,
+      "completion": 3e-07
+    },
+    "gemini-2.5-flash-preview": {
+      "prompt": 7.5e-08,
+      "completion": 3e-07
+    },
+    "gemini-2.5-flash-latest": {
+      "prompt": 7.5e-08,
+      "completion": 3e-07
+    },
+    "gemini-2.0-flash": {
+      "prompt": 1.0000000000000001e-07,
+      "completion": 4.0000000000000003e-07
+    },
+    "gemini-2.0-flash-exp": {
+      "prompt": 1.0000000000000001e-07,
+      "completion": 4.0000000000000003e-07
+    },
+    "gemini-2.0-flash-preview": {
+      "prompt": 1.0000000000000001e-07,
+      "completion": 4.0000000000000003e-07
+    },
+    "gemini-1.5-pro": {
+      "prompt": 1.25e-06,
+      "completion": 5e-06
+    },
+    "gemini-1.5-pro-latest": {
+      "prompt": 1.25e-06,
+      "completion": 5e-06
+    },
+    "gemini-1.5-flash": {
+      "prompt": 7.5e-08,
+      "completion": 3e-07
+    },
+    "gemini-1.5-flash-latest": {
+      "prompt": 7.5e-08,
+      "completion": 3e-07
+    },
+    "gemini-1.5-flash-8b": {
+      "prompt": 3.75e-08,
+      "completion": 1.5e-07
+    },
+    "gemini-1.5-flash-8b-latest": {
+      "prompt": 3.75e-08,
+      "completion": 1.5e-07
+    },
+    "gemini-1.0-pro": {
+      "prompt": 5e-07,
+      "completion": 1.5e-06
+    },
+    "gemini-1.0-pro-latest": {
+      "prompt": 5e-07,
+      "completion": 1.5e-06
+    }
   },
   "capabilities": {
     "gemini-2.5-pro": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-2.5-pro-preview": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-2.5-pro-latest": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-2.5-flash": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-2.5-flash-preview": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-2.5-flash-latest": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-2.0-flash": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-2.0-flash-exp": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-2.0-flash-preview": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-1.5-pro": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-1.5-pro-latest": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-1.5-flash": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-1.5-flash-latest": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-1.5-flash-8b": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-1.5-flash-8b-latest": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image", "video", "audio"]
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ]
     },
     "gemini-1.0-pro": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image"]
+      "modalities": [
+        "text",
+        "image"
+      ]
     },
     "gemini-1.0-pro-latest": {
       "vision": true,
       "function_calling": true,
       "streaming": true,
-      "modalities": ["text", "image"]
+      "modalities": [
+        "text",
+        "image"
+      ]
     }
   }
 }
