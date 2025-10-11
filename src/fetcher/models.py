@@ -54,7 +54,7 @@ class ProviderInfo(BaseModel):
     name: str = Field(..., description="Provider name")
     model_count: int = Field(0, description="Number of models from this provider")
     last_updated: datetime = Field(
-        default_factory=datetime.now, description="Last fetch timestamp"
+        default_factory=lambda: datetime.now(timezone.utc), description="Last fetch timestamp"
     )
 
     class Config:
@@ -69,7 +69,7 @@ class ModelCatalog(BaseModel):
         default_factory=dict, description="Provider information"
     )
     last_updated: datetime = Field(
-        default_factory=datetime.now, description="Catalog last update timestamp"
+        default_factory=lambda: datetime.now(timezone.utc), description="Catalog last update timestamp"
     )
 
     class Config:
@@ -84,8 +84,8 @@ class ModelCatalog(BaseModel):
             self.providers[model.provider] = ProviderInfo(name=model.provider, model_count=0)
 
         self.providers[model.provider].model_count += 1
-        self.providers[model.provider].last_updated = datetime.now()
-        self.last_updated = datetime.now()
+        self.providers[model.provider].last_updated = datetime.now(timezone.utc)
+        self.last_updated = datetime.now(timezone.utc)
 
     def get_models_by_provider(self, provider: str) -> List[ModelInfo]:
         """Get all models from a specific provider."""
