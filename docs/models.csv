@@ -89,7 +89,7 @@ anthropic/claude-fable-5.1,Anthropic: Claude Fable 5.1,openrouter,1000000,1e-05,
 anthropic/claude-fable-5.1:batch,Anthropic: Claude Fable 5.1 (batch),openrouter,1000000,5e-06,2.5e-05,True,True,"text,image,file->text","Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work: long code refactors, front-end and visual..."
 ibm-granite/granite-4.2-8b,IBM: Granite 4.2 8B,openrouter,131072,6e-08,2.5e-07,False,True,"text,text->text","Granite 4.2 8B is a dense reasoning model from IBM. It is suited for mathematics, code generation, multilingual dialogue, and agentic workflows that need multi-step reasoning. It supports full, low-effort,..."
 tencent/hy4-preview,Tencent: Hy4 preview,openrouter,1048576,8.34e-07,2.501e-06,False,True,"text,text->text","Tencent: Hy4 preview is a mixture-of-experts model from Tencent, with 49B active parameters out of 770B total. It is designed for coding agents, complex tool-use workflows, and productivity tasks that..."
-~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,openrouter,1048576,2.8847e-08,5.4046e-08,True,True,"text,image,video->text",This model always redirects to the latest model in the GLM Flash family.
+~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,openrouter,1048576,1.91e-08,1.352e-07,True,True,"text,image,video->text",This model always redirects to the latest model in the GLM Flash family.
 qwen/qwen3.8-flash,Qwen: Qwen3.8 Flash,openrouter,1000000,1.5e-07,4.7e-07,True,True,"text,image,video->text","Qwen3.8 Flash is a multimodal reasoning model from Alibaba. It is suited for coding assistance, agentic workflows, visual understanding, document and codebase analysis, desktop interaction, chart analysis, and long-video analysis."
 z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,openrouter,1048576,1.5e-07,5e-07,True,True,"text,image,video->text",GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...
 z-ai/glm-5.3-flash:batch,Z.ai: GLM 5.3 Flash (batch),openrouter,1048576,5e-08,1.8e-07,True,True,"text,image,video->text",GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...
@@ -97,7 +97,7 @@ meta/muse-spark-1.2-contributor,Meta: Muse Spark 1.2 Contributor,openrouter,1048
 deepseek/deepseek-v4-flash-vision-exp,DeepSeek: DeepSeek V4 Flash Vision Exp,openrouter,1048576,2.156e-07,6.468e-07,True,True,"text,image->text","DeepSeek V4 Flash Vision Exp is an experimental vision-enabled version of [DeepSeek V4 Flash 0731](https://openrouter.ai/deepseek/deepseek-v4-flash-0731) from DeepSeek, adding image understanding while matching the base model on text capabilities including agents,..."
 tencent/hy-mt2-1.8b,Tencent: Hy-MT2-1.8B,openrouter,8192,4.4e-08,1.77e-07,False,False,"text,text->text","Hy-MT2-1.8B is a compact 1.8B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided..."
 tencent/hy-mt2-30b-a3b,Tencent: Hy-MT2-30B-A3B,openrouter,8192,7.4e-08,2.95e-07,False,False,"text,text->text","Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and..."
-~z-ai/glm-latest,Z.ai: GLM Latest,openrouter,1048576,7.9e-08,1.4e-06,False,True,"text,text->text",This model always redirects to the latest GLM model from Z.ai.
+~z-ai/glm-latest,Z.ai: GLM Latest,openrouter,1048576,7.03e-08,4.3843e-06,False,True,"text,text->text",This model always redirects to the latest GLM model from Z.ai.
 tencent/hy-mt2-7b,Tencent: Hy-MT2-7B,openrouter,8192,7.4e-08,2.95e-07,False,False,"text,text->text","Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation."
 z-ai/glm-5.3,Z.ai: GLM 5.3,openrouter,1048576,7.9e-08,1.4e-06,False,True,"text,text->text","GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves..."
 z-ai/glm-5.3:batch,Z.ai: GLM 5.3 (batch),openrouter,1048576,4.5e-07,2e-06,False,True,"text,text->text","GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context window, and improves..."
@@ -110,6 +110,7 @@ qwen/qwen3.8-2.4t-a95b,Qwen: Qwen3.8 2.4T A95B,openrouter,1048576,2e-06,6e-06,Fa
 bytedance-seed/seed-2.0-code,ByteDance Seed: Seed-2.0-Code,openrouter,262144,5e-07,3e-06,True,True,"text,image,video->text","Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude..."
 deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,openrouter,1048576,6.6e-07,1.98e-06,False,True,"text,text->text",DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro.
 x-ai/grok-4.6,SpaceXAI: Grok 4.6,openrouter,500000,2e-06,6e-06,True,True,"text,image,file->text","Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7)."
+liquid/lfm-2.5-2.6b,LiquidAI: LFM2.5-2.6B,openrouter,128000,3.5e-07,5e-07,False,True,"text,text->text","LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or..."
 liquid/lfm-2.5-2.6b:free,LiquidAI: LFM2.5-2.6B (free),openrouter,65536,0.0,0.0,False,True,"text,text->text","LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or..."
 nvidia/nemotron-3.5-lightning,NVIDIA: Nemotron 3.5 Lightning,openrouter,262144,7e-08,2e-07,False,True,"text,text->text","NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that..."
 nvidia/nemotron-3.5-lightning:free,NVIDIA: Nemotron 3.5 Lightning (free),openrouter,1000000,0.0,0.0,False,True,"text,text->text","NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that..."
@@ -118,7 +119,7 @@ upstage/solar-pro4,Upstage: Solar Pro 4,openrouter,524288,1.5e-07,6e-07,False,Tr
 meta/muse-glimmer-30b,Meta: Muse Glimmer 30B,openrouter,131072,3e-07,1.2e-06,True,True,"text,image->text","Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware. It is suited for long-horizon..."
 meta/muse-spark-1.2,Meta: Muse Spark 1.2,openrouter,1048576,1.25e-06,4.25e-06,True,True,"text,image,file,video->text","Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, and PDF documents, returns text, and offers a 1M-token context window...."
 ~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,openrouter,1048576,4.22e-08,1.694e-07,False,True,"text,text->text",This model always redirects to the latest model in the DeepSeek V4 Flash family.
-deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,openrouter,1048576,4.444e-08,1.3332e-07,False,True,"text,text->text","DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows...."
+deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,openrouter,1048576,4.22e-08,1.694e-07,False,True,"text,text->text","DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows...."
 thinkingmachines/inkling-small,Thinking Machines: Inkling Small,openrouter,524288,4.5e-07,1.2e-06,True,True,"text,image,audio->text","Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of..."
 thinkingmachines/inkling-small:free,Thinking Machines: Inkling Small (free),openrouter,1048576,0.0,0.0,True,True,"text,image,audio->text","Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of..."
 qwen/qwen3.7-flash,Qwen: Qwen3.7 Flash,openrouter,1000000,3e-08,1.3e-07,True,True,"text,image,video->text","Qwen3.7 Flash is a vision-language reasoning model from Alibaba. It is suited for multimodal agents, visual coding, search, and computer interaction, with strengths in object recognition, spatial understanding, and real-world..."
@@ -196,7 +197,7 @@ nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,NVIDIA: Nemotron 3 Nano Omni 
 ~anthropic/claude-haiku-latest,Anthropic: Claude Haiku Latest,openrouter,1000000,1e-07,5e-07,True,True,"text,image,file->text",This model always redirects to the latest model in the Claude Haiku family.
 ~openai/gpt-mini-latest,OpenAI: GPT Mini Latest,openrouter,400000,7.5e-07,4.5e-06,True,True,"text,image,file->text",This model always redirects to the latest model in the GPT Mini family.
 ~google/gemini-pro-latest,Google: Gemini Pro Latest,openrouter,1048576,2e-06,1e-05,True,True,"text,image,file,audio,video->text",This model always redirects to the latest model in the Gemini Pro family.
-~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,openrouter,1048576,2.38e-07,1.6e-05,True,True,"text,image,video->text",This model always redirects to the latest model in the Kimi family.
+~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,openrouter,1048576,1.9e-07,8.94e-06,True,True,"text,image,video->text",This model always redirects to the latest model in the Kimi family.
 ~google/gemini-flash-latest,Google: Gemini Flash Latest,openrouter,1048576,7.5e-07,3.75e-06,True,True,"text,image,file,audio,video->text",This model always redirects to the latest model in the Gemini Flash family.
 ~anthropic/claude-sonnet-latest,Anthropic: Claude Sonnet Latest,openrouter,1000000,2e-06,1e-05,True,True,"text,image,file->text",This model always redirects to the latest model in the Claude Sonnet family.
 qwen/qwen3.5-plus-20260420,Qwen: Qwen3.5 Plus 2026-04-20,openrouter,1000000,3e-07,1.8e-06,True,True,"text,image,video->text","Qwen3.5 Plus (April 2026) is a large-scale multimodal language model from Alibaba. It accepts text, image, and video input and produces text output, with a 1M token context window. This..."
@@ -207,7 +208,7 @@ openai/gpt-5.5-pro,OpenAI: GPT-5.5 Pro,openrouter,1050000,3e-05,0.00018,True,Tru
 openai/gpt-5.5-pro:batch,OpenAI: GPT-5.5 Pro (batch),openrouter,1050000,1.5e-05,9e-05,True,True,"text,image,file->text","GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for..."
 openai/gpt-5.5,OpenAI: GPT-5.5,openrouter,1050000,5e-06,3e-05,True,True,"text,image,file->text","GPT-5.5 is OpenAI’s frontier model designed for complex professional workloads, building on GPT-5.4 with stronger reasoning, higher reliability, and improved token efficiency on hard tasks. It features a 1M+ token..."
 openai/gpt-5.5:batch,OpenAI: GPT-5.5 (batch),openrouter,1050000,2.5e-06,1.5e-05,True,True,"text,image,file->text","GPT-5.5 is OpenAI’s frontier model designed for complex professional workloads, building on GPT-5.4 with stronger reasoning, higher reliability, and improved token efficiency on hard tasks. It features a 1M+ token..."
-deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,openrouter,1048576,6.52152e-07,1.304304e-06,False,True,"text,text->text","DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
+deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,openrouter,1048576,2.088e-07,4.176e-07,False,True,"text,text->text","DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
 deepseek/deepseek-v4-flash,DeepSeek: DeepSeek V4 Flash 0423,openrouter,1048576,9.1e-08,1.82e-07,False,True,"text,text->text","DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and..."
 tencent/hy3-preview,Tencent: Hy3 preview,openrouter,262144,1.8e-07,6e-07,False,True,"text,text->text","Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to..."
 xiaomi/mimo-v2.5-pro,Xiaomi: MiMo-V2.5-Pro,openrouter,1050000,3.045e-07,6.09e-07,False,True,"text,text->text","MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro...."
@@ -264,7 +265,7 @@ anthropic/claude-sonnet-4.6,Anthropic: Claude Sonnet 4.6,openrouter,1000000,3e-0
 anthropic/claude-sonnet-4.6:batch,Anthropic: Claude Sonnet 4.6 (batch),openrouter,1000000,1.5e-06,7.5e-06,True,True,"text,image,file->text","Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with..."
 qwen/qwen3.5-plus-02-15,Qwen: Qwen3.5 Plus 2026-02-15,openrouter,1000000,2.6e-07,1.56e-06,True,True,"text,image,video->text","The Qwen3.5 native vision-language series Plus models are built on a hybrid architecture that integrates linear attention mechanisms with sparse mixture-of-experts models, achieving higher inference efficiency. In a variety of..."
 qwen/qwen3.5-397b-a17b,Qwen: Qwen3.5 397B A17B,openrouter,262144,5e-07,3.6e-06,True,True,"text,image,video->text","The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers..."
-minimax/minimax-m2.5,MiniMax: MiniMax M2.5,openrouter,204800,2.7e-07,9.5e-07,False,True,"text,text->text","MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1..."
+minimax/minimax-m2.5,MiniMax: MiniMax M2.5,openrouter,204800,3e-07,1.2e-06,False,True,"text,text->text","MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1..."
 z-ai/glm-5,Z.ai: GLM 5,openrouter,204800,1e-06,3.2e-06,False,True,"text,text->text","GLM-5 is Z.ai’s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading..."
 anthropic/claude-opus-4.6,Anthropic: Claude Opus 4.6,openrouter,1000000,5e-06,2.5e-05,True,True,"text,image,file->text","Opus 4.6 is Anthropic’s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective..."
 anthropic/claude-opus-4.6:batch,Anthropic: Claude Opus 4.6 (batch),openrouter,1000000,2.5e-06,1.25e-05,True,True,"text,image,file->text","Opus 4.6 is Anthropic’s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective..."
@@ -441,7 +442,7 @@ anthracite-org/magnum-v4-72b,Magnum v4 72B,openrouter,32768,2.5e-06,5e-06,False,
 The model is fine-tuned on top of [Qwen2.5 72B](https://openrouter.ai/qwen/qwen-2.5-72b-instruct)."
 qwen/qwen-2.5-7b-instruct,Qwen: Qwen2.5 7B Instruct,openrouter,32768,1e-07,2e-07,False,True,"text,text->text",Qwen2.5 7B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2: - Significantly more knowledge and has greatly improved capabilities in coding and...
 meta-llama/llama-3.2-1b-instruct,Meta: Llama 3.2 1B Instruct,openrouter,60000,2.7e-08,2.01e-07,False,False,"text,text->text","Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate..."
-meta-llama/llama-3.2-3b-instruct,Meta: Llama 3.2 3B Instruct,openrouter,131072,5.09e-08,3.35e-07,False,False,"text,text->text","Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it..."
+meta-llama/llama-3.2-3b-instruct,Meta: Llama 3.2 3B Instruct,openrouter,131072,5e-08,3.3e-07,False,False,"text,text->text","Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it..."
 qwen/qwen-2.5-72b-instruct,Qwen2.5 72B Instruct,openrouter,32768,3.6e-07,4e-07,False,True,"text,text->text",Qwen2.5 72B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2: - Significantly more knowledge and has greatly improved capabilities in coding and...
 cohere/command-r-08-2024,Cohere: Command R (08-2024),openrouter,128000,1.5e-07,6e-07,False,True,"text,text->text","command-r-08-2024 is an update of the [Command R](/models/cohere/command-r) with improved performance for multilingual retrieval-augmented generation (RAG) and tool use. More broadly, it is better at math, code and reasoning and..."
 cohere/command-r-plus-08-2024,Cohere: Command R+ (08-2024),openrouter,128000,2.5e-06,1e-05,False,True,"text,text->text","command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint..."
@@ -472,17 +473,10 @@ openai/gpt-3.5-turbo-0613,OpenAI: GPT-3.5 Turbo (older v0613),openrouter,4095,1e
 
 Training data up to Sep 2021."
 openrouter/auto,Auto Router,openrouter,2000000,-1.0,-1.0,True,True,"text,image,file,audio,video->text,image","The Auto Router automatically selects the best model for your prompt, powered by the wisdom of the market. It routes you based on what the OpenRouter community collectively spends on..."
-openai/gpt-3.5-turbo-instruct,OpenAI: GPT-3.5 Turbo Instruct,openrouter,4095,1.5e-06,2e-06,False,False,"text,text->text",This model is a variant of GPT-3.5 Turbo tuned for instructional prompts and omitting chat-related optimizations. Training data: up to Sep 2021.
 openai/gpt-3.5-turbo-16k,OpenAI: GPT-3.5 Turbo 16k,openrouter,16385,3e-06,4e-06,False,True,"text,text->text","This model offers four times the context length of gpt-3.5-turbo, allowing it to support approximately 20 pages of text in a single request at a higher cost. Training data: up..."
 mancer/weaver,Mancer: Weaver (alpha),openrouter,8000,4e-07,7.5e-07,False,False,"text,text->text","An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in roleplay/narrative situations."
 undi95/remm-slerp-l2-13b,ReMM SLERP 13B,openrouter,6144,3.5e-07,6.5e-07,False,False,"text,text->text",A recreation trial of the original MythoMax-L2-B13 but with updated models. #merge
 gryphe/mythomax-l2-13b,MythoMax 13B,openrouter,8192,8e-08,1.1e-07,False,False,"text,text->text","One of the highest performing and most popular fine-tunes of Llama 2 13B, with rich descriptions and roleplay. #merge"
-openai/gpt-3.5-turbo,OpenAI: GPT-3.5 Turbo,openrouter,16385,5e-07,1.5e-06,False,True,"text,text->text","GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.
-
-Training data up to Sep 2021."
-openai/gpt-3.5-turbo:batch,OpenAI: GPT-3.5 Turbo (batch),openrouter,16385,2.5e-07,7.5e-07,False,True,"text,text->text","GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.
-
-Training data up to Sep 2021."
 openai/gpt-4,OpenAI: GPT-4,openrouter,8191,3e-05,6e-05,False,True,"text,text->text","OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and advanced reasoning..."
 claude-haiku-5-5,Claude Haiku 5.5,anthropic,,,,False,True,text,Anthropic Claude model: Claude Haiku 5.5
 claude-sonnet-5-5,Claude Sonnet 5.5,anthropic,,,,False,True,text,Anthropic Claude model: Claude Sonnet 5.5
@@ -498,58 +492,56 @@ claude-opus-4-6,Claude Opus 4.6,anthropic,,,,False,True,text,Anthropic Claude mo
 claude-opus-4-5-20251101,Claude Opus 4.5,anthropic,,,,False,True,text,Anthropic Claude model: Claude Opus 4.5
 claude-haiku-4-5-20251001,Claude Haiku 4.5,anthropic,,,,False,True,text,Anthropic Claude model: Claude Haiku 4.5
 claude-sonnet-4-5-20250929,Claude Sonnet 4.5,anthropic,200000,3e-06,1.5e-05,True,True,"text,image",Anthropic Claude model: Claude Sonnet 4.5
-gpt-realtime-2.1-mini,gpt-realtime-2.1-mini,openai,,,,False,False,text,OpenAI model: gpt-realtime-2.1-mini
-gpt-realtime-2025-08-28,gpt-realtime-2025-08-28,openai,,,,False,False,text,OpenAI model: gpt-realtime-2025-08-28
+omni-moderation-2024-09-26,omni-moderation-2024-09-26,openai,,,,False,False,text,OpenAI model: omni-moderation-2024-09-26
+gpt-live-transcribe,gpt-live-transcribe,openai,,,,False,False,text,OpenAI model: gpt-live-transcribe
+gpt-5.6-luna,gpt-5.6-luna,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+tts-1,tts-1,openai,,,,False,False,text,OpenAI model: tts-1
+gpt-5-mini,gpt-5-mini,openai,272000,2.5e-07,2e-06,True,True,"text,image",OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+gpt-5-mini-2025-08-07,gpt-5-mini-2025-08-07,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-3.5-turbo-0125,gpt-3.5-turbo-0125,openai,16385,5e-07,1.5e-06,False,True,text,OpenAI GPT-3.5 Turbo - fast and cost-effective
 gpt-5.4-2026-03-05,gpt-5.4-2026-03-05,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-5-nano,gpt-5-nano,openai,272000,1.0000000000000001e-07,5e-07,True,True,"text,image",OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-5.4-mini,gpt-5.4-mini,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-5.1-codex,gpt-5.1-codex,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+gpt-realtime-2.1-mini,gpt-realtime-2.1-mini,openai,,,,False,False,text,OpenAI model: gpt-realtime-2.1-mini
+gpt-realtime-2025-08-28,gpt-realtime-2025-08-28,openai,,,,False,False,text,OpenAI model: gpt-realtime-2025-08-28
 tts-1-hd,tts-1-hd,openai,,,,False,False,text,OpenAI model: tts-1-hd
 gpt-realtime-1.5,gpt-realtime-1.5,openai,,,,False,False,text,OpenAI model: gpt-realtime-1.5
 gpt-realtime,gpt-realtime,openai,,,,False,False,text,OpenAI model: gpt-realtime
 gpt-5.2-pro,gpt-5.2-pro,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-5-chat-latest,gpt-5-chat-latest,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-tts-1,tts-1,openai,,,,False,False,text,OpenAI model: tts-1
-gpt-5-mini,gpt-5-mini,openai,272000,2.5e-07,2e-06,True,True,"text,image",OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-5-mini-2025-08-07,gpt-5-mini-2025-08-07,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-omni-moderation-2024-09-26,omni-moderation-2024-09-26,openai,,,,False,False,text,OpenAI model: omni-moderation-2024-09-26
-gpt-live-transcribe,gpt-live-transcribe,openai,,,,False,False,text,OpenAI model: gpt-live-transcribe
-gpt-5.6-luna,gpt-5.6-luna,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 omni-moderation-latest,omni-moderation-latest,openai,,,,False,False,text,OpenAI model: omni-moderation-latest
 gpt-5.5-pro,gpt-5.5-pro,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-audio-2025-08-28,gpt-audio-2025-08-28,openai,,,,False,False,text,OpenAI model: gpt-audio-2025-08-28
 gpt-4o-mini-transcribe-2025-03-20,gpt-4o-mini-transcribe-2025-03-20,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
-gpt-5-2025-08-07,gpt-5-2025-08-07,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 o4-mini-2025-04-16,o4-mini-2025-04-16,openai,,,,False,False,text,OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities
 gpt-4o-2024-11-20,gpt-4o-2024-11-20,openai,128000,2.5e-06,1e-05,True,True,"text,image",OpenAI GPT-4o - flagship model with vision and function calling
 gpt-5.1,gpt-5.1,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 whisper-1,whisper-1,openai,,,,False,False,text,OpenAI model: whisper-1
 gpt-5-pro,gpt-5-pro,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-realtime-whisper,gpt-realtime-whisper,openai,,,,False,False,text,OpenAI model: gpt-realtime-whisper
+gpt-5-2025-08-07,gpt-5-2025-08-07,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-realtime-2,gpt-realtime-2,openai,,,,False,False,text,OpenAI model: gpt-realtime-2
 gpt-5-search-api,gpt-5-search-api,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-5.5-2026-04-23,gpt-5.5-2026-04-23,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+chat-latest,chat-latest,openai,,,,False,False,text,OpenAI model: chat-latest
+gpt-realtime-translate,gpt-realtime-translate,openai,,,,False,False,text,OpenAI model: gpt-realtime-translate
+gpt-5.4-pro-2026-03-05,gpt-5.4-pro-2026-03-05,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-5.4-mini-2026-03-17,gpt-5.4-mini-2026-03-17,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 babbage-002,babbage-002,openai,,,,False,False,text,OpenAI model: babbage-002
 gpt-4o-2024-05-13,gpt-4o-2024-05-13,openai,128000,5e-06,1.5e-05,True,True,"text,image",OpenAI GPT-4o - flagship model with vision and function calling
 text-embedding-3-large,text-embedding-3-large,openai,8191,1.3e-07,0.0,False,False,text,OpenAI embedding model: text-embedding-3-large
-chat-latest,chat-latest,openai,,,,False,False,text,OpenAI model: chat-latest
-gpt-realtime-translate,gpt-realtime-translate,openai,,,,False,False,text,OpenAI model: gpt-realtime-translate
-gpt-5.4-pro-2026-03-05,gpt-5.4-pro-2026-03-05,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-o3-mini-2025-01-31,o3-mini-2025-01-31,openai,,,,False,False,text,OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities
-gpt-audio-1.5,gpt-audio-1.5,openai,,,,False,False,text,OpenAI model: gpt-audio-1.5
-gpt-image-1.5,gpt-image-1.5,openai,,,,False,False,text,OpenAI model: gpt-image-1.5
 tts-1-1106,tts-1-1106,openai,,,,False,False,text,OpenAI model: tts-1-1106
 gpt-5.5-pro-2026-04-23,gpt-5.5-pro-2026-04-23,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-audio-mini-2025-10-06,gpt-audio-mini-2025-10-06,openai,,,,False,False,text,OpenAI model: gpt-audio-mini-2025-10-06
 gpt-5.2-pro-2025-12-11,gpt-5.2-pro-2025-12-11,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+gpt-4o-mini-transcribe-2025-12-15,gpt-4o-mini-transcribe-2025-12-15,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
+o3-mini-2025-01-31,o3-mini-2025-01-31,openai,,,,False,False,text,OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities
+gpt-audio-1.5,gpt-audio-1.5,openai,,,,False,False,text,OpenAI model: gpt-audio-1.5
+gpt-image-1.5,gpt-image-1.5,openai,,,,False,False,text,OpenAI model: gpt-image-1.5
 gpt-4o-2024-08-06,gpt-4o-2024-08-06,openai,128000,2.5e-06,1e-05,True,True,"text,image",OpenAI GPT-4o - flagship model with vision and function calling
 o3,o3,openai,200000,2e-06,8e-06,True,True,"text,image",OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities
 gpt-4o-mini-search-preview-2025-03-11,gpt-4o-mini-search-preview-2025-03-11,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
-gpt-4o-mini-transcribe-2025-12-15,gpt-4o-mini-transcribe-2025-12-15,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
-gpt-4.1-mini,gpt-4.1-mini,openai,1000000,4.0000000000000003e-07,1.6000000000000001e-06,True,True,"text,image",OpenAI GPT-4.1 - advanced model with 1M token context window
-gpt-4o-mini,gpt-4o-mini,openai,128000,1.5e-07,6e-07,True,True,"text,image",OpenAI GPT-4o - flagship model with vision and function calling
 gpt-4.1-nano,gpt-4.1-nano,openai,1000000,1.0000000000000001e-07,4.0000000000000003e-07,True,True,"text,image",OpenAI GPT-4.1 - advanced model with 1M token context window
 gpt-image-2,gpt-image-2,openai,,,,False,False,text,OpenAI model: gpt-image-2
 gpt-3.5-turbo-16k,gpt-3.5-turbo-16k,openai,16385,3e-06,4e-06,False,True,text,OpenAI GPT-3.5 Turbo - fast and cost-effective
@@ -557,36 +549,32 @@ text-embedding-ada-002,text-embedding-ada-002,openai,8191,1.0000000000000001e-07
 gpt-realtime-2.1,gpt-realtime-2.1,openai,,,,False,False,text,OpenAI model: gpt-realtime-2.1
 gpt-4.1,gpt-4.1,openai,1000000,2e-06,8e-06,True,True,"text,image",OpenAI GPT-4.1 - advanced model with 1M token context window
 gpt-5.5,gpt-5.5,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+gpt-5-pro-2025-10-06,gpt-5-pro-2025-10-06,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+gpt-5.6-sol,gpt-5.6-sol,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+gpt-4.1-mini,gpt-4.1-mini,openai,1000000,4.0000000000000003e-07,1.6000000000000001e-06,True,True,"text,image",OpenAI GPT-4.1 - advanced model with 1M token context window
+gpt-4o-mini,gpt-4o-mini,openai,128000,1.5e-07,6e-07,True,True,"text,image",OpenAI GPT-4o - flagship model with vision and function calling
 gpt-4o-transcribe-diarize,gpt-4o-transcribe-diarize,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
 gpt-5-codex,gpt-5-codex,openai,400000,1.25e-06,1e-05,True,True,"text,image",OpenAI GPT-5 Codex - specialized coding model with multimodal capabilities
 gpt-5.1-2025-11-13,gpt-5.1-2025-11-13,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-4o-search-preview,gpt-4o-search-preview,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
-gpt-5-pro-2025-10-06,gpt-5-pro-2025-10-06,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-5.6-sol,gpt-5.6-sol,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-o1-2024-12-17,o1-2024-12-17,openai,200000,1.5e-05,6e-05,False,False,text,OpenAI o1 - advanced reasoning model
-sora-2,sora-2,openai,,,,False,False,text,OpenAI model: sora-2
 gpt-realtime-mini,gpt-realtime-mini,openai,,,,False,False,text,OpenAI model: gpt-realtime-mini
 gpt-image-1-mini,gpt-image-1-mini,openai,,,,False,False,text,OpenAI model: gpt-image-1-mini
 gpt-5.6-terra,gpt-5.6-terra,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-3.5-turbo-instruct-0914,gpt-3.5-turbo-instruct-0914,openai,,,,False,False,text,OpenAI GPT-3.5 Turbo - fast and cost-effective
+gpt-5.4-pro,gpt-5.4-pro,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+gpt-4o-mini-tts,gpt-4o-mini-tts,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
+gpt-realtime-mini-2025-12-15,gpt-realtime-mini-2025-12-15,openai,,,,False,False,text,OpenAI model: gpt-realtime-mini-2025-12-15
+gpt-5.1-codex-max,gpt-5.1-codex-max,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+sora-2,sora-2,openai,,,,False,False,text,OpenAI model: sora-2
+o1-2024-12-17,o1-2024-12-17,openai,200000,1.5e-05,6e-05,False,False,text,OpenAI o1 - advanced reasoning model
+gpt-5.1-chat-latest,gpt-5.1-chat-latest,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+tts-1-hd-1106,tts-1-hd-1106,openai,,,,False,False,text,OpenAI model: tts-1-hd-1106
 gpt-4o-mini-tts-2025-12-15,gpt-4o-mini-tts-2025-12-15,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
 gpt-image-1,gpt-image-1,openai,,,,False,False,text,OpenAI model: gpt-image-1
 gpt-audio,gpt-audio,openai,,,,False,False,text,OpenAI model: gpt-audio
 gpt-5.3-codex,gpt-5.3-codex,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-5-search-api-2025-10-14,gpt-5-search-api-2025-10-14,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-5.2-codex,gpt-5.2-codex,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-4o-mini-2024-07-18,gpt-4o-mini-2024-07-18,openai,128000,1.5e-07,6e-07,True,True,"text,image",OpenAI GPT-4o - flagship model with vision and function calling
-gpt-4.1-2025-04-14,gpt-4.1-2025-04-14,openai,,,,False,False,text,OpenAI GPT-4.1 - advanced model with 1M token context window
-gpt-5-nano-2025-08-07,gpt-5-nano-2025-08-07,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-4o-transcribe,gpt-4o-transcribe,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
-o4-mini,o4-mini,openai,200000,1.1e-06,4.4e-06,True,True,"text,image",OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities
-gpt-5.1-codex-mini,gpt-5.1-codex-mini,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-5.4-pro,gpt-5.4-pro,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-4o-mini-tts,gpt-4o-mini-tts,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
-gpt-realtime-mini-2025-12-15,gpt-realtime-mini-2025-12-15,openai,,,,False,False,text,OpenAI model: gpt-realtime-mini-2025-12-15
-gpt-5.1-codex-max,gpt-5.1-codex-max,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-5.1-chat-latest,gpt-5.1-chat-latest,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-image-2.5-sunburst-2026-09-08,gpt-image-2.5-sunburst-2026-09-08,openai,,,,False,False,text,OpenAI model: gpt-image-2.5-sunburst-2026-09-08
+gpt-4o,gpt-4o,openai,128000,2.5e-06,1e-05,True,True,"text,image",OpenAI GPT-4o - flagship model with vision and function calling
 gpt-5,gpt-5,openai,272000,1.25e-06,1e-05,True,True,"text,image",OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-4o-mini-transcribe,gpt-4o-mini-transcribe,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
 gpt-image-2-2026-04-21,gpt-image-2-2026-04-21,openai,,,,False,False,text,OpenAI model: gpt-image-2-2026-04-21
@@ -595,36 +583,42 @@ sora-2-pro,sora-2-pro,openai,,,,False,False,text,OpenAI model: sora-2-pro
 gpt-3.5-turbo-instruct,gpt-3.5-turbo-instruct,openai,,,,False,False,text,OpenAI GPT-3.5 Turbo - fast and cost-effective
 gpt-transcribe,gpt-transcribe,openai,,,,False,False,text,OpenAI model: gpt-transcribe
 gpt-4.1-nano-2025-04-14,gpt-4.1-nano-2025-04-14,openai,,,,False,False,text,OpenAI GPT-4.1 - advanced model with 1M token context window
-gpt-4o,gpt-4o,openai,128000,2.5e-06,1e-05,True,True,"text,image",OpenAI GPT-4o - flagship model with vision and function calling
-tts-1-hd-1106,tts-1-hd-1106,openai,,,,False,False,text,OpenAI model: tts-1-hd-1106
+gpt-5.4,gpt-5.4,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+gpt-4o-search-preview-2025-03-11,gpt-4o-search-preview-2025-03-11,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
+text-embedding-3-small,text-embedding-3-small,openai,8191,2e-08,0.0,False,False,text,OpenAI embedding model: text-embedding-3-small
+gpt-4o-mini-2024-07-18,gpt-4o-mini-2024-07-18,openai,128000,1.5e-07,6e-07,True,True,"text,image",OpenAI GPT-4o - flagship model with vision and function calling
+gpt-4.1-2025-04-14,gpt-4.1-2025-04-14,openai,,,,False,False,text,OpenAI GPT-4.1 - advanced model with 1M token context window
+gpt-5.2-codex,gpt-5.2-codex,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-3.5-turbo-1106,gpt-3.5-turbo-1106,openai,16385,1e-06,2e-06,False,True,text,OpenAI GPT-3.5 Turbo - fast and cost-effective
 gpt-4o-mini-tts-2025-03-20,gpt-4o-mini-tts-2025-03-20,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
 gpt-5.2,gpt-5.2,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 gpt-5.4-nano-2026-03-17,gpt-5.4-nano-2026-03-17,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 o1,o1,openai,200000,1.5e-05,6e-05,False,False,text,OpenAI o1 - advanced reasoning model
-gpt-5.4,gpt-5.4,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
-gpt-4o-search-preview-2025-03-11,gpt-4o-search-preview-2025-03-11,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
-text-embedding-3-small,text-embedding-3-small,openai,8191,2e-08,0.0,False,False,text,OpenAI embedding model: text-embedding-3-small
-gpt-6-luna,gpt-6-luna,openai,,,,False,False,text,OpenAI model: gpt-6-luna
-gpt-image-2.5-flare,gpt-image-2.5-flare,openai,,,,False,False,text,OpenAI model: gpt-image-2.5-flare
-gpt-live-1,gpt-live-1,openai,,,,False,False,text,OpenAI model: gpt-live-1
 gpt-5.3-chat-latest,gpt-5.3-chat-latest,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 o3-2025-04-16,o3-2025-04-16,openai,,,,False,False,text,OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities
 gpt-5.2-2025-12-11,gpt-5.2-2025-12-11,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 chatgpt-image-latest,chatgpt-image-latest,openai,,,,False,False,text,OpenAI model: chatgpt-image-latest
 gpt-3.5-turbo,gpt-3.5-turbo,openai,16385,5e-07,1.5e-06,False,True,text,OpenAI GPT-3.5 Turbo - fast and cost-effective
-gpt-image-2.5-sunburst,gpt-image-2.5-sunburst,openai,,,,False,False,text,OpenAI model: gpt-image-2.5-sunburst
-gpt-image-2.5-flare-2026-09-08,gpt-image-2.5-flare-2026-09-08,openai,,,,False,False,text,OpenAI model: gpt-image-2.5-flare-2026-09-08
+gpt-5-nano-2025-08-07,gpt-5-nano-2025-08-07,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
+gpt-4o-transcribe,gpt-4o-transcribe,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
+o4-mini,o4-mini,openai,200000,1.1e-06,4.4e-06,True,True,"text,image",OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities
+gpt-5.1-codex-mini,gpt-5.1-codex-mini,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 davinci-002,davinci-002,openai,,,,False,False,text,OpenAI model: davinci-002
 gpt-5.4-nano,gpt-5.4-nano,openai,,,,False,False,text,OpenAI GPT-5 - next-generation model with advanced reasoning and multimodal capabilities
 o3-mini,o3-mini,openai,,,,False,False,text,OpenAI o3/o4 - next-generation reasoning model with vision and multimodal capabilities
 gpt-audio-mini-2025-12-15,gpt-audio-mini-2025-12-15,openai,,,,False,False,text,OpenAI model: gpt-audio-mini-2025-12-15
-gpt-6-astra,gpt-6-astra,openai,,,,False,False,text,OpenAI model: gpt-6-astra
+gpt-live-1,gpt-live-1,openai,,,,False,False,text,OpenAI model: gpt-live-1
+gpt-6-luna,gpt-6-luna,openai,,,,False,False,text,OpenAI model: gpt-6-luna
+gpt-image-2.5-sunburst-2026-09-08,gpt-image-2.5-sunburst-2026-09-08,openai,,,,False,False,text,OpenAI model: gpt-image-2.5-sunburst-2026-09-08
 gpt-audio-mini,gpt-audio-mini,openai,,,,False,False,text,OpenAI model: gpt-audio-mini
 gpt-4.1-mini-2025-04-14,gpt-4.1-mini-2025-04-14,openai,,,,False,False,text,OpenAI GPT-4.1 - advanced model with 1M token context window
-gpt-6.1-sol,gpt-6.1-sol,openai,,,,False,False,text,OpenAI model: gpt-6.1-sol
+gpt-image-2.5-flare,gpt-image-2.5-flare,openai,,,,False,False,text,OpenAI model: gpt-image-2.5-flare
+gpt-image-2.5-sunburst,gpt-image-2.5-sunburst,openai,,,,False,False,text,OpenAI model: gpt-image-2.5-sunburst
+gpt-image-2.5-flare-2026-09-08,gpt-image-2.5-flare-2026-09-08,openai,,,,False,False,text,OpenAI model: gpt-image-2.5-flare-2026-09-08
+gpt-6-astra,gpt-6-astra,openai,,,,False,False,text,OpenAI model: gpt-6-astra
 gpt-4o-mini-search-preview,gpt-4o-mini-search-preview,openai,,,,False,False,text,OpenAI GPT-4o - flagship model with vision and function calling
 gpt-6-sol,gpt-6-sol,openai,,,,False,False,text,OpenAI model: gpt-6-sol
+gpt-6.1-sol,gpt-6.1-sol,openai,,,,False,False,text,OpenAI model: gpt-6.1-sol
 gemini-2.5-flash,Gemini 2.5 Flash,google,1048576,7.5e-08,3e-07,True,True,"text,image,video,audio","Stable version of Gemini 2.5 Flash, our mid-size multimodal model that supports up to 1 million tokens, released in June of 2025."
 gemini-2.5-pro,Gemini 2.5 Pro,google,1048576,1.25e-06,5e-06,True,True,"text,image,video,audio","Stable release (June 17th, 2025) of Gemini 2.5 Pro"
 gemini-2.5-flash-preview-tts,Gemini 2.5 Flash Preview TTS,google,8192,,,False,True,text,Gemini 2.5 Flash Preview TTS
